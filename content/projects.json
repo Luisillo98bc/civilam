@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Vivienda Multifamiliar Miraflores",
+    "category": "Viviendas",
+    "image": "/viviendas-tramites.jpg",
+    "description": "Diseño arquitectónico, estructural e ingeniería de detalle para un edificio multifamiliar de 5 pisos. Gestión completa de la licencia de edificación ante la municipalidad.",
+    "client": "Inmobiliaria Construye Perú",
+    "location": "Lima, Miraflores",
+    "year": "2024",
+    "gallery": [
+      "/viviendas-tramites.jpg",
+      "/contruc.jpeg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Reservorio Apoyado de 500m3",
+    "category": "Agua Potable",
+    "image": "/proyectos/reservorio.jpg",
+    "description": "Elaboración del expediente técnico y ejecución de reservorio apoyado de concreto armado para el sistema de agua potable en zona rural altoandina.",
+    "client": "Gobierno Regional de Huancavelica",
+    "location": "Huancavelica, Acobamba",
+    "year": "2023",
+    "gallery": [
+      "/proyectos/reservorio2.png"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "PTAR Industrial San Jerónimo",
+    "category": "PTAR",
+    "image": "/proyectos/petar 2.jpeg",
+    "description": "Modelamiento e implementación de la Planta de Tratamiento de Aguas Residuales (PTAR) para una zona industrial, incluyendo lagunas de oxidación y sistemas de filtrado por gravedad.",
+    "client": "Consorcio Industrial del Sur",
+    "location": "Cusco, San Jerónimo",
+    "year": "2024",
+    "gallery": [
+      "/proyectos/petar22.jpeg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Red de Alcantarillado Urbano",
+    "category": "Alcantarillado",
+    "image": "/proyectos/alcantarillado-sanitario.webp",
+    "description": "Renovación integral y ampliación de las redes de alcantarillado sanitario y conexiones domiciliarias para más de 1200 familias.",
+    "client": "Municipalidad Provincial de Trujillo",
+    "location": "La Libertad, Trujillo",
+    "year": "2023",
+    "gallery": [
+      "/proyectos/alcantarillado2.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Supervisión Vial de Carretera Interoceánica",
+    "category": "Supervisión",
+    "image": "/proyectos/supervision vial.jpg",
+    "description": "Servicio de supervisión técnica, ambiental y arqueológica durante el asfaltado y estabilización de taludes en el tramo andino de la carretera.",
+    "client": "Provías Nacional",
+    "location": "Puno, Macusani",
+    "year": "2024",
+    "gallery": [
+      "/proyectos/supervision vial3.jpg",
+      "/proyectos/suoervisionvial2.jpeg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Complejo Deportivo y Obras Civiles",
+    "category": "Construcción",
+    "image": "/proyectos/complejo deportivo1.jpg",
+    "description": "Ejecución de obras civiles, pavimentación exterior, muros de contención por gravedad y graderías para el complejo deportivo municipal.",
+    "client": "Municipalidad Distrital de Los Olivos",
+    "location": "Lima, Los Olivos",
+    "year": "2023",
+    "gallery": [
+      "/proyectos/complejo deportivo2.jpg"
+    ]
+  }
+]

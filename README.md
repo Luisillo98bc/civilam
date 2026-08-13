@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CIVILAM
 
-## Getting Started
+Sitio corporativo de CIVILAM construido con Next.js 16, React 19 y Tailwind CSS 4.
 
-First, run the development server:
+## Desarrollo
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+El servidor local utiliza `http://localhost:3007`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Variables de entorno
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Copia `.env.example` como `.env.local` y configura:
 
-## Learn More
+- `NEXT_PUBLIC_SITE_URL`: dominio público definitivo, sin barra final.
+- `RESEND_API_KEY`: credencial de Resend.
+- `CONTACT_EMAIL`: buzón que recibirá formularios y suscripciones.
+- `RESEND_FROM_EMAIL`: remitente perteneciente a un dominio verificado.
+- `COMPANY_LEGAL_NAME` y `COMPANY_TAX_ID`: datos legales confirmados antes del lanzamiento.
+- `UPSTASH_REDIS_REST_URL` y `UPSTASH_REDIS_REST_TOKEN`: opcionales; activan rate limit compartido entre instancias.
+- `NEXT_PUBLIC_GA_MEASUREMENT_ID`: opcional; Analytics solo carga tras el consentimiento.
 
-To learn more about Next.js, take a look at the following resources:
+En desarrollo, los envíos sin credenciales se guardan en `.local-data/`. En producción nunca se guardan en archivos locales y el formulario muestra un error seguro si el correo no está configurado.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Verificación
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run check
+```
 
-## Deploy on Vercel
+Ejecuta ESLint, TypeScript, pruebas unitarias y el build de producción.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Lista previa al lanzamiento
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Confirmar razón social, RUC y domicilio legal en `/privacidad` y `/terminos`.
+- Confirmar autorización para publicar cada proyecto, cliente, imagen y logotipo.
+- Confirmar datos, fechas, docentes, precios y condiciones de cada capacitación.
+- Verificar el dominio remitente y realizar un envío real del formulario y boletín.
+- Definir el dominio canónico y redirigir la variante alternativa (`www` o sin `www`).
+- Configurar DNS, HTTPS, Search Console y el identificador de Analytics si se utilizará.
+- Revisar la inscripción y obligaciones aplicables del banco de datos personales con asesoría legal peruana.
+- Sustituir gradualmente las imágenes de stock por fotografías propias autorizadas y optimizadas.
+
+## Contenido
+
+- Proyectos: `content/projects.json`
+- Artículos: `content/blog/*.md`
+- Cursos: `src/components/TrainingList.tsx`
+- Datos globales de contacto y URL: `src/lib/site.ts`
+
+No publiques credenciales, documentos de identidad ni información confidencial dentro del repositorio.
