@@ -43,6 +43,7 @@ next-env.d.ts
 
 # local development submissions and generated audit artifacts
 /.local-data/
+/tmp/
 /current_page*.html
 /global_styles.css
 /out.css
