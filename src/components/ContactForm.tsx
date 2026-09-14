@@ -5,6 +5,20 @@ import { submitContactForm } from '@/app/actions/contact';
 import Link from 'next/link';
 import { FaCalculator, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { contact } from '@/lib/site';
+import peruLocations from '@/lib/peru-locations.json';
+
+const locationNameOverrides: Record<string, string> = {
+  AMAZONAS: 'Amazonas', ANCASH: 'Áncash', APURIMAC: 'Apurímac', AREQUIPA: 'Arequipa',
+  AYACUCHO: 'Ayacucho', CAJAMARCA: 'Cajamarca', CALLAO: 'Callao', CUSCO: 'Cusco',
+  HUANCAVELICA: 'Huancavelica', HUANUCO: 'Huánuco', ICA: 'Ica', JUNIN: 'Junín',
+  'LA LIBERTAD': 'La Libertad', LAMBAYEQUE: 'Lambayeque', LIMA: 'Lima', LORETO: 'Loreto',
+  'MADRE DE DIOS': 'Madre de Dios', MOQUEGUA: 'Moquegua', PASCO: 'Pasco', PIURA: 'Piura',
+  PUNO: 'Puno', 'SAN MARTIN': 'San Martín', TACNA: 'Tacna', TUMBES: 'Tumbes', UCAYALI: 'Ucayali',
+};
+
+function displayLocationName(name: string) {
+  return locationNameOverrides[name] || name.toLocaleLowerCase('es-PE').replace(/(^|\s)\S/g, (letter) => letter.toUpperCase());
+}
 
 export default function ContactForm() {
   const [activeTab, setActiveTab] = useState<'express' | 'standard'>('express');
@@ -13,10 +27,19 @@ export default function ContactForm() {
   const [errorMessage, setErrorMessage] = useState('');
 
   // Estados del Cotizador Express
-  const [expressService, setExpressService] = useState('Expedientes Técnicos');
-  const [expressLocation, setExpressLocation] = useState('Junín / Huancayo');
-  const [expressEntityType, setExpressEntityType] = useState('Privada / Inmobiliaria');
-  const [expressUrgency, setExpressUrgency] = useState('Normal (15-30 días)');
+  const [expressService, setExpressService] = useState('');
+  const [expressRegion, setExpressRegion] = useState('');
+  const [expressProvince, setExpressProvince] = useState('');
+  const [expressDistrict, setExpressDistrict] = useState('');
+  const [expressEntityType, setExpressEntityType] = useState('Entidades Privadas');
+
+  const selectedRegion = peruLocations.find((region) => region.code === expressRegion);
+  const selectedProvince = selectedRegion?.provinces.find((province) => province.code === expressProvince);
+  const expressLocation = [selectedRegion?.name, selectedProvince?.name, expressDistrict]
+    .filter(Boolean)
+    .map((location) => displayLocationName(location as string))
+    .join(' / ');
+  const isExpressReady = Boolean(expressService.trim() && selectedProvince && expressDistrict && expressEntityType);
 
   useEffect(() => {
     const syncTabWithHash = () => {
@@ -51,7 +74,7 @@ export default function ContactForm() {
   };
 
   const getExpressWhatsappUrl = () => {
-    const text = `Hola CIVILAM, quisiera cotizar el siguiente proyecto:\n- Servicio: ${expressService}\n- Ubicación: ${expressLocation}\n- Tipo de Entidad: ${expressEntityType}\n- Plazo Estimado: ${expressUrgency}\n¿Me podrían brindar una estimación o propuesta inicial?`;
+    const text = `Hola CIVILAM, quisiera cotizar el siguiente proyecto:\n- Servicio: ${expressService}\n- Ubicación: ${expressLocation}\n- Tipo de Entidad: ${expressEntityType}\n¿Me podrían brindar una estimación o propuesta inicial?`;
     return `${contact.whatsapp}?text=${encodeURIComponent(text)}`;
   };
 
@@ -151,86 +174,100 @@ export default function ContactForm() {
               {/* Paso 1: Servicio */}
               <div>
                 <label className="text-xs font-bold uppercase tracking-wider text-gray-500 block mb-2">1. Tipo de Servicio Requerido</label>
-                <div className="grid grid-cols-2 gap-2">
-                  {['Expedientes Técnicos', 'Obras Hidráulicas', 'Saneamiento & PTAR', 'Licencias & Diseños 3D'].map((serv) => (
-                    <button
-                      key={serv}
-                      type="button"
-                      onClick={() => setExpressService(serv)}
-                      className={`p-3 rounded-xl border text-xs font-bold text-left transition-all ${
-                        expressService === serv 
-                          ? 'bg-blue-50 border-[#1e3a8a] text-[#1e3a8a] shadow-sm' 
-                          : 'bg-slate-50 border-gray-200 text-gray-700 hover:bg-gray-100'
-                      }`}
-                    >
-                      {serv}
-                    </button>
-                  ))}
-                </div>
+                <textarea
+                  value={expressService}
+                  onChange={(e) => setExpressService(e.target.value)}
+                  rows={3}
+                  maxLength={300}
+                  placeholder="Escribe el servicio que necesitas, por ejemplo: expediente técnico para una carretera..."
+                  className="w-full resize-y rounded-xl border border-gray-200 bg-slate-50 p-3 text-sm text-gray-800 transition-all placeholder:text-gray-400 focus:border-[#1e3a8a] focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-100"
+                />
+                <p className="mt-2 text-[0.7rem] text-gray-500">Describe brevemente el servicio para orientarte mejor.</p>
               </div>
 
-              {/* Paso 2: Ubicación & Entidad */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="text-xs font-bold uppercase tracking-wider text-gray-500 block mb-2">2. Ubicación / Región</label>
-                  <select 
-                    value={expressLocation} 
-                    onChange={(e) => setExpressLocation(e.target.value)}
-                    className="w-full p-3 bg-slate-50 border border-gray-200 rounded-xl text-xs font-bold text-gray-800"
-                  >
-                    <option value="Junín / Huancayo">Junín / Huancayo</option>
-                    <option value="Lima Metropolitano">Lima Metropolitano</option>
-                    <option value="Huancavelica / Ayacucho">Huancavelica / Ayacucho</option>
-                    <option value="Cusco / Puno">Cusco / Puno</option>
-                    <option value="Norte del Perú">Norte del Perú</option>
-                    <option value="Otra Región del Perú">Otra Región del Perú</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="text-xs font-bold uppercase tracking-wider text-gray-500 block mb-2">Entidad / Cliente</label>
-                  <select 
-                    value={expressEntityType} 
-                    onChange={(e) => setExpressEntityType(e.target.value)}
-                    className="w-full p-3 bg-slate-50 border border-gray-200 rounded-xl text-xs font-bold text-gray-800"
-                  >
-                    <option value="Privada / Inmobiliaria">Empresa Privada / Particular</option>
-                    <option value="Municipalidad / Gobierno Regional">Municipalidad / Gobierno Regional</option>
-                    <option value="Consorcio / Contratista">Consorcio / Contratista de Obra</option>
-                  </select>
-                </div>
-              </div>
-
-              {/* Paso 3: Urgencia */}
+              {/* Paso 2: Ubicación jerárquica */}
               <div>
-                <label className="text-xs font-bold uppercase tracking-wider text-gray-500 block mb-2">3. Urgencia / Plazo de Entrega</label>
-                <div className="grid grid-cols-3 gap-2">
-                  {['Normal (15-30 días)', 'Urgente (7-15 días)', 'Inmediata (Exprés)'].map((urg) => (
-                    <button
-                      key={urg}
-                      type="button"
-                      onClick={() => setExpressUrgency(urg)}
-                      className={`p-2.5 rounded-xl border text-[0.7rem] font-bold text-center transition-all ${
-                        expressUrgency === urg 
-                          ? 'bg-red-50 border-[#dc2626] text-[#dc2626] shadow-sm' 
-                          : 'bg-slate-50 border-gray-200 text-gray-600 hover:bg-gray-100'
-                      }`}
+                <label className="text-xs font-bold uppercase tracking-wider text-gray-500 block mb-2">2. Ubicación del proyecto</label>
+                <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
+                  <div>
+                    <label htmlFor="express-region" className="mb-1.5 block text-[0.7rem] font-semibold text-gray-600">Región / Departamento</label>
+                    <select
+                      id="express-region"
+                      value={expressRegion}
+                      onChange={(e) => {
+                        setExpressRegion(e.target.value);
+                        setExpressProvince('');
+                        setExpressDistrict('');
+                      }}
+                      className="w-full rounded-xl border border-gray-200 bg-slate-50 p-3 text-xs font-bold text-gray-800 focus:border-[#1e3a8a] focus:outline-none focus:ring-2 focus:ring-blue-100"
                     >
-                      {urg}
-                    </button>
-                  ))}
+                      <option value="">Busca o selecciona una región...</option>
+                      {peruLocations.map((region) => <option key={region.code} value={region.code}>{displayLocationName(region.name)}</option>)}
+                    </select>
+                  </div>
+
+                  <div>
+                    <label htmlFor="express-province" className="mb-1.5 block text-[0.7rem] font-semibold text-gray-600">Provincia</label>
+                    <select
+                      id="express-province"
+                      value={expressProvince}
+                      disabled={!selectedRegion}
+                      onChange={(e) => {
+                        setExpressProvince(e.target.value);
+                        setExpressDistrict('');
+                      }}
+                      className="w-full rounded-xl border border-gray-200 bg-slate-50 p-3 text-xs font-bold text-gray-800 focus:border-[#1e3a8a] focus:outline-none focus:ring-2 focus:ring-blue-100 disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                      <option value="">{selectedRegion ? 'Busca o selecciona una provincia...' : 'Primero elige una región'}</option>
+                      {selectedRegion?.provinces.map((province) => <option key={province.code} value={province.code}>{displayLocationName(province.name)}</option>)}
+                    </select>
+                  </div>
+
+                  <div>
+                    <label htmlFor="express-district" className="mb-1.5 block text-[0.7rem] font-semibold text-gray-600">Distrito</label>
+                    <select
+                      id="express-district"
+                      value={expressDistrict}
+                      disabled={!selectedProvince}
+                      onChange={(e) => setExpressDistrict(e.target.value)}
+                      className="w-full rounded-xl border border-gray-200 bg-slate-50 p-3 text-xs font-bold text-gray-800 focus:border-[#1e3a8a] focus:outline-none focus:ring-2 focus:ring-blue-100 disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                      <option value="">{selectedProvince ? 'Busca o selecciona un distrito...' : 'Primero elige una provincia'}</option>
+                      {selectedProvince?.districts.map((district) => <option key={district} value={district}>{displayLocationName(district)}</option>)}
+                    </select>
+                  </div>
                 </div>
+                <p className="mt-2 text-[0.7rem] text-gray-500">Selecciona en orden: región, provincia y distrito. En cada lista puedes escribir las primeras letras para encontrarla rápidamente.</p>
+              </div>
+
+              {/* Paso 3: Entidad */}
+              <div>
+                <label htmlFor="express-entity" className="text-xs font-bold uppercase tracking-wider text-gray-500 block mb-2">3. Entidad / Cliente</label>
+                <select
+                  id="express-entity"
+                  value={expressEntityType}
+                  onChange={(e) => setExpressEntityType(e.target.value)}
+                  className="w-full rounded-xl border border-gray-200 bg-slate-50 p-3 text-xs font-bold text-gray-800 focus:border-[#1e3a8a] focus:outline-none focus:ring-2 focus:ring-blue-100"
+                >
+                  <option value="Entidades Públicas">Entidades Públicas</option>
+                  <option value="Entidades Privadas">Entidades Privadas</option>
+                </select>
+                <p className="mt-2 text-[0.7rem] text-gray-500">Elige el tipo de cliente para personalizar la orientación inicial.</p>
               </div>
 
               {/* Botón WhatsApp Express */}
               <a
-                href={getExpressWhatsappUrl()}
+                href={isExpressReady ? getExpressWhatsappUrl() : undefined}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs uppercase tracking-wider py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all"
+                aria-disabled={!isExpressReady}
+                onClick={(e) => {
+                  if (!isExpressReady) e.preventDefault();
+                }}
+                className={`w-full inline-flex items-center justify-center gap-2.5 rounded-xl px-6 py-4 text-xs font-extrabold uppercase tracking-wider text-white shadow-lg transition-all ${isExpressReady ? 'bg-emerald-600 hover:bg-emerald-700 hover:shadow-xl' : 'cursor-not-allowed bg-gray-300'}`}
               >
                 <FaWhatsapp className="text-xl" />
-                Enviar Cotización a WhatsApp
+                {isExpressReady ? 'Enviar Cotización a WhatsApp' : 'Completa los datos para continuar'}
               </a>
             </div>
           ) : isSuccess ? (

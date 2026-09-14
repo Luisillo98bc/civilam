@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 const needs = [
   ['01', 'Elaborar un expediente técnico', 'Estudios, memorias, planos, metrados, presupuesto y documentación para evaluación o ejecución.', '/servicios#expedientes'],
-  ['02', 'Diseñar o construir una edificación', 'Arquitectura, estructuras, instalaciones, licencias, modelamiento y ejecución de obra.', '/servicios#viviendas'],
-  ['03', 'Desarrollar saneamiento o hidráulica', 'Agua potable, alcantarillado, reservorios, PTAR y modelamiento hidráulico.', '/servicios#agua'],
+  ['02', 'Realizar un levantamiento topográfico', 'Topografía, geodesia, fotogrametría, georreferenciación y modelos digitales del terreno.', '/servicios#topografia'],
+  ['03', 'Mantener un sistema de agua o saneamiento', 'Limpieza, desinfección, mantenimiento preventivo y diagnóstico de reservorios y redes.', '/servicios#mantenimiento'],
   ['04', 'Evaluar hidrología y riesgos', 'Estudios de cuenca, inundaciones, fajas marginales y modelamiento hidráulico 1D/2D.', '/servicios#hidrologia'],
 ];
 

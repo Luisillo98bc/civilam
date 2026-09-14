@@ -10,18 +10,18 @@ const services = [
     features: ['Memorias y estudios', 'Planos y especialidades', 'Metrados y presupuesto'],
   },
   {
-    id: 'viviendas',
-    title: 'Edificaciones y construcción',
-    description: 'Diseño, licenciamiento, ejecución y supervisión de edificaciones con coordinación técnica entre arquitectura e ingenierías.',
-    image: '/contruc.jpeg',
-    features: ['Diseño estructural', 'Licencias de edificación', 'Ejecución y control de obra'],
+    id: 'topografia',
+    title: 'Topografía, geodesia y fotogrametría',
+    description: 'Levantamiento y procesamiento de información territorial para sustentar diseños, expedientes, obras y decisiones técnicas.',
+    image: '/sig-cartografia.png',
+    features: ['Levantamientos con GNSS', 'Fotogrametría con drones', 'Modelos digitales de elevación'],
   },
   {
-    id: 'agua',
-    title: 'Agua y saneamiento',
-    description: 'Sistemas de agua potable, alcantarillado y tratamiento planteados según demanda, condiciones del terreno y normativa aplicable.',
+    id: 'mantenimiento',
+    title: 'Mantenimiento de agua y saneamiento',
+    description: 'Limpieza, desinfección y mantenimiento preventivo de sistemas para conservar su operación y salubridad.',
     image: '/construccion_mante.jpeg',
-    features: ['Redes y reservorios', 'Alcantarillado sanitario', 'Plantas de tratamiento'],
+    features: ['Limpieza de reservorios', 'Desinfección de redes', 'Diagnóstico y mantenimiento'],
   },
 ];
 

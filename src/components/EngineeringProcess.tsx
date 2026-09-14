@@ -1,8 +1,8 @@
 const steps = [
   ['01', 'Evaluación', 'Revisamos ubicación, alcance, antecedentes y objetivo para definir la ruta técnica adecuada.'],
   ['02', 'Estudios', 'Levantamos información, desarrollamos estudios básicos y verificamos condicionantes normativas.'],
-  ['03', 'Diseño', 'Coordinamos especialidades y desarrollamos planos, cálculos, metrados y especificaciones.'],
-  ['04', 'Entrega', 'Realizamos control documental, presentamos entregables y acompañamos observaciones o ejecución.'],
+  ['03', 'Diseño', 'Coordinamos especialidades y desarrollamos planos, cálculos, metrados y presupuestos.'],
+  ['04', 'Entrega', 'Realizamos control documental, presentamos entregables.'],
 ];
 
 export default function EngineeringProcess() {

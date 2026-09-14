@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import HeroInner from '@/components/HeroInner';
 import AboutInfo from '@/components/AboutInfo';
-import EngineeringProcess from '@/components/EngineeringProcess';
 import CTA from '@/components/CTA';
 import CompanySnapshot from '@/components/CompanySnapshot';
 
@@ -22,7 +21,6 @@ export default function NosotrosPage() {
       />
       <AboutInfo />
       <CompanySnapshot />
-      <EngineeringProcess />
       <CTA />
     </main>
   );

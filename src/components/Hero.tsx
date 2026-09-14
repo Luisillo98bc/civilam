@@ -18,13 +18,26 @@ export default function Hero() {
 
       <div className="site-wrapper relative z-10 flex min-h-[680px] items-center pb-12 pt-28 lg:min-h-[720px] lg:pb-16">
         <div className="max-w-[720px]">
-          <p className="technical-label mb-7 text-white/70">INGENIERÍA CIVIL · HUANCAYO · COBERTURA NACIONAL</p>
-          <h1 className="max-w-[720px] text-[clamp(2.7rem,5.5vw,5.1rem)] font-bold leading-[.98] tracking-[-.055em] text-white">
-            Proyectos complejos.<br />Soluciones <span className="text-[#e5a72a]">ejecutables.</span>
-          </h1>
-          <p className="mt-7 max-w-[620px] text-base leading-7 text-slate-200 md:text-lg md:leading-8">
-            Desarrollamos expedientes técnicos, saneamiento, hidráulica, construcción y supervisión con criterio técnico, control documental y acompañamiento en cada etapa.
-          </p>
+          <p className="technical-label mb-5 text-white/70">INGENIERÍA CIVIL · INGENIERIA AMBIENTAL · ARQUITECTURA</p>
+          <div className="mb-8 flex w-fit max-w-full items-center gap-4 rounded-sm bg-white px-5 py-4 text-[#102a43] shadow-[0_12px_35px_rgba(0,0,0,.18)] sm:gap-5 sm:px-7 sm:py-5">
+            <Image
+              src="/logo.png"
+              alt=""
+              width={82}
+              height={82}
+              className="h-[66px] w-[66px] shrink-0 object-contain sm:h-[82px] sm:w-[82px]"
+            />
+            <div className="border-l border-slate-200 pl-4 sm:pl-5">
+              <h1 className="text-[clamp(2rem,4vw,3.5rem)] font-black leading-none tracking-[-.055em]">CIVILAM</h1>
+              <p className="mt-2 text-[0.62rem] font-bold leading-tight tracking-[0.16em] text-slate-500 sm:text-xs">INGENIERÍA Y CONSTRUCCIÓN</p>
+            </div>
+          </div>
+          <div className="max-w-[650px] border-l-2 border-[#e5a72a] pl-5 text-slate-200">
+            <p className="text-xl font-semibold leading-tight text-white md:text-2xl">“LIDERANDO LA INGENIERÍA DEL FUTURO”</p>
+            <p className="mt-4 text-base leading-7 md:text-lg md:leading-8">
+              Integramos experiencia, conocimiento, innovación y ciencia para diseñar, ejecutar y supervisar proyectos de ingeniería.
+            </p>
+          </div>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Link href="/contacto#cotizador" className="btn-primary min-h-12 rounded-sm px-7 py-3.5">
               Solicitar evaluación

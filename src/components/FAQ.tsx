@@ -11,20 +11,9 @@ interface FAQItem {
 const faqs: FAQItem[] = [
   {
     question: "¿Qué es un Expediente Técnico y por qué es indispensable?",
-    answer: "El Expediente Técnico es el conjunto de documentos de carácter técnico y económico (planos, memoria descriptiva, especificaciones técnicas, metrados, presupuesto, estudios de suelos, etc.) que definen las características y el costo de una obra. Es indispensable para la correcta ejecución física del proyecto, garantizar la seguridad estructural y cumplir con las normativas municipales y estatales en el Perú."
+    answer: "El Expediente Técnico es el conjunto de documentos de carácter técnico y económico (planos, memoria descriptiva, especificaciones técnicas, metrados, presupuesto, estudios de suelos, etc.) que definen las características y el costo de una obra. Es indispensable para la correcta ejecución física del proyecto, garantizar la seguridad estructural y cumplir con las normativas."
   },
-  {
-    question: "¿En qué consiste la Declaratoria de Fábrica y la Independización?",
-    answer: "La Declaratoria de Fábrica es el reconocimiento legal de la existencia de una edificación (vivienda, comercio o industria) inscrita en la SUNARP. La Independización permite dividir un inmueble en varias unidades de propiedad exclusiva (como departamentos o pisos), asignándoles una partida registral propia para que puedan ser vendidos o hipotecados por separado."
-  },
-  {
-    question: "¿Tienen cobertura para proyectos fuera de Huancayo?",
-    answer: "Sí, en CIVILAM operamos a nivel nacional. Si bien nuestra base principal está en el departamento de Junín, brindamos consultorías, estudios hidrológicos, modelamientos de inundaciones y elaboración de expedientes técnicos para entidades públicas y privadas en todo el Perú."
-  },
-  {
-    question: "¿Qué herramientas emplean para el modelamiento hidráulico y cartografía?",
-    answer: "Utilizamos software líder en la industria de la ingeniería civil e hidráulica como HEC-RAS (1D/2D) e Iber para simulaciones de inundación y rotura de presas; WaterCAD y SewerCAD para el diseño de redes de agua potable y alcantarillado; y ArcGIS/QGIS para el procesamiento cartográfico y generación de mapas temáticos."
-  },
+
   {
     question: "¿Cómo es el proceso para cotizar un estudio o proyecto con CIVILAM?",
     answer: "Descríbenos tu requerimiento mediante el formulario o WhatsApp. Revisaremos la información inicial y coordinaremos una llamada o visita técnica cuando sea necesario. El plazo y las condiciones de la propuesta se confirmarán según el alcance y la complejidad del proyecto."
@@ -73,16 +62,16 @@ export default function FAQ() {
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
-              <motion.div 
-                key={index} 
+              <motion.div
+                key={index}
                 className={`border rounded-2xl overflow-hidden transition-all duration-500 ease-out ${isOpen ? 'border-transparent bg-white shadow-[0_20px_40px_-15px_rgba(30,58,138,0.1)]' : 'border-slate-200/60 bg-white/50 hover:bg-white hover:border-blue-100 hover:shadow-sm'}`}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
               >
-                <button 
-                  className={`w-full flex justify-between items-center p-6 md:p-7 bg-transparent border-none text-[1.05rem] md:text-[1.15rem] font-bold text-primary-blue text-left transition-colors duration-300 cursor-pointer gap-6 leading-[1.4] ${isOpen ? 'text-accent-red' : 'hover:text-accent-blue'}`} 
+                <button
+                  className={`w-full flex justify-between items-center p-6 md:p-7 bg-transparent border-none text-[1.05rem] md:text-[1.15rem] font-bold text-primary-blue text-left transition-colors duration-300 cursor-pointer gap-6 leading-[1.4] ${isOpen ? 'text-accent-red' : 'hover:text-accent-blue'}`}
                   onClick={() => toggleFAQ(index)}
                   aria-expanded={isOpen}
                 >
@@ -96,7 +85,7 @@ export default function FAQ() {
                 </button>
                 <AnimatePresence initial={false}>
                   {isOpen && (
-                    <motion.div 
+                    <motion.div
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}

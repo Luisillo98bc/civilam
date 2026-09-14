@@ -1,4 +1,4 @@
-const sectors = ['Entidades públicas', 'Empresas privadas', 'Contratistas', 'Comunidades y JASS'];
+const sectors = ['Entidades públicas', 'Entidades Privadas'];
 
 export default function SectorStrip() {
   return (

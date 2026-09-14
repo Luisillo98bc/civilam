@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import HeroInner from '@/components/HeroInner';
+import NeedsGrid from '@/components/NeedsGrid';
 import ServicesTabs from '@/components/ServicesTabs';
 import WorkProcess from '@/components/WorkProcess';
 import Certifications from '@/components/Certifications';
@@ -26,20 +27,18 @@ export default function ServiciosPage() {
           serviceType: ['Expedientes técnicos', 'Saneamiento', 'Hidráulica', 'Construcción y supervisión'],
         })}
       </Script>
-      <HeroInner 
-        title="Capacidades técnicas para cada etapa" 
-        subtitle="Estudios, expedientes, saneamiento, hidráulica, edificaciones y supervisión coordinados alrededor de los objetivos del proyecto."
+      <HeroInner
+        title="Capacidades técnicas para cada etapa"
+        subtitle="Expedientes técnicos, Topografía, Estudios, Monitoreos Ambientales, Estudios de Impacto Ambiental, Mapas Temáticos y Arqueología."
         eyebrow="SERVICIOS · ESPECIALIDADES"
         image="/expedientes-tecnicos.png"
       />
+      <NeedsGrid />
       <section className="bg-[#fbfaf7]">
         <div className="site-wrapper pt-20 lg:pt-28">
-          <div className="grid gap-6 border-b border-slate-300 pb-10 lg:grid-cols-2 lg:items-end">
-            <div>
-              <p className="technical-label text-[#9a6410]">CATÁLOGO COMPLETO</p>
-              <h2 className="editorial-title mt-5">Todo lo que podemos desarrollar</h2>
-            </div>
-            <p className="max-w-xl text-base leading-7 text-slate-600 lg:justify-self-end">Explora cada especialidad, subservicio y entregable. El alcance se adapta a la etapa, ubicación y requerimientos de cada proyecto.</p>
+          <div className="border-b border-slate-300 pb-10">
+            <p className="technical-label text-[#9a6410]">CATÁLOGO COMPLETO</p>
+            <h2 className="editorial-title mt-5 max-w-4xl">Todo lo que podemos desarrollar</h2>
           </div>
         </div>
         <ServicesTabs />

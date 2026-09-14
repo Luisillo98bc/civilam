@@ -71,8 +71,8 @@ export default function Footer() {
             <h4 className="text-base font-bold mb-6 text-[#F8FAFC] tracking-[0.01em]">Servicios</h4>
             <ul className="flex flex-col gap-3">
               <li><Link href="/servicios#expedientes" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Expedientes Técnicos</Link></li>
-              <li><Link href="/servicios#viviendas" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Construcción de Viviendas</Link></li>
-              <li><Link href="/servicios#agua" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Agua Potable y Saneamiento</Link></li>
+              <li><Link href="/servicios#topografia" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Topografía y Geodesia</Link></li>
+              <li><Link href="/servicios#mantenimiento" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Mantenimiento de Agua y Saneamiento</Link></li>
               <li><Link href="/servicios#hidrologia" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Hidrología e Hidráulica</Link></li>
               <li><Link href="/servicios#modelamiento" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Modelamiento Hidráulico</Link></li>
               <li><Link href="/servicios#ambiental" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Gestión Ambiental</Link></li>

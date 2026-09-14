@@ -1,0 +1,3220 @@
+[
+    {
+        "name":  "AMAZONAS",
+        "code":  "01",
+        "provinces":  [
+                          {
+                              "name":  "CHACHAPOYAS",
+                              "code":  "0101",
+                              "districts":  [
+                                                "CHACHAPOYAS",
+                                                "ASUNCION",
+                                                "BALSAS",
+                                                "CHETO",
+                                                "CHILIQUIN",
+                                                "CHUQUIBAMBA",
+                                                "GRANADA",
+                                                "HUANCAS",
+                                                "LA JALCA",
+                                                "LEIMEBAMBA",
+                                                "LEVANTO",
+                                                "MAGDALENA",
+                                                "MARISCAL CASTILLA",
+                                                "MOLINOPAMPA",
+                                                "MONTEVIDEO",
+                                                "OLLEROS",
+                                                "QUINJALCA",
+                                                "SAN FRANCISCO DE DAGUAS",
+                                                "SAN ISIDRO DE MAINO",
+                                                "SOLOCO",
+                                                "SONCHE"
+                                            ]
+                          },
+                          {
+                              "name":  "BAGUA",
+                              "code":  "0102",
+                              "districts":  [
+                                                "BAGUA",
+                                                "ARAMANGO",
+                                                "COPALLIN",
+                                                "EL PARCO",
+                                                "IMAZA",
+                                                "LA PECA"
+                                            ]
+                          },
+                          {
+                              "name":  "BONGARA",
+                              "code":  "0103",
+                              "districts":  [
+                                                "JUMBILLA",
+                                                "CHISQUILLA",
+                                                "CHURUJA",
+                                                "COROSHA",
+                                                "CUISPES",
+                                                "FLORIDA",
+                                                "JAZAN",
+                                                "RECTA",
+                                                "SAN CARLOS",
+                                                "SHIPASBAMBA",
+                                                "VALERA",
+                                                "YAMBRASBAMBA"
+                                            ]
+                          },
+                          {
+                              "name":  "CONDORCANQUI",
+                              "code":  "0104",
+                              "districts":  [
+                                                "NIEVA",
+                                                "EL CENEPA",
+                                                "RIO SANTIAGO"
+                                            ]
+                          },
+                          {
+                              "name":  "LUYA",
+                              "code":  "0105",
+                              "districts":  [
+                                                "LAMUD",
+                                                "CAMPORREDONDO",
+                                                "COCABAMBA",
+                                                "COLCAMAR",
+                                                "CONILA",
+                                                "INGUILPATA",
+                                                "LONGUITA",
+                                                "LONYA CHICO",
+                                                "LUYA",
+                                                "LUYA VIEJO",
+                                                "MARIA",
+                                                "OCALLI",
+                                                "OCUMAL",
+                                                "PISUQUIA",
+                                                "PROVIDENCIA",
+                                                "SAN CRISTOBAL",
+                                                "SAN FRANCISCO DEL YESO",
+                                                "SAN JERONIMO",
+                                                "SAN JUAN DE LOPECANCHA",
+                                                "SANTA CATALINA",
+                                                "SANTO TOMAS",
+                                                "TINGO",
+                                                "TRITA"
+                                            ]
+                          },
+                          {
+                              "name":  "RODRIGUEZ DE MENDOZA",
+                              "code":  "0106",
+                              "districts":  [
+                                                "SAN NICOLAS",
+                                                "CHIRIMOTO",
+                                                "COCHAMAL",
+                                                "HUAMBO",
+                                                "LIMABAMBA",
+                                                "LONGAR",
+                                                "MARISCAL BENAVIDES",
+                                                "MILPUC",
+                                                "OMIA",
+                                                "SANTA ROSA",
+                                                "TOTORA",
+                                                "VISTA ALEGRE"
+                                            ]
+                          },
+                          {
+                              "name":  "UTCUBAMBA",
+                              "code":  "0107",
+                              "districts":  [
+                                                "BAGUA GRANDE",
+                                                "CAJARURO",
+                                                "CUMBA",
+                                                "EL MILAGRO",
+                                                "JAMALCA",
+                                                "LONYA GRANDE",
+                                                "YAMON"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "ANCASH",
+        "code":  "02",
+        "provinces":  [
+                          {
+                              "name":  "HUARAZ",
+                              "code":  "0201",
+                              "districts":  [
+                                                "HUARAZ",
+                                                "COCHABAMBA",
+                                                "COLCABAMBA",
+                                                "HUANCHAY",
+                                                "INDEPENDENCIA",
+                                                "JANGAS",
+                                                "LA LIBERTAD",
+                                                "OLLEROS",
+                                                "PAMPAS",
+                                                "PARIACOTO",
+                                                "PIRA",
+                                                "TARICA"
+                                            ]
+                          },
+                          {
+                              "name":  "AIJA",
+                              "code":  "0202",
+                              "districts":  [
+                                                "AIJA",
+                                                "CORIS",
+                                                "HUACLLAN",
+                                                "LA MERCED",
+                                                "SUCCHA"
+                                            ]
+                          },
+                          {
+                              "name":  "ANTONIO RAYMONDI",
+                              "code":  "0203",
+                              "districts":  [
+                                                "LLAMELLIN",
+                                                "ACZO",
+                                                "CHACCHO",
+                                                "CHINGAS",
+                                                "MIRGAS",
+                                                "SAN JUAN DE RONTOY"
+                                            ]
+                          },
+                          {
+                              "name":  "ASUNCION",
+                              "code":  "0204",
+                              "districts":  [
+                                                "CHACAS",
+                                                "ACOCHACA"
+                                            ]
+                          },
+                          {
+                              "name":  "BOLOGNESI",
+                              "code":  "0205",
+                              "districts":  [
+                                                "CHIQUIAN",
+                                                "ABELARDO PARDO LEZAMETA",
+                                                "ANTONIO RAYMONDI",
+                                                "AQUIA",
+                                                "CAJACAY",
+                                                "CANIS",
+                                                "COLQUIOC",
+                                                "HUALLANCA",
+                                                "HUASTA",
+                                                "HUAYLLACAYAN",
+                                                "LA PRIMAVERA",
+                                                "MANGAS",
+                                                "PACLLON",
+                                                "SAN MIGUEL DE CORPANQUI",
+                                                "TICLLOS"
+                                            ]
+                          },
+                          {
+                              "name":  "CARHUAZ",
+                              "code":  "0206",
+                              "districts":  [
+                                                "CARHUAZ",
+                                                "ACOPAMPA",
+                                                "AMASHCA",
+                                                "ANTA",
+                                                "ATAQUERO",
+                                                "MARCARA",
+                                                "PARIAHUANCA",
+                                                "SAN MIGUEL DE ACO",
+                                                "SHILLA",
+                                                "TINCO",
+                                                "YUNGAR"
+                                            ]
+                          },
+                          {
+                              "name":  "CARLOS FERMIN FITZCARRALD",
+                              "code":  "0207",
+                              "districts":  [
+                                                "SAN LUIS",
+                                                "SAN NICOLAS",
+                                                "YAUYA"
+                                            ]
+                          },
+                          {
+                              "name":  "CASMA",
+                              "code":  "0208",
+                              "districts":  [
+                                                "CASMA",
+                                                "BUENA VISTA ALTA",
+                                                "COMANDANTE NOEL",
+                                                "YAUTAN"
+                                            ]
+                          },
+                          {
+                              "name":  "CORONGO",
+                              "code":  "0209",
+                              "districts":  [
+                                                "CORONGO",
+                                                "ACO",
+                                                "BAMBAS",
+                                                "CUSCA",
+                                                "LA PAMPA",
+                                                "YANAC",
+                                                "YUPAN"
+                                            ]
+                          },
+                          {
+                              "name":  "HUARI",
+                              "code":  "0210",
+                              "districts":  [
+                                                "HUARI",
+                                                "ANRA",
+                                                "CAJAY",
+                                                "CHAVIN DE HUANTAR",
+                                                "HUACACHI",
+                                                "HUACCHIS",
+                                                "HUACHIS",
+                                                "HUANTAR",
+                                                "MASIN",
+                                                "PAUCAS",
+                                                "PONTO",
+                                                "RAHUAPAMPA",
+                                                "RAPAYAN",
+                                                "SAN MARCOS",
+                                                "SAN PEDRO DE CHANA",
+                                                "UCO"
+                                            ]
+                          },
+                          {
+                              "name":  "HUARMEY",
+                              "code":  "0211",
+                              "districts":  [
+                                                "HUARMEY",
+                                                "COCHAPETI",
+                                                "CULEBRAS",
+                                                "HUAYAN",
+                                                "MALVAS"
+                                            ]
+                          },
+                          {
+                              "name":  "HUAYLAS",
+                              "code":  "0212",
+                              "districts":  [
+                                                "CARAZ",
+                                                "HUALLANCA",
+                                                "HUATA",
+                                                "HUAYLAS",
+                                                "MATO",
+                                                "PAMPAROMAS",
+                                                "PUEBLO LIBRE",
+                                                "SANTA CRUZ",
+                                                "SANTO TORIBIO",
+                                                "YURACMARCA"
+                                            ]
+                          },
+                          {
+                              "name":  "MARISCAL LUZURIAGA",
+                              "code":  "0213",
+                              "districts":  [
+                                                "PISCOBAMBA",
+                                                "CASCA",
+                                                "ELEAZAR GUZMAN BARRON",
+                                                "FIDEL OLIVAS ESCUDERO",
+                                                "LLAMA",
+                                                "LLUMPA",
+                                                "LUCMA",
+                                                "MUSGA"
+                                            ]
+                          },
+                          {
+                              "name":  "OCROS",
+                              "code":  "0214",
+                              "districts":  [
+                                                "OCROS",
+                                                "ACAS",
+                                                "CAJAMARQUILLA",
+                                                "CARHUAPAMPA",
+                                                "COCHAS",
+                                                "CONGAS",
+                                                "LLIPA",
+                                                "SAN CRISTOBAL DE RAJAN",
+                                                "SAN PEDRO",
+                                                "SANTIAGO DE CHILCAS"
+                                            ]
+                          },
+                          {
+                              "name":  "PALLASCA",
+                              "code":  "0215",
+                              "districts":  [
+                                                "CABANA",
+                                                "BOLOGNESI",
+                                                "CONCHUCOS",
+                                                "HUACASCHUQUE",
+                                                "HUANDOVAL",
+                                                "LACABAMBA",
+                                                "LLAPO",
+                                                "PALLASCA",
+                                                "PAMPAS",
+                                                "SANTA ROSA",
+                                                "TAUCA"
+                                            ]
+                          },
+                          {
+                              "name":  "POMABAMBA",
+                              "code":  "0216",
+                              "districts":  [
+                                                "POMABAMBA",
+                                                "HUAYLLAN",
+                                                "PAROBAMBA",
+                                                "QUINUABAMBA"
+                                            ]
+                          },
+                          {
+                              "name":  "RECUAY",
+                              "code":  "0217",
+                              "districts":  [
+                                                "RECUAY",
+                                                "CATAC",
+                                                "COTAPARACO",
+                                                "HUAYLLAPAMPA",
+                                                "LLACLLIN",
+                                                "MARCA",
+                                                "PAMPAS CHICO",
+                                                "PARARIN",
+                                                "TAPACOCHA",
+                                                "TICAPAMPA"
+                                            ]
+                          },
+                          {
+                              "name":  "SANTA",
+                              "code":  "0218",
+                              "districts":  [
+                                                "CHIMBOTE",
+                                                "CACERES DEL PERU",
+                                                "COISHCO",
+                                                "MACATE",
+                                                "MORO",
+                                                "NEPEÑA",
+                                                "SAMANCO",
+                                                "SANTA",
+                                                "NUEVO CHIMBOTE"
+                                            ]
+                          },
+                          {
+                              "name":  "SIHUAS",
+                              "code":  "0219",
+                              "districts":  [
+                                                "SIHUAS",
+                                                "ACOBAMBA",
+                                                "ALFONSO UGARTE",
+                                                "CASHAPAMPA",
+                                                "CHINGALPO",
+                                                "HUAYLLABAMBA",
+                                                "QUICHES",
+                                                "RAGASH",
+                                                "SAN JUAN",
+                                                "SICSIBAMBA"
+                                            ]
+                          },
+                          {
+                              "name":  "YUNGAY",
+                              "code":  "0220",
+                              "districts":  [
+                                                "YUNGAY",
+                                                "CASCAPARA",
+                                                "MANCOS",
+                                                "MATACOTO",
+                                                "QUILLO",
+                                                "RANRAHIRCA",
+                                                "SHUPLUY",
+                                                "YANAMA"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "APURIMAC",
+        "code":  "03",
+        "provinces":  [
+                          {
+                              "name":  "ABANCAY",
+                              "code":  "0301",
+                              "districts":  [
+                                                "ABANCAY",
+                                                "CHACOCHE",
+                                                "CIRCA",
+                                                "CURAHUASI",
+                                                "HUANIPACA",
+                                                "LAMBRAMA",
+                                                "PICHIRHUA",
+                                                "SAN PEDRO DE CACHORA",
+                                                "TAMBURCO"
+                                            ]
+                          },
+                          {
+                              "name":  "ANDAHUAYLAS",
+                              "code":  "0302",
+                              "districts":  [
+                                                "ANDAHUAYLAS",
+                                                "ANDARAPA",
+                                                "CHIARA",
+                                                "HUANCARAMA",
+                                                "HUANCARAY",
+                                                "HUAYANA",
+                                                "KISHUARA",
+                                                "PACOBAMBA",
+                                                "PACUCHA",
+                                                "PAMPACHIRI",
+                                                "POMACOCHA",
+                                                "SAN ANTONIO DE CACHI",
+                                                "SAN JERONIMO",
+                                                "SAN MIGUEL DE CHACCRAMPA",
+                                                "SANTA MARIA DE CHICMO",
+                                                "TALAVERA",
+                                                "TUMAY HUARACA",
+                                                "TURPO",
+                                                "KAQUIABAMBA",
+                                                "JOSE MARIA ARGUEDAS"
+                                            ]
+                          },
+                          {
+                              "name":  "ANTABAMBA",
+                              "code":  "0303",
+                              "districts":  [
+                                                "ANTABAMBA",
+                                                "EL ORO",
+                                                "HUAQUIRCA",
+                                                "JUAN ESPINOZA MEDRANO",
+                                                "OROPESA",
+                                                "PACHACONAS",
+                                                "SABAINO"
+                                            ]
+                          },
+                          {
+                              "name":  "AYMARAES",
+                              "code":  "0304",
+                              "districts":  [
+                                                "CHALHUANCA",
+                                                "CAPAYA",
+                                                "CARAYBAMBA",
+                                                "CHAPIMARCA",
+                                                "COLCABAMBA",
+                                                "COTARUSE",
+                                                "HUAYLLO",
+                                                "JUSTO APU SAHUARAURA",
+                                                "LUCRE",
+                                                "POCOHUANCA",
+                                                "SAN JUAN DE CHACÑA",
+                                                "SAÑAYCA",
+                                                "SORAYA",
+                                                "TAPAIRIHUA",
+                                                "TINTAY",
+                                                "TORAYA",
+                                                "YANACA"
+                                            ]
+                          },
+                          {
+                              "name":  "COTABAMBAS",
+                              "code":  "0305",
+                              "districts":  [
+                                                "TAMBOBAMBA",
+                                                "COTABAMBAS",
+                                                "COYLLURQUI",
+                                                "HAQUIRA",
+                                                "MARA",
+                                                "CHALLHUAHUACHO"
+                                            ]
+                          },
+                          {
+                              "name":  "CHINCHEROS",
+                              "code":  "0306",
+                              "districts":  [
+                                                "CHINCHEROS",
+                                                "ANCO-HUALLO",
+                                                "COCHARCAS",
+                                                "HUACCANA",
+                                                "OCOBAMBA",
+                                                "ONGOY",
+                                                "URANMARCA",
+                                                "RANRACANCHA",
+                                                "ROCCHACC",
+                                                "EL PORVENIR",
+                                                "LOS CHANKAS",
+                                                "AHUAYRO"
+                                            ]
+                          },
+                          {
+                              "name":  "GRAU",
+                              "code":  "0307",
+                              "districts":  [
+                                                "CHUQUIBAMBILLA",
+                                                "CURPAHUASI",
+                                                "GAMARRA",
+                                                "HUAYLLATI",
+                                                "MAMARA",
+                                                "MICAELA BASTIDAS",
+                                                "PATAYPAMPA",
+                                                "PROGRESO",
+                                                "SAN ANTONIO",
+                                                "SANTA ROSA",
+                                                "TURPAY",
+                                                "VILCABAMBA",
+                                                "VIRUNDO",
+                                                "CURASCO"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "AREQUIPA",
+        "code":  "04",
+        "provinces":  [
+                          {
+                              "name":  "AREQUIPA",
+                              "code":  "0401",
+                              "districts":  [
+                                                "AREQUIPA",
+                                                "ALTO SELVA ALEGRE",
+                                                "CAYMA",
+                                                "CERRO COLORADO",
+                                                "CHARACATO",
+                                                "CHIGUATA",
+                                                "JACOBO HUNTER",
+                                                "LA JOYA",
+                                                "MARIANO MELGAR",
+                                                "MIRAFLORES",
+                                                "MOLLEBAYA",
+                                                "PAUCARPATA",
+                                                "POCSI",
+                                                "POLOBAYA",
+                                                "QUEQUEÑA",
+                                                "SABANDIA",
+                                                "SACHACA",
+                                                "SAN JUAN DE SIGUAS",
+                                                "SAN JUAN DE TARUCANI",
+                                                "SANTA ISABEL DE SIGUAS",
+                                                "SANTA RITA DE SIGUAS",
+                                                "SOCABAYA",
+                                                "TIABAYA",
+                                                "UCHUMAYO",
+                                                "VITOR",
+                                                "YANAHUARA",
+                                                "YARABAMBA",
+                                                "YURA",
+                                                "JOSE LUIS BUSTAMANTE Y RIVERO"
+                                            ]
+                          },
+                          {
+                              "name":  "CAMANA",
+                              "code":  "0402",
+                              "districts":  [
+                                                "CAMANA",
+                                                "JOSE MARIA QUIMPER",
+                                                "MARIANO NICOLAS VALCARCEL",
+                                                "MARISCAL CACERES",
+                                                "NICOLAS DE PIEROLA",
+                                                "OCOÑA",
+                                                "QUILCA",
+                                                "SAMUEL PASTOR"
+                                            ]
+                          },
+                          {
+                              "name":  "CARAVELI",
+                              "code":  "0403",
+                              "districts":  [
+                                                "CARAVELI",
+                                                "ACARI",
+                                                "ATICO",
+                                                "ATIQUIPA",
+                                                "BELLA UNION",
+                                                "CAHUACHO",
+                                                "CHALA",
+                                                "CHAPARRA",
+                                                "HUANUHUANU",
+                                                "JAQUI",
+                                                "LOMAS",
+                                                "QUICACHA",
+                                                "YAUCA"
+                                            ]
+                          },
+                          {
+                              "name":  "CASTILLA",
+                              "code":  "0404",
+                              "districts":  [
+                                                "APLAO",
+                                                "ANDAGUA",
+                                                "AYO",
+                                                "CHACHAS",
+                                                "CHILCAYMARCA",
+                                                "CHOCO",
+                                                "HUANCARQUI",
+                                                "MACHAGUAY",
+                                                "ORCOPAMPA",
+                                                "PAMPACOLCA",
+                                                "TIPAN",
+                                                "UÑON",
+                                                "URACA",
+                                                "VIRACO"
+                                            ]
+                          },
+                          {
+                              "name":  "CAYLLOMA",
+                              "code":  "0405",
+                              "districts":  [
+                                                "CHIVAY",
+                                                "ACHOMA",
+                                                "CABANACONDE",
+                                                "CALLALLI",
+                                                "CAYLLOMA",
+                                                "COPORAQUE",
+                                                "HUAMBO",
+                                                "HUANCA",
+                                                "ICHUPAMPA",
+                                                "LARI",
+                                                "LLUTA",
+                                                "MACA",
+                                                "MADRIGAL",
+                                                "SAN ANTONIO DE CHUCA",
+                                                "SIBAYO",
+                                                "TAPAY",
+                                                "TISCO",
+                                                "TUTI",
+                                                "YANQUE",
+                                                "MAJES"
+                                            ]
+                          },
+                          {
+                              "name":  "CONDESUYOS",
+                              "code":  "0406",
+                              "districts":  [
+                                                "CHUQUIBAMBA",
+                                                "ANDARAY",
+                                                "CAYARANI",
+                                                "CHICHAS",
+                                                "IRAY",
+                                                "RIO GRANDE",
+                                                "SALAMANCA",
+                                                "YANAQUIHUA"
+                                            ]
+                          },
+                          {
+                              "name":  "ISLAY",
+                              "code":  "0407",
+                              "districts":  [
+                                                "MOLLENDO",
+                                                "COCACHACRA",
+                                                "DEAN VALDIVIA",
+                                                "ISLAY",
+                                                "MEJIA",
+                                                "PUNTA DE BOMBON"
+                                            ]
+                          },
+                          {
+                              "name":  "LA UNION",
+                              "code":  "0408",
+                              "districts":  [
+                                                "COTAHUASI",
+                                                "ALCA",
+                                                "CHARCANA",
+                                                "HUAYNACOTAS",
+                                                "PAMPAMARCA",
+                                                "PUYCA",
+                                                "QUECHUALLA",
+                                                "SAYLA",
+                                                "TAURIA",
+                                                "TOMEPAMPA",
+                                                "TORO"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "AYACUCHO",
+        "code":  "05",
+        "provinces":  [
+                          {
+                              "name":  "HUAMANGA",
+                              "code":  "0501",
+                              "districts":  [
+                                                "AYACUCHO",
+                                                "ACOCRO",
+                                                "ACOS VINCHOS",
+                                                "CARMEN ALTO",
+                                                "CHIARA",
+                                                "OCROS",
+                                                "PACAYCASA",
+                                                "QUINUA",
+                                                "SAN JOSE DE TICLLAS",
+                                                "SAN JUAN BAUTISTA",
+                                                "SANTIAGO DE PISCHA",
+                                                "SOCOS",
+                                                "TAMBILLO",
+                                                "VINCHOS",
+                                                "JESUS NAZARENO",
+                                                "ANDRES AVELINO CACERES DORREGARAY"
+                                            ]
+                          },
+                          {
+                              "name":  "CANGALLO",
+                              "code":  "0502",
+                              "districts":  [
+                                                "CANGALLO",
+                                                "CHUSCHI",
+                                                "LOS MOROCHUCOS",
+                                                "MARIA PARADO DE BELLIDO",
+                                                "PARAS",
+                                                "TOTOS"
+                                            ]
+                          },
+                          {
+                              "name":  "HUANCA SANCOS",
+                              "code":  "0503",
+                              "districts":  [
+                                                "SANCOS",
+                                                "CARAPO",
+                                                "SACSAMARCA",
+                                                "SANTIAGO DE LUCANAMARCA"
+                                            ]
+                          },
+                          {
+                              "name":  "HUANTA",
+                              "code":  "0504",
+                              "districts":  [
+                                                "HUANTA",
+                                                "AYAHUANCO",
+                                                "HUAMANGUILLA",
+                                                "IGUAIN",
+                                                "LURICOCHA",
+                                                "SANTILLANA",
+                                                "SIVIA",
+                                                "LLOCHEGUA",
+                                                "CANAYRE",
+                                                "UCHURACCAY",
+                                                "PUCACOLPA",
+                                                "CHACA",
+                                                "PUTIS"
+                                            ]
+                          },
+                          {
+                              "name":  "LA MAR",
+                              "code":  "0505",
+                              "districts":  [
+                                                "SAN MIGUEL",
+                                                "ANCO",
+                                                "AYNA",
+                                                "CHILCAS",
+                                                "CHUNGUI",
+                                                "LUIS CARRANZA",
+                                                "SANTA ROSA",
+                                                "TAMBO",
+                                                "SAMUGARI",
+                                                "ANCHIHUAY",
+                                                "ORONCCOY",
+                                                "UNION PROGRESO",
+                                                "RIO MAGDALENA",
+                                                "NINABAMBA",
+                                                "PATIBAMBA"
+                                            ]
+                          },
+                          {
+                              "name":  "LUCANAS",
+                              "code":  "0506",
+                              "districts":  [
+                                                "PUQUIO",
+                                                "AUCARA",
+                                                "CABANA",
+                                                "CARMEN SALCEDO",
+                                                "CHAVIÑA",
+                                                "CHIPAO",
+                                                "HUAC-HUAS",
+                                                "LARAMATE",
+                                                "LEONCIO PRADO",
+                                                "LLAUTA",
+                                                "LUCANAS",
+                                                "OCAÑA",
+                                                "OTOCA",
+                                                "SAISA",
+                                                "SAN CRISTOBAL",
+                                                "SAN JUAN",
+                                                "SAN PEDRO",
+                                                "SAN PEDRO DE PALCO",
+                                                "SANCOS",
+                                                "SANTA ANA DE HUAYCAHUACHO",
+                                                "SANTA LUCIA"
+                                            ]
+                          },
+                          {
+                              "name":  "PARINACOCHAS",
+                              "code":  "0507",
+                              "districts":  [
+                                                "CORACORA",
+                                                "CHUMPI",
+                                                "CORONEL CASTAÑEDA",
+                                                "PACAPAUSA",
+                                                "PULLO",
+                                                "PUYUSCA",
+                                                "SAN FRANCISCO DE RAVACAYCO",
+                                                "UPAHUACHO"
+                                            ]
+                          },
+                          {
+                              "name":  "PAUCAR DEL SARA SARA",
+                              "code":  "0508",
+                              "districts":  [
+                                                "PAUSA",
+                                                "COLTA",
+                                                "CORCULLA",
+                                                "LAMPA",
+                                                "MARCABAMBA",
+                                                "OYOLO",
+                                                "PARARCA",
+                                                "SAN JAVIER DE ALPABAMBA",
+                                                "SAN JOSE DE USHUA",
+                                                "SARA SARA"
+                                            ]
+                          },
+                          {
+                              "name":  "SUCRE",
+                              "code":  "0509",
+                              "districts":  [
+                                                "QUEROBAMBA",
+                                                "BELEN",
+                                                "CHALCOS",
+                                                "CHILCAYOC",
+                                                "HUACAÑA",
+                                                "MORCOLLA",
+                                                "PAICO",
+                                                "SAN PEDRO DE LARCAY",
+                                                "SAN SALVADOR DE QUIJE",
+                                                "SANTIAGO DE PAUCARAY",
+                                                "SORAS"
+                                            ]
+                          },
+                          {
+                              "name":  "VICTOR FAJARDO",
+                              "code":  "0510",
+                              "districts":  [
+                                                "HUANCAPI",
+                                                "ALCAMENCA",
+                                                "APONGO",
+                                                "ASQUIPATA",
+                                                "CANARIA",
+                                                "CAYARA",
+                                                "COLCA",
+                                                "HUAMANQUIQUIA",
+                                                "HUANCARAYLLA",
+                                                "HUAYA",
+                                                "SARHUA",
+                                                "VILCANCHOS"
+                                            ]
+                          },
+                          {
+                              "name":  "VILCAS HUAMAN",
+                              "code":  "0511",
+                              "districts":  [
+                                                "VILCAS HUAMAN",
+                                                "ACCOMARCA",
+                                                "CARHUANCA",
+                                                "CONCEPCION",
+                                                "HUAMBALPA",
+                                                "INDEPENDENCIA",
+                                                "SAURAMA",
+                                                "VISCHONGO"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "CAJAMARCA",
+        "code":  "06",
+        "provinces":  [
+                          {
+                              "name":  "CAJAMARCA",
+                              "code":  "0601",
+                              "districts":  [
+                                                "CAJAMARCA",
+                                                "ASUNCION",
+                                                "CHETILLA",
+                                                "COSPAN",
+                                                "ENCAÑADA",
+                                                "JESUS",
+                                                "LLACANORA",
+                                                "LOS BAÑOS DEL INCA",
+                                                "MAGDALENA",
+                                                "MATARA",
+                                                "NAMORA",
+                                                "SAN JUAN"
+                                            ]
+                          },
+                          {
+                              "name":  "CAJABAMBA",
+                              "code":  "0602",
+                              "districts":  [
+                                                "CAJABAMBA",
+                                                "CACHACHI",
+                                                "CONDEBAMBA",
+                                                "SITACOCHA"
+                                            ]
+                          },
+                          {
+                              "name":  "CELENDIN",
+                              "code":  "0603",
+                              "districts":  [
+                                                "CELENDIN",
+                                                "CHUMUCH",
+                                                "CORTEGANA",
+                                                "HUASMIN",
+                                                "JORGE CHAVEZ",
+                                                "JOSE GALVEZ",
+                                                "MIGUEL IGLESIAS",
+                                                "OXAMARCA",
+                                                "SOROCHUCO",
+                                                "SUCRE",
+                                                "UTCO",
+                                                "LA LIBERTAD DE PALLAN"
+                                            ]
+                          },
+                          {
+                              "name":  "CHOTA",
+                              "code":  "0604",
+                              "districts":  [
+                                                "CHOTA",
+                                                "ANGUIA",
+                                                "CHADIN",
+                                                "CHIGUIRIP",
+                                                "CHIMBAN",
+                                                "CHOROPAMPA",
+                                                "COCHABAMBA",
+                                                "CONCHAN",
+                                                "HUAMBOS",
+                                                "LAJAS",
+                                                "LLAMA",
+                                                "MIRACOSTA",
+                                                "PACCHA",
+                                                "PION",
+                                                "QUEROCOTO",
+                                                "SAN JUAN DE LICUPIS",
+                                                "TACABAMBA",
+                                                "TOCMOCHE",
+                                                "CHALAMARCA"
+                                            ]
+                          },
+                          {
+                              "name":  "CONTUMAZA",
+                              "code":  "0605",
+                              "districts":  [
+                                                "CONTUMAZA",
+                                                "CHILETE",
+                                                "CUPISNIQUE",
+                                                "GUZMANGO",
+                                                "SAN BENITO",
+                                                "SANTA CRUZ DE TOLEDO",
+                                                "TANTARICA",
+                                                "YONAN"
+                                            ]
+                          },
+                          {
+                              "name":  "CUTERVO",
+                              "code":  "0606",
+                              "districts":  [
+                                                "CUTERVO",
+                                                "CALLAYUC",
+                                                "CHOROS",
+                                                "CUJILLO",
+                                                "LA RAMADA",
+                                                "PIMPINGOS",
+                                                "QUEROCOTILLO",
+                                                "SAN ANDRES DE CUTERVO",
+                                                "SAN JUAN DE CUTERVO",
+                                                "SAN LUIS DE LUCMA",
+                                                "SANTA CRUZ",
+                                                "SANTO DOMINGO DE LA CAPILLA",
+                                                "SANTO TOMAS",
+                                                "SOCOTA",
+                                                "TORIBIO CASANOVA"
+                                            ]
+                          },
+                          {
+                              "name":  "HUALGAYOC",
+                              "code":  "0607",
+                              "districts":  [
+                                                "BAMBAMARCA",
+                                                "CHUGUR",
+                                                "HUALGAYOC"
+                                            ]
+                          },
+                          {
+                              "name":  "JAEN",
+                              "code":  "0608",
+                              "districts":  [
+                                                "JAEN",
+                                                "BELLAVISTA",
+                                                "CHONTALI",
+                                                "COLASAY",
+                                                "HUABAL",
+                                                "LAS PIRIAS",
+                                                "POMAHUACA",
+                                                "PUCARA",
+                                                "SALLIQUE",
+                                                "SAN FELIPE",
+                                                "SAN JOSE DEL ALTO",
+                                                "SANTA ROSA"
+                                            ]
+                          },
+                          {
+                              "name":  "SAN IGNACIO",
+                              "code":  "0609",
+                              "districts":  [
+                                                "SAN IGNACIO",
+                                                "CHIRINOS",
+                                                "HUARANGO",
+                                                "LA COIPA",
+                                                "NAMBALLE",
+                                                "SAN JOSE DE LOURDES",
+                                                "TABACONAS"
+                                            ]
+                          },
+                          {
+                              "name":  "SAN MARCOS",
+                              "code":  "0610",
+                              "districts":  [
+                                                "PEDRO GALVEZ",
+                                                "CHANCAY",
+                                                "EDUARDO VILLANUEVA",
+                                                "GREGORIO PITA",
+                                                "ICHOCAN",
+                                                "JOSE MANUEL QUIROZ",
+                                                "JOSE SABOGAL"
+                                            ]
+                          },
+                          {
+                              "name":  "SAN MIGUEL",
+                              "code":  "0611",
+                              "districts":  [
+                                                "SAN MIGUEL",
+                                                "BOLIVAR",
+                                                "CALQUIS",
+                                                "CATILLUC",
+                                                "EL PRADO",
+                                                "LA FLORIDA",
+                                                "LLAPA",
+                                                "NANCHOC",
+                                                "NIEPOS",
+                                                "SAN GREGORIO",
+                                                "SAN SILVESTRE DE COCHAN",
+                                                "TONGOD",
+                                                "UNION AGUA BLANCA"
+                                            ]
+                          },
+                          {
+                              "name":  "SAN PABLO",
+                              "code":  "0612",
+                              "districts":  [
+                                                "SAN PABLO",
+                                                "SAN BERNARDINO",
+                                                "SAN LUIS",
+                                                "TUMBADEN"
+                                            ]
+                          },
+                          {
+                              "name":  "SANTA CRUZ",
+                              "code":  "0613",
+                              "districts":  [
+                                                "SANTA CRUZ",
+                                                "ANDABAMBA",
+                                                "CATACHE",
+                                                "CHANCAYBAÑOS",
+                                                "LA ESPERANZA",
+                                                "NINABAMBA",
+                                                "PULAN",
+                                                "SAUCEPAMPA",
+                                                "SEXI",
+                                                "UTICYACU",
+                                                "YAUYUCAN"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "CALLAO",
+        "code":  "07",
+        "provinces":  [
+                          {
+                              "name":  "CALLAO",
+                              "code":  "0701",
+                              "districts":  [
+                                                "CALLAO",
+                                                "BELLAVISTA",
+                                                "CARMEN DE LA LEGUA REYNOSO",
+                                                "LA PERLA",
+                                                "LA PUNTA",
+                                                "VENTANILLA",
+                                                "MI PERU"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "CUSCO",
+        "code":  "08",
+        "provinces":  [
+                          {
+                              "name":  "CUSCO",
+                              "code":  "0801",
+                              "districts":  [
+                                                "CUSCO",
+                                                "CCORCA",
+                                                "POROY",
+                                                "SAN JERONIMO",
+                                                "SAN SEBASTIAN",
+                                                "SANTIAGO",
+                                                "SAYLLA",
+                                                "WANCHAQ"
+                                            ]
+                          },
+                          {
+                              "name":  "ACOMAYO",
+                              "code":  "0802",
+                              "districts":  [
+                                                "ACOMAYO",
+                                                "ACOPIA",
+                                                "ACOS",
+                                                "MOSOC LLACTA",
+                                                "POMACANCHI",
+                                                "RONDOCAN",
+                                                "SANGARARA"
+                                            ]
+                          },
+                          {
+                              "name":  "ANTA",
+                              "code":  "0803",
+                              "districts":  [
+                                                "ANTA",
+                                                "ANCAHUASI",
+                                                "CACHIMAYO",
+                                                "CHINCHAYPUJIO",
+                                                "HUAROCONDO",
+                                                "LIMATAMBO",
+                                                "MOLLEPATA",
+                                                "PUCYURA",
+                                                "ZURITE"
+                                            ]
+                          },
+                          {
+                              "name":  "CALCA",
+                              "code":  "0804",
+                              "districts":  [
+                                                "CALCA",
+                                                "COYA",
+                                                "LAMAY",
+                                                "LARES",
+                                                "PISAC",
+                                                "SAN SALVADOR",
+                                                "TARAY",
+                                                "YANATILE"
+                                            ]
+                          },
+                          {
+                              "name":  "CANAS",
+                              "code":  "0805",
+                              "districts":  [
+                                                "YANAOCA",
+                                                "CHECCA",
+                                                "KUNTURKANKI",
+                                                "LANGUI",
+                                                "LAYO",
+                                                "PAMPAMARCA",
+                                                "QUEHUE",
+                                                "TUPAC AMARU"
+                                            ]
+                          },
+                          {
+                              "name":  "CANCHIS",
+                              "code":  "0806",
+                              "districts":  [
+                                                "SICUANI",
+                                                "CHECACUPE",
+                                                "COMBAPATA",
+                                                "MARANGANI",
+                                                "PITUMARCA",
+                                                "SAN PABLO",
+                                                "SAN PEDRO",
+                                                "TINTA"
+                                            ]
+                          },
+                          {
+                              "name":  "CHUMBIVILCAS",
+                              "code":  "0807",
+                              "districts":  [
+                                                "SANTO TOMAS",
+                                                "CAPACMARCA",
+                                                "CHAMACA",
+                                                "COLQUEMARCA",
+                                                "LIVITACA",
+                                                "LLUSCO",
+                                                "QUIÑOTA",
+                                                "VELILLE"
+                                            ]
+                          },
+                          {
+                              "name":  "ESPINAR",
+                              "code":  "0808",
+                              "districts":  [
+                                                "ESPINAR",
+                                                "CONDOROMA",
+                                                "COPORAQUE",
+                                                "OCORURO",
+                                                "PALLPATA",
+                                                "PICHIGUA",
+                                                "SUYCKUTAMBO",
+                                                "ALTO PICHIGUA"
+                                            ]
+                          },
+                          {
+                              "name":  "LA CONVENCION",
+                              "code":  "0809",
+                              "districts":  [
+                                                "SANTA ANA",
+                                                "ECHARATE",
+                                                "HUAYOPATA",
+                                                "MARANURA",
+                                                "OCOBAMBA",
+                                                "QUELLOUNO",
+                                                "QUIMBIRI",
+                                                "SANTA TERESA",
+                                                "VILCABAMBA",
+                                                "PICHARI",
+                                                "INKAWASI",
+                                                "VILLA VIRGEN",
+                                                "VILLA KINTIARINA",
+                                                "MEGANTONI",
+                                                "KUMPIRUSHIATO",
+                                                "CIELO PUNCO",
+                                                "MANITEA",
+                                                "UNION ASHÁNINKA"
+                                            ]
+                          },
+                          {
+                              "name":  "PARURO",
+                              "code":  "0810",
+                              "districts":  [
+                                                "PARURO",
+                                                "ACCHA",
+                                                "CCAPI",
+                                                "COLCHA",
+                                                "HUANOQUITE",
+                                                "OMACHA",
+                                                "PACCARITAMBO",
+                                                "PILLPINTO",
+                                                "YAURISQUE"
+                                            ]
+                          },
+                          {
+                              "name":  "PAUCARTAMBO",
+                              "code":  "0811",
+                              "districts":  [
+                                                "PAUCARTAMBO",
+                                                "CAICAY",
+                                                "CHALLABAMBA",
+                                                "COLQUEPATA",
+                                                "HUANCARANI",
+                                                "KOSÑIPATA"
+                                            ]
+                          },
+                          {
+                              "name":  "QUISPICANCHI",
+                              "code":  "0812",
+                              "districts":  [
+                                                "URCOS",
+                                                "ANDAHUAYLILLAS",
+                                                "CAMANTI",
+                                                "CCARHUAYO",
+                                                "CCATCA",
+                                                "CUSIPATA",
+                                                "HUARO",
+                                                "LUCRE",
+                                                "MARCAPATA",
+                                                "OCONGATE",
+                                                "OROPESA",
+                                                "QUIQUIJANA"
+                                            ]
+                          },
+                          {
+                              "name":  "URUBAMBA",
+                              "code":  "0813",
+                              "districts":  [
+                                                "URUBAMBA",
+                                                "CHINCHERO",
+                                                "HUAYLLABAMBA",
+                                                "MACHUPICCHU",
+                                                "MARAS",
+                                                "OLLANTAYTAMBO",
+                                                "YUCAY"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "HUANCAVELICA",
+        "code":  "09",
+        "provinces":  [
+                          {
+                              "name":  "HUANCAVELICA",
+                              "code":  "0901",
+                              "districts":  [
+                                                "HUANCAVELICA",
+                                                "ACOBAMBILLA",
+                                                "ACORIA",
+                                                "CONAYCA",
+                                                "CUENCA",
+                                                "HUACHOCOLPA",
+                                                "HUAYLLAHUARA",
+                                                "IZCUCHACA",
+                                                "LARIA",
+                                                "MANTA",
+                                                "MARISCAL CACERES",
+                                                "MOYA",
+                                                "NUEVO OCCORO",
+                                                "PALCA",
+                                                "PILCHACA",
+                                                "VILCA",
+                                                "YAULI",
+                                                "ASCENSION",
+                                                "HUANDO"
+                                            ]
+                          },
+                          {
+                              "name":  "ACOBAMBA",
+                              "code":  "0902",
+                              "districts":  [
+                                                "ACOBAMBA",
+                                                "ANDABAMBA",
+                                                "ANTA",
+                                                "CAJA",
+                                                "MARCAS",
+                                                "PAUCARA",
+                                                "POMACOCHA",
+                                                "ROSARIO"
+                                            ]
+                          },
+                          {
+                              "name":  "ANGARAES",
+                              "code":  "0903",
+                              "districts":  [
+                                                "LIRCAY",
+                                                "ANCHONGA",
+                                                "CALLANMARCA",
+                                                "CCOCHACCASA",
+                                                "CHINCHO",
+                                                "CONGALLA",
+                                                "HUANCA-HUANCA",
+                                                "HUAYLLAY GRANDE",
+                                                "JULCAMARCA",
+                                                "SAN ANTONIO DE ANTAPARCO",
+                                                "SANTO TOMAS DE PATA",
+                                                "SECCLLA"
+                                            ]
+                          },
+                          {
+                              "name":  "CASTROVIRREYNA",
+                              "code":  "0904",
+                              "districts":  [
+                                                "CASTROVIRREYNA",
+                                                "ARMA",
+                                                "AURAHUA",
+                                                "CAPILLAS",
+                                                "CHUPAMARCA",
+                                                "COCAS",
+                                                "HUACHOS",
+                                                "HUAMATAMBO",
+                                                "MOLLEPAMPA",
+                                                "SAN JUAN",
+                                                "SANTA ANA",
+                                                "TANTARA",
+                                                "TICRAPO"
+                                            ]
+                          },
+                          {
+                              "name":  "CHURCAMPA",
+                              "code":  "0905",
+                              "districts":  [
+                                                "CHURCAMPA",
+                                                "ANCO",
+                                                "CHINCHIHUASI",
+                                                "EL CARMEN",
+                                                "LA MERCED",
+                                                "LOCROJA",
+                                                "PAUCARBAMBA",
+                                                "SAN MIGUEL DE MAYOCC",
+                                                "SAN PEDRO DE CORIS",
+                                                "PACHAMARCA",
+                                                "COSME"
+                                            ]
+                          },
+                          {
+                              "name":  "HUAYTARA",
+                              "code":  "0906",
+                              "districts":  [
+                                                "HUAYTARA",
+                                                "AYAVI",
+                                                "CORDOVA",
+                                                "HUAYACUNDO ARMA",
+                                                "LARAMARCA",
+                                                "OCOYO",
+                                                "PILPICHACA",
+                                                "QUERCO",
+                                                "QUITO-ARMA",
+                                                "SAN ANTONIO DE CUSICANCHA",
+                                                "SAN FRANCISCO DE SANGAYAICO",
+                                                "SAN ISIDRO",
+                                                "SANTIAGO DE CHOCORVOS",
+                                                "SANTIAGO DE QUIRAHUARA",
+                                                "SANTO DOMINGO DE CAPILLAS",
+                                                "TAMBO"
+                                            ]
+                          },
+                          {
+                              "name":  "TAYACAJA",
+                              "code":  "0907",
+                              "districts":  [
+                                                "PAMPAS",
+                                                "ACOSTAMBO",
+                                                "ACRAQUIA",
+                                                "AHUAYCHA",
+                                                "COLCABAMBA",
+                                                "DANIEL HERNANDEZ",
+                                                "HUACHOCOLPA",
+                                                "HUARIBAMBA",
+                                                "ÑAHUIMPUQUIO",
+                                                "PAZOS",
+                                                "QUISHUAR",
+                                                "SALCABAMBA",
+                                                "SALCAHUASI",
+                                                "SAN MARCOS DE ROCCHAC",
+                                                "SURCUBAMBA",
+                                                "TINTAY PUNCU",
+                                                "QUICHUAS",
+                                                "ANDAYMARCA",
+                                                "ROBLE",
+                                                "PICHOS",
+                                                "SANTIAGO DE TUCUMA",
+                                                "LAMBRAS",
+                                                "COCHABAMBA"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "HUANUCO",
+        "code":  "10",
+        "provinces":  [
+                          {
+                              "name":  "HUANUCO",
+                              "code":  "1001",
+                              "districts":  [
+                                                "HUANUCO",
+                                                "AMARILIS",
+                                                "CHINCHAO",
+                                                "CHURUBAMBA",
+                                                "MARGOS",
+                                                "QUISQUI",
+                                                "SAN FRANCISCO DE CAYRAN",
+                                                "SAN PEDRO DE CHAULAN",
+                                                "SANTA MARIA DEL VALLE",
+                                                "YARUMAYO",
+                                                "PILLCO MARCA",
+                                                "YACUS",
+                                                "SAN PABLO DE PILLAO"
+                                            ]
+                          },
+                          {
+                              "name":  "AMBO",
+                              "code":  "1002",
+                              "districts":  [
+                                                "AMBO",
+                                                "CAYNA",
+                                                "COLPAS",
+                                                "CONCHAMARCA",
+                                                "HUACAR",
+                                                "SAN FRANCISCO",
+                                                "SAN RAFAEL",
+                                                "TOMAY KICHWA"
+                                            ]
+                          },
+                          {
+                              "name":  "DOS DE MAYO",
+                              "code":  "1003",
+                              "districts":  [
+                                                "LA UNION",
+                                                "CHUQUIS",
+                                                "MARIAS",
+                                                "PACHAS",
+                                                "QUIVILLA",
+                                                "RIPAN",
+                                                "SHUNQUI",
+                                                "SILLAPATA",
+                                                "YANAS"
+                                            ]
+                          },
+                          {
+                              "name":  "HUACAYBAMBA",
+                              "code":  "1004",
+                              "districts":  [
+                                                "HUACAYBAMBA",
+                                                "CANCHABAMBA",
+                                                "COCHABAMBA",
+                                                "PINRA"
+                                            ]
+                          },
+                          {
+                              "name":  "HUAMALIES",
+                              "code":  "1005",
+                              "districts":  [
+                                                "LLATA",
+                                                "ARANCAY",
+                                                "CHAVIN DE PARIARCA",
+                                                "JACAS GRANDE",
+                                                "JIRCAN",
+                                                "MIRAFLORES",
+                                                "MONZON",
+                                                "PUNCHAO",
+                                                "PUÑOS",
+                                                "SINGA",
+                                                "TANTAMAYO"
+                                            ]
+                          },
+                          {
+                              "name":  "LEONCIO PRADO",
+                              "code":  "1006",
+                              "districts":  [
+                                                "RUPA-RUPA",
+                                                "DANIEL ALOMIAS ROBLES",
+                                                "HERMILIO VALDIZAN",
+                                                "JOSE CRESPO Y CASTILLO",
+                                                "LUYANDO",
+                                                "MARIANO DAMASO BERAUN",
+                                                "PUCAYACU",
+                                                "CASTILLO GRANDE",
+                                                "PUEBLO NUEVO",
+                                                "SANTO DOMINGO DE ANDA"
+                                            ]
+                          },
+                          {
+                              "name":  "MARAÑON",
+                              "code":  "1007",
+                              "districts":  [
+                                                "HUACRACHUCO",
+                                                "CHOLON",
+                                                "SAN BUENAVENTURA",
+                                                "LA MORADA",
+                                                "SANTA ROSA DE ALTO YANAJANCA"
+                                            ]
+                          },
+                          {
+                              "name":  "PACHITEA",
+                              "code":  "1008",
+                              "districts":  [
+                                                "PANAO",
+                                                "CHAGLLA",
+                                                "MOLINO",
+                                                "UMARI"
+                                            ]
+                          },
+                          {
+                              "name":  "PUERTO INCA",
+                              "code":  "1009",
+                              "districts":  [
+                                                "PUERTO INCA",
+                                                "CODO DEL POZUZO",
+                                                "HONORIA",
+                                                "TOURNAVISTA",
+                                                "YUYAPICHIS"
+                                            ]
+                          },
+                          {
+                              "name":  "LAURICOCHA",
+                              "code":  "1010",
+                              "districts":  [
+                                                "JESUS",
+                                                "BAÑOS",
+                                                "JIVIA",
+                                                "QUEROPALCA",
+                                                "RONDOS",
+                                                "SAN FRANCISCO DE ASIS",
+                                                "SAN MIGUEL DE CAURI"
+                                            ]
+                          },
+                          {
+                              "name":  "YAROWILCA",
+                              "code":  "1011",
+                              "districts":  [
+                                                "CHAVINILLO",
+                                                "CAHUAC",
+                                                "CHACABAMBA",
+                                                "APARICIO POMARES",
+                                                "JACAS CHICO",
+                                                "OBAS",
+                                                "PAMPAMARCA",
+                                                "CHORAS"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "ICA",
+        "code":  "11",
+        "provinces":  [
+                          {
+                              "name":  "ICA",
+                              "code":  "1101",
+                              "districts":  [
+                                                "ICA",
+                                                "LA TINGUIÑA",
+                                                "LOS AQUIJES",
+                                                "OCUCAJE",
+                                                "PACHACUTEC",
+                                                "PARCONA",
+                                                "PUEBLO NUEVO",
+                                                "SALAS",
+                                                "SAN JOSE DE LOS MOLINOS",
+                                                "SAN JUAN BAUTISTA",
+                                                "SANTIAGO",
+                                                "SUBTANJALLA",
+                                                "TATE",
+                                                "YAUCA DEL ROSARIO"
+                                            ]
+                          },
+                          {
+                              "name":  "CHINCHA",
+                              "code":  "1102",
+                              "districts":  [
+                                                "CHINCHA ALTA",
+                                                "ALTO LARAN",
+                                                "CHAVIN",
+                                                "CHINCHA BAJA",
+                                                "EL CARMEN",
+                                                "GROCIO PRADO",
+                                                "PUEBLO NUEVO",
+                                                "SAN JUAN DE YANAC",
+                                                "SAN PEDRO DE HUACARPANA",
+                                                "SUNAMPE",
+                                                "TAMBO DE MORA"
+                                            ]
+                          },
+                          {
+                              "name":  "NAZCA",
+                              "code":  "1103",
+                              "districts":  [
+                                                "NAZCA",
+                                                "CHANGUILLO",
+                                                "EL INGENIO",
+                                                "MARCONA",
+                                                "VISTA ALEGRE"
+                                            ]
+                          },
+                          {
+                              "name":  "PALPA",
+                              "code":  "1104",
+                              "districts":  [
+                                                "PALPA",
+                                                "LLIPATA",
+                                                "RIO GRANDE",
+                                                "SANTA CRUZ",
+                                                "TIBILLO"
+                                            ]
+                          },
+                          {
+                              "name":  "PISCO",
+                              "code":  "1105",
+                              "districts":  [
+                                                "PISCO",
+                                                "HUANCANO",
+                                                "HUMAY",
+                                                "INDEPENDENCIA",
+                                                "PARACAS",
+                                                "SAN ANDRES",
+                                                "SAN CLEMENTE",
+                                                "TUPAC AMARU INCA"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "JUNIN",
+        "code":  "12",
+        "provinces":  [
+                          {
+                              "name":  "HUANCAYO",
+                              "code":  "1201",
+                              "districts":  [
+                                                "HUANCAYO",
+                                                "CARHUACALLANGA",
+                                                "CHACAPAMPA",
+                                                "CHICCHE",
+                                                "CHILCA",
+                                                "CHONGOS ALTO",
+                                                "CHUPURO",
+                                                "COLCA",
+                                                "CULLHUAS",
+                                                "EL TAMBO",
+                                                "HUACRAPUQUIO",
+                                                "HUALHUAS",
+                                                "HUANCAN",
+                                                "HUASICANCHA",
+                                                "HUAYUCACHI",
+                                                "INGENIO",
+                                                "PARIAHUANCA",
+                                                "PILCOMAYO",
+                                                "PUCARA",
+                                                "QUICHUAY",
+                                                "QUILCAS",
+                                                "SAN AGUSTIN",
+                                                "SAN JERONIMO DE TUNAN",
+                                                "SAÑO",
+                                                "SAPALLANGA",
+                                                "SICAYA",
+                                                "SANTO DOMINGO DE ACOBAMBA",
+                                                "VIQUES"
+                                            ]
+                          },
+                          {
+                              "name":  "CONCEPCION",
+                              "code":  "1202",
+                              "districts":  [
+                                                "CONCEPCION",
+                                                "ACO",
+                                                "ANDAMARCA",
+                                                "CHAMBARA",
+                                                "COCHAS",
+                                                "COMAS",
+                                                "HEROINAS TOLEDO",
+                                                "MANZANARES",
+                                                "MARISCAL CASTILLA",
+                                                "MATAHUASI",
+                                                "MITO",
+                                                "NUEVE DE JULIO",
+                                                "ORCOTUNA",
+                                                "SAN JOSE DE QUERO",
+                                                "SANTA ROSA DE OCOPA"
+                                            ]
+                          },
+                          {
+                              "name":  "CHANCHAMAYO",
+                              "code":  "1203",
+                              "districts":  [
+                                                "CHANCHAMAYO",
+                                                "PERENE",
+                                                "PICHANAQUI",
+                                                "SAN LUIS DE SHUARO",
+                                                "SAN RAMON",
+                                                "VITOC"
+                                            ]
+                          },
+                          {
+                              "name":  "JAUJA",
+                              "code":  "1204",
+                              "districts":  [
+                                                "JAUJA",
+                                                "ACOLLA",
+                                                "APATA",
+                                                "ATAURA",
+                                                "CANCHAYLLO",
+                                                "CURICACA",
+                                                "EL MANTARO",
+                                                "HUAMALI",
+                                                "HUARIPAMPA",
+                                                "HUERTAS",
+                                                "JANJAILLO",
+                                                "JULCAN",
+                                                "LEONOR ORDOÑEZ",
+                                                "LLOCLLAPAMPA",
+                                                "MARCO",
+                                                "MASMA",
+                                                "MASMA CHICCHE",
+                                                "MOLINOS",
+                                                "MONOBAMBA",
+                                                "MUQUI",
+                                                "MUQUIYAUYO",
+                                                "PACA",
+                                                "PACCHA",
+                                                "PANCAN",
+                                                "PARCO",
+                                                "POMACANCHA",
+                                                "RICRAN",
+                                                "SAN LORENZO",
+                                                "SAN PEDRO DE CHUNAN",
+                                                "SAUSA",
+                                                "SINCOS",
+                                                "TUNAN MARCA",
+                                                "YAULI",
+                                                "YAUYOS"
+                                            ]
+                          },
+                          {
+                              "name":  "JUNIN",
+                              "code":  "1205",
+                              "districts":  [
+                                                "JUNIN",
+                                                "CARHUAMAYO",
+                                                "ONDORES",
+                                                "ULCUMAYO"
+                                            ]
+                          },
+                          {
+                              "name":  "SATIPO",
+                              "code":  "1206",
+                              "districts":  [
+                                                "SATIPO",
+                                                "COVIRIALI",
+                                                "LLAYLLA",
+                                                "MAZAMARI",
+                                                "PAMPA HERMOSA",
+                                                "PANGOA",
+                                                "RIO NEGRO",
+                                                "RIO TAMBO",
+                                                "VIZCATAN DEL ENE"
+                                            ]
+                          },
+                          {
+                              "name":  "TARMA",
+                              "code":  "1207",
+                              "districts":  [
+                                                "TARMA",
+                                                "ACOBAMBA",
+                                                "HUARICOLCA",
+                                                "HUASAHUASI",
+                                                "LA UNION",
+                                                "PALCA",
+                                                "PALCAMAYO",
+                                                "SAN PEDRO DE CAJAS",
+                                                "TAPO"
+                                            ]
+                          },
+                          {
+                              "name":  "YAULI",
+                              "code":  "1208",
+                              "districts":  [
+                                                "LA OROYA",
+                                                "CHACAPALPA",
+                                                "HUAY-HUAY",
+                                                "MARCAPOMACOCHA",
+                                                "MOROCOCHA",
+                                                "PACCHA",
+                                                "SANTA BARBARA DE CARHUACAYAN",
+                                                "SANTA ROSA DE SACCO",
+                                                "SUITUCANCHA",
+                                                "YAULI"
+                                            ]
+                          },
+                          {
+                              "name":  "CHUPACA",
+                              "code":  "1209",
+                              "districts":  [
+                                                "CHUPACA",
+                                                "AHUAC",
+                                                "CHONGOS BAJO",
+                                                "HUACHAC",
+                                                "HUAMANCACA CHICO",
+                                                "SAN JUAN DE YSCOS",
+                                                "SAN JUAN DE JARPA",
+                                                "TRES DE DICIEMBRE",
+                                                "YANACANCHA"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "LA LIBERTAD",
+        "code":  "13",
+        "provinces":  [
+                          {
+                              "name":  "TRUJILLO",
+                              "code":  "1301",
+                              "districts":  [
+                                                "TRUJILLO",
+                                                "EL PORVENIR",
+                                                "FLORENCIA DE MORA",
+                                                "HUANCHACO",
+                                                "LA ESPERANZA",
+                                                "LAREDO",
+                                                "MOCHE",
+                                                "POROTO",
+                                                "SALAVERRY",
+                                                "SIMBAL",
+                                                "VICTOR LARCO HERRERA"
+                                            ]
+                          },
+                          {
+                              "name":  "ASCOPE",
+                              "code":  "1302",
+                              "districts":  [
+                                                "ASCOPE",
+                                                "CHICAMA",
+                                                "CHOCOPE",
+                                                "MAGDALENA DE CAO",
+                                                "PAIJAN",
+                                                "RAZURI",
+                                                "SANTIAGO DE CAO",
+                                                "CASA GRANDE"
+                                            ]
+                          },
+                          {
+                              "name":  "BOLIVAR",
+                              "code":  "1303",
+                              "districts":  [
+                                                "BOLIVAR",
+                                                "BAMBAMARCA",
+                                                "CONDORMARCA",
+                                                "LONGOTEA",
+                                                "UCHUMARCA",
+                                                "UCUNCHA"
+                                            ]
+                          },
+                          {
+                              "name":  "CHEPEN",
+                              "code":  "1304",
+                              "districts":  [
+                                                "CHEPEN",
+                                                "PACANGA",
+                                                "PUEBLO NUEVO"
+                                            ]
+                          },
+                          {
+                              "name":  "JULCAN",
+                              "code":  "1305",
+                              "districts":  [
+                                                "JULCAN",
+                                                "CALAMARCA",
+                                                "CARABAMBA",
+                                                "HUASO"
+                                            ]
+                          },
+                          {
+                              "name":  "OTUZCO",
+                              "code":  "1306",
+                              "districts":  [
+                                                "OTUZCO",
+                                                "AGALLPAMPA",
+                                                "CHARAT",
+                                                "HUARANCHAL",
+                                                "LA CUESTA",
+                                                "MACHE",
+                                                "PARANDAY",
+                                                "SALPO",
+                                                "SINSICAP",
+                                                "USQUIL"
+                                            ]
+                          },
+                          {
+                              "name":  "PACASMAYO",
+                              "code":  "1307",
+                              "districts":  [
+                                                "SAN PEDRO DE LLOC",
+                                                "GUADALUPE",
+                                                "JEQUETEPEQUE",
+                                                "PACASMAYO",
+                                                "SAN JOSE"
+                                            ]
+                          },
+                          {
+                              "name":  "PATAZ",
+                              "code":  "1308",
+                              "districts":  [
+                                                "TAYABAMBA",
+                                                "BULDIBUYO",
+                                                "CHILLIA",
+                                                "HUANCASPATA",
+                                                "HUAYLILLAS",
+                                                "HUAYO",
+                                                "ONGON",
+                                                "PARCOY",
+                                                "PATAZ",
+                                                "PIAS",
+                                                "SANTIAGO DE CHALLAS",
+                                                "TAURIJA",
+                                                "URPAY"
+                                            ]
+                          },
+                          {
+                              "name":  "SANCHEZ CARRION",
+                              "code":  "1309",
+                              "districts":  [
+                                                "HUAMACHUCO",
+                                                "CHUGAY",
+                                                "COCHORCO",
+                                                "CURGOS",
+                                                "MARCABAL",
+                                                "SANAGORAN",
+                                                "SARIN",
+                                                "SARTIMBAMBA"
+                                            ]
+                          },
+                          {
+                              "name":  "SANTIAGO DE CHUCO",
+                              "code":  "1310",
+                              "districts":  [
+                                                "SANTIAGO DE CHUCO",
+                                                "ANGASMARCA",
+                                                "CACHICADAN",
+                                                "MOLLEBAMBA",
+                                                "MOLLEPATA",
+                                                "QUIRUVILCA",
+                                                "SANTA CRUZ DE CHUCA",
+                                                "SITABAMBA"
+                                            ]
+                          },
+                          {
+                              "name":  "GRAN CHIMU",
+                              "code":  "1311",
+                              "districts":  [
+                                                "CASCAS",
+                                                "LUCMA",
+                                                "MARMOT",
+                                                "SAYAPULLO"
+                                            ]
+                          },
+                          {
+                              "name":  "VIRU",
+                              "code":  "1312",
+                              "districts":  [
+                                                "VIRU",
+                                                "CHAO",
+                                                "GUADALUPITO"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "LAMBAYEQUE",
+        "code":  "14",
+        "provinces":  [
+                          {
+                              "name":  "CHICLAYO",
+                              "code":  "1401",
+                              "districts":  [
+                                                "CHICLAYO",
+                                                "CHONGOYAPE",
+                                                "ETEN",
+                                                "ETEN PUERTO",
+                                                "JOSE LEONARDO ORTIZ",
+                                                "LA VICTORIA",
+                                                "LAGUNAS",
+                                                "MONSEFU",
+                                                "NUEVA ARICA",
+                                                "OYOTUN",
+                                                "PICSI",
+                                                "PIMENTEL",
+                                                "REQUE",
+                                                "SANTA ROSA",
+                                                "SAÑA",
+                                                "CAYALTI",
+                                                "PATAPO",
+                                                "POMALCA",
+                                                "PUCALA",
+                                                "TUMAN"
+                                            ]
+                          },
+                          {
+                              "name":  "FERREÑAFE",
+                              "code":  "1402",
+                              "districts":  [
+                                                "FERREÑAFE",
+                                                "CAÑARIS",
+                                                "INCAHUASI",
+                                                "MANUEL ANTONIO MESONES MURO",
+                                                "PITIPO",
+                                                "PUEBLO NUEVO"
+                                            ]
+                          },
+                          {
+                              "name":  "LAMBAYEQUE",
+                              "code":  "1403",
+                              "districts":  [
+                                                "LAMBAYEQUE",
+                                                "CHOCHOPE",
+                                                "ILLIMO",
+                                                "JAYANCA",
+                                                "MOCHUMI",
+                                                "MORROPE",
+                                                "MOTUPE",
+                                                "OLMOS",
+                                                "PACORA",
+                                                "SALAS",
+                                                "SAN JOSE",
+                                                "TUCUME"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "LIMA",
+        "code":  "15",
+        "provinces":  [
+                          {
+                              "name":  "LIMA",
+                              "code":  "1501",
+                              "districts":  [
+                                                "LIMA",
+                                                "ANCON",
+                                                "ATE",
+                                                "BARRANCO",
+                                                "BREÑA",
+                                                "CARABAYLLO",
+                                                "CHACLACAYO",
+                                                "CHORRILLOS",
+                                                "CIENEGUILLA",
+                                                "COMAS",
+                                                "EL AGUSTINO",
+                                                "INDEPENDENCIA",
+                                                "JESUS MARIA",
+                                                "LA MOLINA",
+                                                "LA VICTORIA",
+                                                "LINCE",
+                                                "LOS OLIVOS",
+                                                "LURIGANCHO",
+                                                "LURIN",
+                                                "MAGDALENA DEL MAR",
+                                                "PUEBLO LIBRE",
+                                                "MIRAFLORES",
+                                                "PACHACAMAC",
+                                                "PUCUSANA",
+                                                "PUENTE PIEDRA",
+                                                "PUNTA HERMOSA",
+                                                "PUNTA NEGRA",
+                                                "RIMAC",
+                                                "SAN BARTOLO",
+                                                "SAN BORJA",
+                                                "SAN ISIDRO",
+                                                "SAN JUAN DE LURIGANCHO",
+                                                "SAN JUAN DE MIRAFLORES",
+                                                "SAN LUIS",
+                                                "SAN MARTIN DE PORRES",
+                                                "SAN MIGUEL",
+                                                "SANTA ANITA",
+                                                "SANTA MARIA DEL MAR",
+                                                "SANTA ROSA",
+                                                "SANTIAGO DE SURCO",
+                                                "SURQUILLO",
+                                                "VILLA EL SALVADOR",
+                                                "VILLA MARIA DEL TRIUNFO",
+                                                "SANTA MARIA DE HUACHIPA"
+                                            ]
+                          },
+                          {
+                              "name":  "BARRANCA",
+                              "code":  "1502",
+                              "districts":  [
+                                                "BARRANCA",
+                                                "PARAMONGA",
+                                                "PATIVILCA",
+                                                "SUPE",
+                                                "SUPE PUERTO"
+                                            ]
+                          },
+                          {
+                              "name":  "CAJATAMBO",
+                              "code":  "1503",
+                              "districts":  [
+                                                "CAJATAMBO",
+                                                "COPA",
+                                                "GORGOR",
+                                                "HUANCAPON",
+                                                "MANAS"
+                                            ]
+                          },
+                          {
+                              "name":  "CANTA",
+                              "code":  "1504",
+                              "districts":  [
+                                                "CANTA",
+                                                "ARAHUAY",
+                                                "HUAMANTANGA",
+                                                "HUAROS",
+                                                "LACHAQUI",
+                                                "SAN BUENAVENTURA",
+                                                "SANTA ROSA DE QUIVES"
+                                            ]
+                          },
+                          {
+                              "name":  "CAÑETE",
+                              "code":  "1505",
+                              "districts":  [
+                                                "SAN VICENTE DE CAÑETE",
+                                                "ASIA",
+                                                "CALANGO",
+                                                "CERRO AZUL",
+                                                "CHILCA",
+                                                "COAYLLO",
+                                                "IMPERIAL",
+                                                "LUNAHUANA",
+                                                "MALA",
+                                                "NUEVO IMPERIAL",
+                                                "PACARAN",
+                                                "QUILMANA",
+                                                "SAN ANTONIO",
+                                                "SAN LUIS",
+                                                "SANTA CRUZ DE FLORES",
+                                                "ZUÑIGA"
+                                            ]
+                          },
+                          {
+                              "name":  "HUARAL",
+                              "code":  "1506",
+                              "districts":  [
+                                                "HUARAL",
+                                                "ATAVILLOS ALTO",
+                                                "ATAVILLOS BAJO",
+                                                "AUCALLAMA",
+                                                "CHANCAY",
+                                                "IHUARI",
+                                                "LAMPIAN",
+                                                "PACARAOS",
+                                                "SAN MIGUEL DE ACOS",
+                                                "SANTA CRUZ DE ANDAMARCA",
+                                                "SUMBILCA",
+                                                "VEINTISIETE DE NOVIEMBRE"
+                                            ]
+                          },
+                          {
+                              "name":  "HUAROCHIRI",
+                              "code":  "1507",
+                              "districts":  [
+                                                "MATUCANA",
+                                                "ANTIOQUIA",
+                                                "CALLAHUANCA",
+                                                "CARAMPOMA",
+                                                "CHICLA",
+                                                "CUENCA",
+                                                "HUACHUPAMPA",
+                                                "HUANZA",
+                                                "HUAROCHIRI",
+                                                "LAHUAYTAMBO",
+                                                "LANGA",
+                                                "LARAOS",
+                                                "MARIATANA",
+                                                "RICARDO PALMA",
+                                                "SAN ANDRES DE TUPICOCHA",
+                                                "SAN ANTONIO",
+                                                "SAN BARTOLOME",
+                                                "SAN DAMIAN",
+                                                "SAN JUAN DE IRIS",
+                                                "SAN JUAN DE TANTARANCHE",
+                                                "SAN LORENZO DE QUINTI",
+                                                "SAN MATEO",
+                                                "SAN MATEO DE OTAO",
+                                                "SAN PEDRO DE CASTA",
+                                                "SAN PEDRO DE HUANCAYRE",
+                                                "SANGALLAYA",
+                                                "SANTA CRUZ DE COCACHACRA",
+                                                "SANTA EULALIA",
+                                                "SANTIAGO DE ANCHUCAYA",
+                                                "SANTIAGO DE TUNA",
+                                                "SANTO DOMINGO DE LOS OLLEROS",
+                                                "SURCO"
+                                            ]
+                          },
+                          {
+                              "name":  "HUAURA",
+                              "code":  "1508",
+                              "districts":  [
+                                                "HUACHO",
+                                                "AMBAR",
+                                                "CALETA DE CARQUIN",
+                                                "CHECRAS",
+                                                "HUALMAY",
+                                                "HUAURA",
+                                                "LEONCIO PRADO",
+                                                "PACCHO",
+                                                "SANTA LEONOR",
+                                                "SANTA MARIA",
+                                                "SAYAN",
+                                                "VEGUETA"
+                                            ]
+                          },
+                          {
+                              "name":  "OYON",
+                              "code":  "1509",
+                              "districts":  [
+                                                "OYON",
+                                                "ANDAJES",
+                                                "CAUJUL",
+                                                "COCHAMARCA",
+                                                "NAVAN",
+                                                "PACHANGARA"
+                                            ]
+                          },
+                          {
+                              "name":  "YAUYOS",
+                              "code":  "1510",
+                              "districts":  [
+                                                "YAUYOS",
+                                                "ALIS",
+                                                "AYAUCA",
+                                                "AYAVIRI",
+                                                "AZANGARO",
+                                                "CACRA",
+                                                "CARANIA",
+                                                "CATAHUASI",
+                                                "CHOCOS",
+                                                "COCHAS",
+                                                "COLONIA",
+                                                "HONGOS",
+                                                "HUAMPARA",
+                                                "HUANCAYA",
+                                                "HUANGASCAR",
+                                                "HUANTAN",
+                                                "HUAÑEC",
+                                                "LARAOS",
+                                                "LINCHA",
+                                                "MADEAN",
+                                                "MIRAFLORES",
+                                                "OMAS",
+                                                "PUTINZA",
+                                                "QUINCHES",
+                                                "QUINOCAY",
+                                                "SAN JOAQUIN",
+                                                "SAN PEDRO DE PILAS",
+                                                "TANTA",
+                                                "TAURIPAMPA",
+                                                "TOMAS",
+                                                "TUPE",
+                                                "VIÑAC",
+                                                "VITIS"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "LORETO",
+        "code":  "16",
+        "provinces":  [
+                          {
+                              "name":  "MAYNAS",
+                              "code":  "1601",
+                              "districts":  [
+                                                "IQUITOS",
+                                                "ALTO NANAY",
+                                                "FERNANDO LORES",
+                                                "INDIANA",
+                                                "LAS AMAZONAS",
+                                                "MAZAN",
+                                                "NAPO",
+                                                "PUNCHANA",
+                                                "PUTUMAYO",
+                                                "TORRES CAUSANA",
+                                                "BELEN",
+                                                "SAN JUAN BAUTISTA",
+                                                "TENIENTE MANUEL CLAVERO"
+                                            ]
+                          },
+                          {
+                              "name":  "ALTO AMAZONAS",
+                              "code":  "1602",
+                              "districts":  [
+                                                "YURIMAGUAS",
+                                                "BALSAPUERTO",
+                                                "JEBEROS",
+                                                "LAGUNAS",
+                                                "SANTA CRUZ",
+                                                "TENIENTE CESAR LOPEZ ROJAS"
+                                            ]
+                          },
+                          {
+                              "name":  "LORETO",
+                              "code":  "1603",
+                              "districts":  [
+                                                "NAUTA",
+                                                "PARINARI",
+                                                "TIGRE",
+                                                "TROMPETEROS",
+                                                "URARINAS"
+                                            ]
+                          },
+                          {
+                              "name":  "MARISCAL RAMON CASTILLA",
+                              "code":  "1604",
+                              "districts":  [
+                                                "RAMON CASTILLA",
+                                                "PEBAS",
+                                                "YAVARI",
+                                                "SAN PABLO"
+                                            ]
+                          },
+                          {
+                              "name":  "REQUENA",
+                              "code":  "1605",
+                              "districts":  [
+                                                "REQUENA",
+                                                "ALTO TAPICHE",
+                                                "CAPELO",
+                                                "EMILIO SAN MARTIN",
+                                                "MAQUIA",
+                                                "PUINAHUA",
+                                                "SAQUENA",
+                                                "SOPLIN",
+                                                "TAPICHE",
+                                                "JENARO HERRERA",
+                                                "YAQUERANA"
+                                            ]
+                          },
+                          {
+                              "name":  "UCAYALI",
+                              "code":  "1606",
+                              "districts":  [
+                                                "CONTAMANA",
+                                                "INAHUAYA",
+                                                "PADRE MARQUEZ",
+                                                "PAMPA HERMOSA",
+                                                "SARAYACU",
+                                                "VARGAS GUERRA"
+                                            ]
+                          },
+                          {
+                              "name":  "DATEM DEL MARAÑON",
+                              "code":  "1607",
+                              "districts":  [
+                                                "BARRANCA",
+                                                "CAHUAPANAS",
+                                                "MANSERICHE",
+                                                "MORONA",
+                                                "PASTAZA",
+                                                "ANDOAS"
+                                            ]
+                          },
+                          {
+                              "name":  "PUTUMAYO",
+                              "code":  "1608",
+                              "districts":  [
+                                                "PUTUMAYO",
+                                                "ROSA PANDURO",
+                                                "TENIENTE MANUEL CLAVERO",
+                                                "YAGUAS"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "MADRE DE DIOS",
+        "code":  "17",
+        "provinces":  [
+                          {
+                              "name":  "TAMBOPATA",
+                              "code":  "1701",
+                              "districts":  [
+                                                "TAMBOPATA",
+                                                "INAMBARI",
+                                                "LAS PIEDRAS",
+                                                "LABERINTO"
+                                            ]
+                          },
+                          {
+                              "name":  "MANU",
+                              "code":  "1702",
+                              "districts":  [
+                                                "MANU",
+                                                "FITZCARRALD",
+                                                "MADRE DE DIOS",
+                                                "HUEPETUHE"
+                                            ]
+                          },
+                          {
+                              "name":  "TAHUAMANU",
+                              "code":  "1703",
+                              "districts":  [
+                                                "IÑAPARI",
+                                                "IBERIA",
+                                                "TAHUAMANU"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "MOQUEGUA",
+        "code":  "18",
+        "provinces":  [
+                          {
+                              "name":  "MARISCAL NIETO",
+                              "code":  "1801",
+                              "districts":  [
+                                                "MOQUEGUA",
+                                                "CARUMAS",
+                                                "CUCHUMBAYA",
+                                                "SAMEGUA",
+                                                "SAN CRISTOBAL",
+                                                "TORATA"
+                                            ]
+                          },
+                          {
+                              "name":  "GENERAL SANCHEZ CERRO",
+                              "code":  "1802",
+                              "districts":  [
+                                                "OMATE",
+                                                "CHOJATA",
+                                                "COALAQUE",
+                                                "ICHUÑA",
+                                                "LA CAPILLA",
+                                                "LLOQUE",
+                                                "MATALAQUE",
+                                                "PUQUINA",
+                                                "QUINISTAQUILLAS",
+                                                "UBINAS",
+                                                "YUNGA"
+                                            ]
+                          },
+                          {
+                              "name":  "ILO",
+                              "code":  "1803",
+                              "districts":  [
+                                                "ILO",
+                                                "EL ALGARROBAL",
+                                                "PACOCHA"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "PASCO",
+        "code":  "19",
+        "provinces":  [
+                          {
+                              "name":  "PASCO",
+                              "code":  "1901",
+                              "districts":  [
+                                                "CHAUPIMARCA",
+                                                "HUACHON",
+                                                "HUARIACA",
+                                                "HUAYLLAY",
+                                                "NINACACA",
+                                                "PALLANCHACRA",
+                                                "PAUCARTAMBO",
+                                                "SAN FRANCISCO DE ASIS DE YARUSYACAN",
+                                                "SIMON BOLIVAR",
+                                                "TICLACAYAN",
+                                                "TINYAHUARCO",
+                                                "VICCO",
+                                                "YANACANCHA"
+                                            ]
+                          },
+                          {
+                              "name":  "DANIEL ALCIDES CARRION",
+                              "code":  "1902",
+                              "districts":  [
+                                                "YANAHUANCA",
+                                                "CHACAYAN",
+                                                "GOYLLARISQUIZGA",
+                                                "PAUCAR",
+                                                "SAN PEDRO DE PILLAO",
+                                                "SANTA ANA DE TUSI",
+                                                "TAPUC",
+                                                "VILCABAMBA"
+                                            ]
+                          },
+                          {
+                              "name":  "OXAPAMPA",
+                              "code":  "1903",
+                              "districts":  [
+                                                "OXAPAMPA",
+                                                "CHONTABAMBA",
+                                                "HUANCABAMBA",
+                                                "PALCAZU",
+                                                "POZUZO",
+                                                "PUERTO BERMUDEZ",
+                                                "VILLA RICA",
+                                                "CONSTITUCION"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "PIURA",
+        "code":  "20",
+        "provinces":  [
+                          {
+                              "name":  "PIURA",
+                              "code":  "2001",
+                              "districts":  [
+                                                "PIURA",
+                                                "CASTILLA",
+                                                "CATACAOS",
+                                                "CURA MORI",
+                                                "EL TALLAN",
+                                                "LA ARENA",
+                                                "LA UNION",
+                                                "LAS LOMAS",
+                                                "TAMBO GRANDE",
+                                                "VEINTISEIS DE OCTUBRE"
+                                            ]
+                          },
+                          {
+                              "name":  "AYABACA",
+                              "code":  "2002",
+                              "districts":  [
+                                                "AYABACA",
+                                                "FRIAS",
+                                                "JILILI",
+                                                "LAGUNAS",
+                                                "MONTERO",
+                                                "PACAIPAMPA",
+                                                "PAIMAS",
+                                                "SAPILLICA",
+                                                "SICCHEZ",
+                                                "SUYO"
+                                            ]
+                          },
+                          {
+                              "name":  "HUANCABAMBA",
+                              "code":  "2003",
+                              "districts":  [
+                                                "HUANCABAMBA",
+                                                "CANCHAQUE",
+                                                "EL CARMEN DE LA FRONTERA",
+                                                "HUARMACA",
+                                                "LALAQUIZ",
+                                                "SAN MIGUEL DE EL FAIQUE",
+                                                "SONDOR",
+                                                "SONDORILLO"
+                                            ]
+                          },
+                          {
+                              "name":  "MORROPON",
+                              "code":  "2004",
+                              "districts":  [
+                                                "CHULUCANAS",
+                                                "BUENOS AIRES",
+                                                "CHALACO",
+                                                "LA MATANZA",
+                                                "MORROPON",
+                                                "SALITRAL",
+                                                "SAN JUAN DE BIGOTE",
+                                                "SANTA CATALINA DE MOSSA",
+                                                "SANTO DOMINGO",
+                                                "YAMANGO"
+                                            ]
+                          },
+                          {
+                              "name":  "PAITA",
+                              "code":  "2005",
+                              "districts":  [
+                                                "PAITA",
+                                                "AMOTAPE",
+                                                "ARENAL",
+                                                "COLAN",
+                                                "LA HUACA",
+                                                "TAMARINDO",
+                                                "VICHAYAL"
+                                            ]
+                          },
+                          {
+                              "name":  "SULLANA",
+                              "code":  "2006",
+                              "districts":  [
+                                                "SULLANA",
+                                                "BELLAVISTA",
+                                                "IGNACIO ESCUDERO",
+                                                "LANCONES",
+                                                "MARCAVELICA",
+                                                "MIGUEL CHECA",
+                                                "QUERECOTILLO",
+                                                "SALITRAL"
+                                            ]
+                          },
+                          {
+                              "name":  "TALARA",
+                              "code":  "2007",
+                              "districts":  [
+                                                "PARIÑAS",
+                                                "EL ALTO",
+                                                "LA BREA",
+                                                "LOBITOS",
+                                                "LOS ORGANOS",
+                                                "MANCORA"
+                                            ]
+                          },
+                          {
+                              "name":  "SECHURA",
+                              "code":  "2008",
+                              "districts":  [
+                                                "SECHURA",
+                                                "BELLAVISTA DE LA UNION",
+                                                "BERNAL",
+                                                "CRISTO NOS VALGA",
+                                                "VICE",
+                                                "RINCONADA LLICUAR"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "PUNO",
+        "code":  "21",
+        "provinces":  [
+                          {
+                              "name":  "PUNO",
+                              "code":  "2101",
+                              "districts":  [
+                                                "PUNO",
+                                                "ACORA",
+                                                "AMANTANI",
+                                                "ATUNCOLLA",
+                                                "CAPACHICA",
+                                                "CHUCUITO",
+                                                "COATA",
+                                                "HUATA",
+                                                "MAÑAZO",
+                                                "PAUCARCOLLA",
+                                                "PICHACANI",
+                                                "PLATERIA",
+                                                "SAN ANTONIO",
+                                                "TIQUILLACA",
+                                                "VILQUE"
+                                            ]
+                          },
+                          {
+                              "name":  "AZANGARO",
+                              "code":  "2102",
+                              "districts":  [
+                                                "AZANGARO",
+                                                "ACHAYA",
+                                                "ARAPA",
+                                                "ASILLO",
+                                                "CAMINACA",
+                                                "CHUPA",
+                                                "JOSE DOMINGO CHOQUEHUANCA",
+                                                "MUÑANI",
+                                                "POTONI",
+                                                "SAMAN",
+                                                "SAN ANTON",
+                                                "SAN JOSE",
+                                                "SAN JUAN DE SALINAS",
+                                                "SANTIAGO DE PUPUJA",
+                                                "TIRAPATA"
+                                            ]
+                          },
+                          {
+                              "name":  "CARABAYA",
+                              "code":  "2103",
+                              "districts":  [
+                                                "MACUSANI",
+                                                "AJOYANI",
+                                                "AYAPATA",
+                                                "COASA",
+                                                "CORANI",
+                                                "CRUCERO",
+                                                "ITUATA",
+                                                "OLLACHEA",
+                                                "SAN GABAN",
+                                                "USICAYOS"
+                                            ]
+                          },
+                          {
+                              "name":  "CHUCUITO",
+                              "code":  "2104",
+                              "districts":  [
+                                                "JULI",
+                                                "DESAGUADERO",
+                                                "HUACULLANI",
+                                                "KELLUYO",
+                                                "PISACOMA",
+                                                "POMATA",
+                                                "ZEPITA"
+                                            ]
+                          },
+                          {
+                              "name":  "EL COLLAO",
+                              "code":  "2105",
+                              "districts":  [
+                                                "ILAVE",
+                                                "CAPAZO",
+                                                "PILCUYO",
+                                                "SANTA ROSA",
+                                                "CONDURIRI"
+                                            ]
+                          },
+                          {
+                              "name":  "HUANCANE",
+                              "code":  "2106",
+                              "districts":  [
+                                                "HUANCANE",
+                                                "COJATA",
+                                                "HUATASANI",
+                                                "INCHUPALLA",
+                                                "PUSI",
+                                                "ROSASPATA",
+                                                "TARACO",
+                                                "VILQUE CHICO"
+                                            ]
+                          },
+                          {
+                              "name":  "LAMPA",
+                              "code":  "2107",
+                              "districts":  [
+                                                "LAMPA",
+                                                "CABANILLA",
+                                                "CALAPUJA",
+                                                "NICASIO",
+                                                "OCUVIRI",
+                                                "PALCA",
+                                                "PARATIA",
+                                                "PUCARA",
+                                                "SANTA LUCIA",
+                                                "VILAVILA"
+                                            ]
+                          },
+                          {
+                              "name":  "MELGAR",
+                              "code":  "2108",
+                              "districts":  [
+                                                "AYAVIRI",
+                                                "ANTAUTA",
+                                                "CUPI",
+                                                "LLALLI",
+                                                "MACARI",
+                                                "NUÑOA",
+                                                "ORURILLO",
+                                                "SANTA ROSA",
+                                                "UMACHIRI"
+                                            ]
+                          },
+                          {
+                              "name":  "MOHO",
+                              "code":  "2109",
+                              "districts":  [
+                                                "MOHO",
+                                                "CONIMA",
+                                                "HUAYRAPATA",
+                                                "TILALI"
+                                            ]
+                          },
+                          {
+                              "name":  "SAN ANTONIO DE PUTINA",
+                              "code":  "2110",
+                              "districts":  [
+                                                "PUTINA",
+                                                "ANANEA",
+                                                "PEDRO VILCA APAZA",
+                                                "QUILCAPUNCU",
+                                                "SINA"
+                                            ]
+                          },
+                          {
+                              "name":  "SAN ROMAN",
+                              "code":  "2111",
+                              "districts":  [
+                                                "JULIACA",
+                                                "CABANA",
+                                                "CABANILLAS",
+                                                "CARACOTO",
+                                                "SAN MIGUEL"
+                                            ]
+                          },
+                          {
+                              "name":  "SANDIA",
+                              "code":  "2112",
+                              "districts":  [
+                                                "SANDIA",
+                                                "CUYOCUYO",
+                                                "LIMBANI",
+                                                "PATAMBUCO",
+                                                "PHARA",
+                                                "QUIACA",
+                                                "SAN JUAN DEL ORO",
+                                                "YANAHUAYA",
+                                                "ALTO INAMBARI",
+                                                "SAN PEDRO DE PUTINA PUNCO"
+                                            ]
+                          },
+                          {
+                              "name":  "YUNGUYO",
+                              "code":  "2113",
+                              "districts":  [
+                                                "YUNGUYO",
+                                                "ANAPIA",
+                                                "COPANI",
+                                                "CUTURAPI",
+                                                "OLLARAYA",
+                                                "TINICACHI",
+                                                "UNICACHI"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "SAN MARTIN",
+        "code":  "22",
+        "provinces":  [
+                          {
+                              "name":  "MOYOBAMBA",
+                              "code":  "2201",
+                              "districts":  [
+                                                "MOYOBAMBA",
+                                                "CALZADA",
+                                                "HABANA",
+                                                "JEPELACIO",
+                                                "SORITOR",
+                                                "YANTALO"
+                                            ]
+                          },
+                          {
+                              "name":  "BELLAVISTA",
+                              "code":  "2202",
+                              "districts":  [
+                                                "BELLAVISTA",
+                                                "ALTO BIAVO",
+                                                "BAJO BIAVO",
+                                                "HUALLAGA",
+                                                "SAN PABLO",
+                                                "SAN RAFAEL"
+                                            ]
+                          },
+                          {
+                              "name":  "EL DORADO",
+                              "code":  "2203",
+                              "districts":  [
+                                                "SAN JOSE DE SISA",
+                                                "AGUA BLANCA",
+                                                "SAN MARTIN",
+                                                "SANTA ROSA",
+                                                "SHATOJA"
+                                            ]
+                          },
+                          {
+                              "name":  "HUALLAGA",
+                              "code":  "2204",
+                              "districts":  [
+                                                "SAPOSOA",
+                                                "ALTO SAPOSOA",
+                                                "EL ESLABON",
+                                                "PISCOYACU",
+                                                "SACANCHE",
+                                                "TINGO DE SAPOSOA"
+                                            ]
+                          },
+                          {
+                              "name":  "LAMAS",
+                              "code":  "2205",
+                              "districts":  [
+                                                "LAMAS",
+                                                "ALONSO DE ALVARADO",
+                                                "BARRANQUITA",
+                                                "CAYNARACHI",
+                                                "CUÑUMBUQUI",
+                                                "PINTO RECODO",
+                                                "RUMISAPA",
+                                                "SAN ROQUE DE CUMBAZA",
+                                                "SHANAO",
+                                                "TABALOSOS",
+                                                "ZAPATERO"
+                                            ]
+                          },
+                          {
+                              "name":  "MARISCAL CACERES",
+                              "code":  "2206",
+                              "districts":  [
+                                                "JUANJUI",
+                                                "CAMPANILLA",
+                                                "HUICUNGO",
+                                                "PACHIZA",
+                                                "PAJARILLO"
+                                            ]
+                          },
+                          {
+                              "name":  "PICOTA",
+                              "code":  "2207",
+                              "districts":  [
+                                                "PICOTA",
+                                                "BUENOS AIRES",
+                                                "CASPISAPA",
+                                                "PILLUANA",
+                                                "PUCACACA",
+                                                "SAN CRISTOBAL",
+                                                "SAN HILARION",
+                                                "SHAMBOYACU",
+                                                "TINGO DE PONASA",
+                                                "TRES UNIDOS"
+                                            ]
+                          },
+                          {
+                              "name":  "RIOJA",
+                              "code":  "2208",
+                              "districts":  [
+                                                "RIOJA",
+                                                "AWAJUN",
+                                                "ELIAS SOPLIN VARGAS",
+                                                "NUEVA CAJAMARCA",
+                                                "PARDO MIGUEL",
+                                                "POSIC",
+                                                "SAN FERNANDO",
+                                                "YORONGOS",
+                                                "YURACYACU"
+                                            ]
+                          },
+                          {
+                              "name":  "SAN MARTIN",
+                              "code":  "2209",
+                              "districts":  [
+                                                "TARAPOTO",
+                                                "ALBERTO LEVEAU",
+                                                "CACATACHI",
+                                                "CHAZUTA",
+                                                "CHIPURANA",
+                                                "EL PORVENIR",
+                                                "HUIMBAYOC",
+                                                "JUAN GUERRA",
+                                                "LA BANDA DE SHILCAYO",
+                                                "MORALES",
+                                                "PAPAPLAYA",
+                                                "SAN ANTONIO",
+                                                "SAUCE",
+                                                "SHAPAJA"
+                                            ]
+                          },
+                          {
+                              "name":  "TOCACHE",
+                              "code":  "2210",
+                              "districts":  [
+                                                "TOCACHE",
+                                                "NUEVO PROGRESO",
+                                                "POLVORA",
+                                                "SHUNTE",
+                                                "UCHIZA",
+                                                "SANTA LUCIA"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "TACNA",
+        "code":  "23",
+        "provinces":  [
+                          {
+                              "name":  "TACNA",
+                              "code":  "2301",
+                              "districts":  [
+                                                "TACNA",
+                                                "ALTO DE LA ALIANZA",
+                                                "CALANA",
+                                                "CIUDAD NUEVA",
+                                                "INCLAN",
+                                                "PACHIA",
+                                                "PALCA",
+                                                "POCOLLAY",
+                                                "SAMA",
+                                                "CORONEL GREGORIO ALBARRACIN LANCHIPA",
+                                                "LA YARADA LOS PALOS"
+                                            ]
+                          },
+                          {
+                              "name":  "CANDARAVE",
+                              "code":  "2302",
+                              "districts":  [
+                                                "CANDARAVE",
+                                                "CAIRANI",
+                                                "CAMILACA",
+                                                "CURIBAYA",
+                                                "HUANUARA",
+                                                "QUILAHUANI"
+                                            ]
+                          },
+                          {
+                              "name":  "JORGE BASADRE",
+                              "code":  "2303",
+                              "districts":  [
+                                                "LOCUMBA",
+                                                "ILABAYA",
+                                                "ITE"
+                                            ]
+                          },
+                          {
+                              "name":  "TARATA",
+                              "code":  "2304",
+                              "districts":  [
+                                                "TARATA",
+                                                "HEROES ALBARRACIN CHUCATAMANI",
+                                                "ESTIQUE",
+                                                "ESTIQUE-PAMPA",
+                                                "SITAJARA",
+                                                "SUSAPAYA",
+                                                "TARUCACHI",
+                                                "TICACO"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "TUMBES",
+        "code":  "24",
+        "provinces":  [
+                          {
+                              "name":  "TUMBES",
+                              "code":  "2401",
+                              "districts":  [
+                                                "TUMBES",
+                                                "CORRALES",
+                                                "LA CRUZ",
+                                                "PAMPAS DE HOSPITAL",
+                                                "SAN JACINTO",
+                                                "SAN JUAN DE LA VIRGEN"
+                                            ]
+                          },
+                          {
+                              "name":  "CONTRALMIRANTE VILLAR",
+                              "code":  "2402",
+                              "districts":  [
+                                                "ZORRITOS",
+                                                "CASITAS",
+                                                "CANOAS DE PUNTA SAL"
+                                            ]
+                          },
+                          {
+                              "name":  "ZARUMILLA",
+                              "code":  "2403",
+                              "districts":  [
+                                                "ZARUMILLA",
+                                                "AGUAS VERDES",
+                                                "MATAPALO",
+                                                "PAPAYAL"
+                                            ]
+                          }
+                      ]
+    },
+    {
+        "name":  "UCAYALI",
+        "code":  "25",
+        "provinces":  [
+                          {
+                              "name":  "CORONEL PORTILLO",
+                              "code":  "2501",
+                              "districts":  [
+                                                "CALLERIA",
+                                                "CAMPOVERDE",
+                                                "IPARIA",
+                                                "MASISEA",
+                                                "YARINACOCHA",
+                                                "NUEVA REQUENA",
+                                                "MANANTAY"
+                                            ]
+                          },
+                          {
+                              "name":  "ATALAYA",
+                              "code":  "2502",
+                              "districts":  [
+                                                "RAYMONDI",
+                                                "SEPAHUA",
+                                                "TAHUANIA",
+                                                "YURUA"
+                                            ]
+                          },
+                          {
+                              "name":  "PADRE ABAD",
+                              "code":  "2503",
+                              "districts":  [
+                                                "PADRE ABAD",
+                                                "IRAZOLA",
+                                                "CURIMANA",
+                                                "NESHUYA",
+                                                "ALEXANDER VON HUMBOLDT",
+                                                "HUIPOCA",
+                                                "BOQUERON"
+                                            ]
+                          },
+                          {
+                              "name":  "PURUS",
+                              "code":  "2504",
+                              "districts":  [
+                                                "PURUS"
+                                            ]
+                          }
+                      ]
+    }
+]

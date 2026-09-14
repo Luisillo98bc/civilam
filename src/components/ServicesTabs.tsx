@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaFileAlt, FaHome, FaWater, FaProjectDiagram, FaLaptopCode, FaLeaf, FaSearch, FaMapMarkedAlt, FaMonument, FaCheckCircle, FaAward, FaWhatsapp, FaShieldAlt, FaClock, FaCheckDouble } from 'react-icons/fa';
+import { FaFileAlt, FaProjectDiagram, FaLaptopCode, FaLeaf, FaSearch, FaMapMarkedAlt, FaMonument, FaCheckCircle, FaAward, FaWhatsapp, FaShieldAlt, FaClock, FaCheckDouble, FaTools } from 'react-icons/fa';
 import { contact } from '@/lib/site';
 
 const categories = [
@@ -31,126 +31,164 @@ const categories = [
     ]
   },
   {
-    id: 'viviendas',
-    label: 'Viviendas y Trámites',
-    icon: <FaHome />,
-    title: 'Construcción y Trámites de Viviendas',
-    description: 'Gestión integral desde el anteproyecto arquitectónico y estructural hasta la obtención legal de licencias, declaratorias e independizaciones.',
-    image: '/viviendas-tramites.jpg',
-    type: 'CONSTRUCCIÓN & GESTIÓN',
+    id: 'topografia',
+    label: 'Topografía, Geodesia y Fotogrametría',
+    icon: <FaMapMarkedAlt />,
+    title: 'Topografía, Geodesia y Fotogrametría',
+    description: 'Levantamos y procesamos información territorial con precisión para sustentar diseños, expedientes, obras y decisiones técnicas.',
+    image: '/sig-cartografia.png',
+    type: 'TOPOGRAFÍA & GEOMÁTICA',
     items: [
-      'Diseño Arquitectónico y Estructural 3D',
-      'Licencias de Construcción y Remodelación',
-      'Declaratoria de Fábrica (SUNARP)',
-      'Independización de Inmuebles',
-      'Subdivisión de Lotes y Terrenos',
-      'Tasaciones Comerciales de Predios',
-      'Levantamiento Topográfico con Drones'
+      'Levantamientos topográficos con estación total y GNSS',
+      'Georreferenciación y control de puntos',
+      'Levantamientos con drones y fotogrametría',
+      'Ortomosaicos y modelos digitales de elevación',
+      'Curvas de nivel y perfiles longitudinales',
+      'Replanteo y verificación de obras'
     ]
   },
   {
-    id: 'agua',
-    label: 'Agua Potable y Saneamiento',
-    icon: <FaWater />,
-    title: 'Sistemas de Agua Potable y Saneamiento',
-    description: 'Diseño e implementación de infraestructura hidráulica para abastecimiento de agua segura y tratamiento eficiente de efluentes.',
-    image: '/agua potable.png',
-    type: 'INGENIERÍA SANITARIA',
+    id: 'mantenimiento',
+    label: 'Mantenimiento, Limpieza y Desinfección de Sistemas de Agua Potable y Saneamiento',
+    icon: <FaTools />,
+    title: 'Mantenimiento, limpieza y desinfección de sistemas de agua potable y saneamiento',
+    description: 'Mantenemos las estructuras y redes en condiciones adecuadas de operación, salubridad y continuidad del servicio.',
+    image: '/construccion_mante.jpeg',
+    type: 'OPERACIÓN & MANTENIMIENTO',
     items: [
-      'Redes de Distribución de Agua Potable',
-      'Redes de Alcantarillado Sanitario',
-      'Plantas de Tratamiento de Agua Potable (PTAP)',
-      'Plantas de Tratamiento de Aguas Residuales (PTAR)',
-      'Estaciones de Bombeo y Captaciones',
-      'Líneas de Conducción, Aducción e Impulsión'
+      'Limpieza y desinfección de reservorios',
+      'Lavado y desinfección de redes de agua potable',
+      'Limpieza de cámaras, captaciones y estructuras',
+      'Mantenimiento preventivo de sistemas',
+      'Diagnóstico de fallas y recomendaciones',
+      'Protocolos y constancias de servicio'
     ]
   },
   {
     id: 'hidrologia',
-    label: 'Hidrología e Hidráulica',
+    label: 'Estudios de Hidrología e Hidráulica',
     icon: <FaProjectDiagram />,
-    title: 'Estudios Hidrológicos y Diseño Hidráulico',
-    description: 'Evaluación cuantitativa y cualitativa de recursos hídricos en cuencas para el diseño seguro de obras civiles e hidráulicas.',
+    title: 'Estudios de Hidrología e Hidráulica',
+    description: 'Evaluamos el comportamiento del agua en cuencas y cauces para sustentar diseños, obras de protección y gestión de riesgos.',
     image: '/hidraulico.jpg',
     type: 'ESTUDIOS ESPECIALIZADOS',
     items: [
-      'Estudios Hidrológicos e Hidrogeológicos de Cuencas',
-      'Diseño Hidráulico de Presas y Represas',
-      'Delimitación de Fajas Marginales (ANA)',
-      'Defensas Ribereñas y Muros de Gaviones',
-      'Estudios de Socavación en Puentes y Obras de Arte'
+      'Estudios hidrológicos e hidrogeológicos de cuencas',
+      'Diseño hidráulico de presas y represas',
+      'Delimitación de fajas marginales (ANA)',
+      'Defensas ribereñas y muros de gaviones',
+      'Estudios de socavación en puentes y obras de arte',
+      'Análisis de caudales máximos y disponibilidad hídrica'
     ]
   },
   {
     id: 'modelamiento',
-    label: 'Modelamiento Hidráulico',
+    label: 'Modelamiento Hidrológico e Hidráulico (HEC-HMS, HEC-RAS, IBER, SWMM)',
     icon: <FaLaptopCode />,
-    title: 'Modelamiento Hidráulico 1D y 2D',
-    description: 'Simulación digital avanzada del comportamiento de fluidos, transporte de sedimentos y análisis de riesgo por inundaciones.',
+    title: 'Modelamiento hidrológico e hidráulico',
+    description: 'Simulamos escenarios de lluvia, escorrentía, cauces y drenaje urbano con herramientas especializadas para tomar decisiones seguras.',
     image: '/modelado 2d hibraulica.png',
     type: 'SIMULACIÓN DIGITAL',
     items: [
-      'Modelamiento de Inundaciones (HEC-RAS 1D/2D, IBER)',
-      'Modelamiento y Simulación de Rotura de Presas',
-      'Modelamiento de Redes de Agua (WaterCAD / EPANET)',
-      'Modelamiento de Redes de Alcantarillado (SewerCAD)',
-      'Simulación de Transporte de Sedimentos'
+      'Modelamiento hidrológico con HEC-HMS',
+      'Simulación hidráulica 1D y 2D con HEC-RAS',
+      'Modelamiento de cauces y planicies con IBER',
+      'Modelamiento de drenaje urbano con SWMM',
+      'Mapas de inundación y escenarios de riesgo',
+      'Calibración, interpretación y reportes técnicos'
     ]
   },
   {
-    id: 'ambiental',
-    label: 'Medio Ambiente',
-    icon: <FaLeaf />,
-    title: 'Estudios e Instrumentos Ambientales',
-    description: 'Elaboración de expedientes ambientales exigidos por los ministerios para asegurar la viabilidad ecológica de los proyectos.',
+    id: 'evar',
+    label: 'Evaluación de Riesgos Originados por Fenómenos Naturales (EVAR)',
+    icon: <FaShieldAlt />,
+    title: 'Evaluación de riesgos originados por fenómenos naturales (EVAR)',
+    description: 'Identificamos peligros, vulnerabilidades y niveles de riesgo para orientar medidas de prevención y reducción en cada proyecto.',
     image: '/medio-ambiente-riesgos-realista.png',
-    type: 'GESTIÓN AMBIENTAL',
+    type: 'GESTIÓN DEL RIESGO',
     items: [
-      'Declaración de Impacto Ambiental (DIA)',
-      'Estudio de Impacto Ambiental Semidetallado (EIA-sd)',
-      'Plan de Manejo Ambiental (PMA)',
-      'Monitoreo Ambiental (Agua, Aire, Ruido y Suelos)',
-      'Planes de Cierre de Pasivos Ambientales'
+      'Identificación de peligros naturales',
+      'Evaluación de vulnerabilidad y exposición',
+      'Escenarios de riesgo por inundaciones, huaicos y movimientos en masa',
+      'Mapas de peligros y riesgo',
+      'Medidas de prevención y reducción del riesgo',
+      'Informe técnico de evaluación de riesgos (EVAR)'
+    ]
+  },
+  {
+    id: 'monitoreos',
+    label: 'Monitoreos de Agua, Aire, Suelo y Ruido',
+    icon: <FaSearch />,
+    title: 'Monitoreos de agua, aire, suelo y ruido',
+    description: 'Planificamos y ejecutamos monitoreos ambientales para conocer las condiciones del entorno y verificar el cumplimiento de compromisos.',
+    image: '/medio ambiente.avif',
+    type: 'MONITOREO AMBIENTAL',
+    items: [
+      'Monitoreo de calidad de agua superficial y subterránea',
+      'Monitoreo de calidad de aire y emisiones',
+      'Monitoreo de calidad de suelo',
+      'Monitoreo de ruido ambiental y ocupacional',
+      'Diseño de puntos y frecuencia de muestreo',
+      'Informes de resultados y comparación normativa'
     ]
   },
   {
     id: 'impacto',
-    label: 'Impacto Ambiental',
-    icon: <FaSearch />,
-    title: 'Evaluación de Impacto Ambiental',
-    description: 'Análisis minucioso y estructurado de los efectos socioambientales en proyectos de gran envergadura.',
+    label: 'Estudios de Impacto Ambiental (EIA)',
+    icon: <FaLeaf />,
+    title: 'Estudios de Impacto Ambiental (EIA)',
+    description: 'Evaluamos los impactos ambientales y sociales de cada proyecto para definir medidas de manejo, prevención, mitigación y seguimiento.',
     image: '/impacto-ambiental.png',
-    type: 'EVALUACIÓN ECOLÓGICA',
+    type: 'EVALUACIÓN AMBIENTAL',
     items: [
-      'Evaluación Ambiental Preliminar (EVAP)',
-      'Estudio de Impacto Ambiental Detallado (EIA-d)',
-      'Modificaciones del Estudio de Impacto Ambiental (MEIA)',
-      'Planes de Cierre y Post Cierre Ambiental',
-      'Auditorías y Fiscalización Ambiental'
+      'Línea base ambiental y social',
+      'Identificación y valoración de impactos',
+      'Estudios de Impacto Ambiental semidetallados y detallados',
+      'Plan de manejo ambiental',
+      'Programa de monitoreo y seguimiento',
+      'Auditorías y fiscalización ambiental'
+    ]
+  },
+  {
+    id: 'ambiental',
+    label: 'Servicios en Medio Ambiente',
+    icon: <FaLeaf />,
+    title: 'Servicios integrales en medio ambiente',
+    description: 'Acompañamos a proyectos públicos y privados en el cumplimiento ambiental y en la gestión responsable de sus actividades.',
+    image: '/medio-ambiente-riesgos.png',
+    type: 'GESTIÓN AMBIENTAL',
+    items: [
+      'Declaración de Impacto Ambiental (DIA)',
+      'Instrumentos de gestión ambiental',
+      'Planes de manejo y adecuación ambiental',
+      'Supervisión y cumplimiento de compromisos',
+      'Planes de cierre y post cierre',
+      'Asesoría ambiental para proyectos'
     ]
   },
   {
     id: 'mapas',
-    label: 'Mapas Temáticos',
+    label: 'Mapas Base y Temáticos (ArcGIS, QGIS y ArcGIS Pro)',
     icon: <FaMapMarkedAlt />,
-    title: 'Cartografía y Sistemas de Información Geográfica (SIG)',
-    description: 'Generación de mapas de alta precisión, cartografía especializada y análisis de riesgo mediante ArcGIS y QGIS.',
+    title: 'Mapas base y temáticos',
+    description: 'Elaboramos cartografía técnica y análisis geoespacial para comunicar información territorial con claridad y precisión.',
     image: '/sig-cartografia.png',
     type: 'GEOMÁTICA & SIG',
     items: [
-      'Elaboración de Mapas Temáticos en ArcGIS y QGIS',
-      'Modelos Digitales de Elevación (DEM) y Terreno',
-      'Análisis Espacial y Geoprocesamiento Avanzado',
-      'Cartografía de Riesgos de Desastres y Vulnerabilidad',
-      'Sistemas de Catastro Urbano y Rural'
+      'Cartografía base y mapas temáticos',
+      'Geoprocesamiento en ArcGIS, QGIS y ArcGIS Pro',
+      'Modelos digitales de elevación y terreno',
+      'Mapas de riesgos, vulnerabilidad y uso de suelo',
+      'Bases de datos geográficas y georreferenciación',
+      'Diseño e impresión de mapas técnicos'
     ]
   },
   {
     id: 'arqueologia',
-    label: 'Arqueología',
+    label: 'Servicios en Arqueología',
     icon: <FaMonument />,
-    title: 'Estudios Arqueológicos y Obtención de CIRA',
-    description: 'Gestión técnica y administrativa del patrimonio cultural para la liberación de áreas de proyectos de construcción.',
+    title: 'Servicios en arqueología y gestión del patrimonio',
+    description: 'Gestionamos los estudios y autorizaciones arqueológicas necesarios para facilitar el desarrollo responsable de proyectos de infraestructura.',
     image: '/arqueologia.jpg',
     type: 'PATRIMONIO CULTURAL',
     items: [
@@ -158,7 +196,8 @@ const categories = [
       'Plan de Monitoreo Arqueológico (PMA)',
       'Proyecto de Evaluación Arqueológica (PEA)',
       'Proyecto de Rescate Arqueológico (PRA)',
-      'Supervisión y Acompañamiento Arqueológico en Obra'
+      'Supervisión y acompañamiento arqueológico en obra',
+      'Gestión y seguimiento ante el Ministerio de Cultura'
     ]
   }
 ];
@@ -193,13 +232,13 @@ export default function ServicesTabs() {
   };
 
   // Buscador inteligente
-  const filteredCategories = searchQuery.trim() === '' 
-    ? categories 
-    : categories.filter(cat => 
-        cat.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        cat.label.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        cat.items.some(item => item.toLowerCase().includes(searchQuery.toLowerCase()))
-      );
+  const filteredCategories = searchQuery.trim() === ''
+    ? categories
+    : categories.filter(cat =>
+      cat.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      cat.label.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      cat.items.some(item => item.toLowerCase().includes(searchQuery.toLowerCase()))
+    );
 
   return (
     <section id="catalogo-servicios" className="section scroll-mt-28 bg-slate-50/70 !py-16">
@@ -229,7 +268,7 @@ export default function ServicesTabs() {
                 className="w-full pl-12 pr-4 py-3.5 bg-white border border-gray-200 rounded-lg text-sm shadow-sm focus:outline-none focus:border-[#1e3a8a] focus:ring-2 focus:ring-blue-100 transition-all"
               />
               {searchQuery && (
-                <button 
+                <button
                   onClick={() => setSearchQuery('')}
                   className="absolute right-4 text-xs font-bold text-gray-400 hover:text-gray-600 bg-gray-100 px-2 py-1 rounded-md"
                 >
@@ -248,7 +287,7 @@ export default function ServicesTabs() {
             </div>
             <div>
               <span className="block text-xs font-bold text-gray-900">Normativa Vigente</span>
-              <span className="text-[0.75rem] text-gray-500">Aprobación MVCS & ANA</span>
+              <span className="text-[0.75rem] text-gray-500">RNE, AASHTO, ASCE, ACI, AISC</span>
             </div>
           </div>
 
@@ -290,11 +329,10 @@ export default function ServicesTabs() {
             return (
               <button
                 key={category.id}
-                  className={`py-3 px-5 rounded-lg text-sm font-semibold cursor-pointer transition-all duration-300 flex items-center gap-2.5 shadow-sm border ${
-                  isActive 
-                    ? 'bg-gradient-to-r from-[#1e3a8a] to-[#2563eb] text-white border-transparent shadow-lg shadow-blue-900/20 -translate-y-0.5' 
+                className={`py-3 px-5 rounded-lg text-sm font-semibold cursor-pointer transition-all duration-300 flex items-center gap-2.5 shadow-sm border ${isActive
+                    ? 'bg-gradient-to-r from-[#1e3a8a] to-[#2563eb] text-white border-transparent shadow-lg shadow-blue-900/20 -translate-y-0.5'
                     : 'bg-white border-gray-200 text-gray-700 hover:border-blue-300 hover:text-[#1e3a8a] hover:bg-blue-50/50'
-                }`}
+                  }`}
                 onClick={() => selectCategory(category.id)}
                 aria-pressed={isActive}
               >
@@ -309,7 +347,7 @@ export default function ServicesTabs() {
 
         {/* Contenido Activo animado */}
         <AnimatePresence mode="wait">
-          <motion.div 
+          <motion.div
             key={activeCategory.id}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -373,18 +411,18 @@ export default function ServicesTabs() {
 
               {/* Watermark Logo Badge (Top-Left) */}
               <div className="absolute top-5 left-5 bg-white/90 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-lg flex items-center gap-2.5 border border-white/50">
-                <Image 
-                  src="/logo.png" 
-                  alt="CIVILAM Logo" 
-                  width={26} 
-                  height={26} 
-                  className="object-contain" 
+                <Image
+                  src="/logo.png"
+                  alt="CIVILAM Logo"
+                  width={26}
+                  height={26}
+                  className="object-contain"
                 />
                 <span className="font-extrabold text-xs tracking-wider text-[#1e3a8a]">CIVILAM</span>
               </div>
 
               {/* Badge Garantía de Proyecto (Bottom) */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.4 }}
