@@ -54,7 +54,7 @@ export default function Hero() {
               ['03', 'Acompañamiento integral'],
             ].map(([number, label]) => (
               <div key={number} className="flex items-center gap-4 border-white/20 py-4 sm:border-r sm:px-5 first:pl-0 last:border-r-0">
-                <span className="font-mono text-xs text-[#e5a72a]">{number}</span>
+                <span className="font-sans text-xs text-[#e5a72a]">{number}</span>
                 <span className="text-sm font-medium text-slate-200">{label}</span>
               </div>
             ))}

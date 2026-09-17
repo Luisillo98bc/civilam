@@ -18,7 +18,7 @@ export default function EngineeringProcess() {
           <ol className="grid border-l border-slate-300 sm:grid-cols-2">
             {steps.map(([number, title, description]) => (
               <li key={number} className="relative border-b border-r border-slate-300 p-7 sm:p-9">
-                <span className="absolute -left-3 top-9 flex size-6 items-center justify-center bg-[#102a43] font-mono text-[9px] text-white">{number}</span>
+                <span className="absolute -left-3 top-9 flex size-6 items-center justify-center bg-[#102a43] font-sans text-[9px] text-white">{number}</span>
                 <h3 className="text-2xl font-semibold text-[#102a43]">{title}</h3>
                 <p className="mt-4 text-sm leading-6 text-slate-600">{description}</p>
               </li>

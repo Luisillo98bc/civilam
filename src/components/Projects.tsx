@@ -55,7 +55,7 @@ export default function Projects() {
         {projects.length ? (
           <div className="mt-8 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project) => (
-              <div 
+              <article
                 key={project.id} 
                 className="bg-white border border-gray-200 p-5 md:p-6 shadow-sm flex flex-col justify-between"
               >
@@ -66,12 +66,12 @@ export default function Projects() {
 
                 {/* Image */}
                 <div className="relative aspect-[16/10] w-full overflow-hidden bg-gray-100 border border-gray-200">
-                  <Image 
-                    src={project.image} 
-                    alt={project.title} 
-                    fill 
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
-                    className="object-cover" 
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover"
                   />
                 </div>
 
@@ -79,7 +79,7 @@ export default function Projects() {
                 <p className="mt-5 text-[#111827] font-semibold text-xs leading-relaxed tracking-wide uppercase">
                   {project.title}
                 </p>
-              </div>
+              </article>
             ))}
           </div>
         ) : (

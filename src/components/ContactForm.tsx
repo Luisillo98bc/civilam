@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import { submitContactForm } from '@/app/actions/contact';
 import Link from 'next/link';
 import { FaCalculator, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { contact } from '@/lib/site';
+import { isValidEmail, isValidPhone, normalizeText } from '@/lib/form-validation';
 import peruLocations from '@/lib/peru-locations.json';
 
 const locationNameOverrides: Record<string, string> = {
@@ -24,6 +24,7 @@ export default function ContactForm() {
   const [activeTab, setActiveTab] = useState<'express' | 'standard'>('express');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [whatsappUrl, setWhatsappUrl] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
   // Estados del Cotizador Express
@@ -51,31 +52,75 @@ export default function ContactForm() {
     return () => window.removeEventListener('hashchange', syncTabWithHash);
   }, []);
 
-  const handleStandardSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleStandardSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setErrorMessage('');
-    
-    const formData = new FormData(e.currentTarget);
 
-    try {
-      const result = await submitContactForm(null, formData);
-      if (result.success) {
-        setIsSuccess(true);
-        window.gtag?.('event', 'contact_form_submit', { service: String(formData.get('service') || 'general') });
-      } else {
-        setErrorMessage(result.error || 'Hubo un problema enviando el mensaje. Inténtalo nuevamente.');
-      }
-    } catch {
-      setErrorMessage('No pudimos conectar con el servicio. Inténtalo nuevamente o utiliza WhatsApp.');
-    } finally {
+    const formData = new FormData(e.currentTarget);
+    const name = normalizeText(formData.get('name'), 100);
+    const phone = normalizeText(formData.get('phone'), 30);
+    const email = normalizeText(formData.get('email'), 254).toLowerCase();
+    const service = normalizeText(formData.get('service'), 80);
+    const message = normalizeText(formData.get('message'), 3000);
+    const consent = formData.get('privacy') === 'on';
+    const serviceField = e.currentTarget.elements.namedItem('service');
+    const serviceLabel = serviceField instanceof HTMLSelectElement
+      ? serviceField.selectedOptions[0]?.textContent?.trim() || service
+      : service;
+
+    if (name.length < 2 || !isValidPhone(phone) || !isValidEmail(email) || !service || message.length < 10 || !consent) {
+      setErrorMessage('Revisa los campos obligatorios y acepta la política de privacidad.');
       setIsSubmitting(false);
+      return;
     }
+
+    const whatsappMessage = [
+      '*NUEVA SOLICITUD DE EVALUACIÓN*',
+      '━━━━━━━━━━━━━━━━━━━━',
+      '🏗️ *CIVILAM · Contacto web*',
+      '',
+      '👤 *Nombre:* ' + name,
+      '📞 *Teléfono:* ' + phone,
+      '✉️ *Correo:* ' + email,
+      '🧭 *Servicio solicitado:* ' + serviceLabel,
+      '',
+      '📝 *Detalles del proyecto*',
+      message,
+      '',
+      '✅ *Consentimiento:* El cliente acepta el tratamiento de sus datos para atender esta solicitud.',
+      '',
+      '_Mensaje recibido desde civilam.com_'
+    ].join('\n');
+    const url = contact.whatsapp + '?text=' + encodeURIComponent(whatsappMessage);
+
+    setWhatsappUrl(url);
+    setIsSuccess(true);
+    window.gtag?.('event', 'contact_form_whatsapp', { service });
+    window.open(url, '_blank', 'noopener,noreferrer');
+    setIsSubmitting(false);
   };
 
   const getExpressWhatsappUrl = () => {
-    const text = `Hola CIVILAM, quisiera cotizar el siguiente proyecto:\n- Servicio: ${expressService}\n- Ubicación: ${expressLocation}\n- Tipo de Entidad: ${expressEntityType}\n¿Me podrían brindar una estimación o propuesta inicial?`;
-    return `${contact.whatsapp}?text=${encodeURIComponent(text)}`;
+    const text = [
+      '*SOLICITUD DE COTIZACIÓN EXPRESS*',
+      '━━━━━━━━━━━━━━━━━━━━',
+      '🏗️ *CIVILAM · Evaluación inicial*',
+      '',
+      '🧰 *Servicio requerido*',
+      expressService,
+      '',
+      '📍 *Ubicación del proyecto*',
+      expressLocation,
+      '',
+      '🏢 *Tipo de entidad:* ' + expressEntityType,
+      '',
+      '📌 *Siguiente paso*',
+      'Deseo recibir una orientación inicial sobre alcance, entregables y próximos pasos.',
+      '',
+      '_Solicitud preparada desde civilam.com_'
+    ].join('\n');
+    return contact.whatsapp + '?text=' + encodeURIComponent(text);
   };
 
   return (
@@ -83,6 +128,7 @@ export default function ContactForm() {
       {/* Selector de Pestañas: Cotizador Express vs Formulario Tradicional */}
       <div id="cotizador" className="flex w-full max-w-xl gap-2 scroll-mt-32">
         <button
+          type="button"
           onClick={() => setActiveTab('express')}
           className={`flex min-h-12 flex-1 items-center justify-center gap-2 border px-5 py-3.5 text-xs font-bold uppercase tracking-wider transition sm:text-sm ${
             activeTab === 'express'
@@ -95,6 +141,7 @@ export default function ContactForm() {
         </button>
 
         <button
+          type="button"
           id="mensaje"
           onClick={() => setActiveTab('standard')}
           className={`flex min-h-12 flex-1 items-center justify-center gap-2 border px-5 py-3.5 text-xs font-bold uppercase tracking-wider transition sm:text-sm ${
@@ -173,14 +220,15 @@ export default function ContactForm() {
 
               {/* Paso 1: Servicio */}
               <div>
-                <label className="text-xs font-bold uppercase tracking-wider text-gray-500 block mb-2">1. Tipo de Servicio Requerido</label>
+                <label htmlFor="express-service" className="text-xs font-bold uppercase tracking-wider text-gray-500 block mb-2">1. Tipo de Servicio Requerido</label>
                 <textarea
+                  id="express-service"
                   value={expressService}
                   onChange={(e) => setExpressService(e.target.value)}
                   rows={3}
                   maxLength={300}
                   placeholder="Escribe el servicio que necesitas, por ejemplo: expediente técnico para una carretera..."
-                  className="w-full resize-y rounded-xl border border-gray-200 bg-slate-50 p-3 text-sm text-gray-800 transition-all placeholder:text-gray-400 focus:border-[#1e3a8a] focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-100"
+                      className="w-full resize-y rounded-sm border border-gray-200 bg-slate-50 p-3 text-sm text-gray-800 transition-all placeholder:text-gray-400 focus:border-[#1e3a8a] focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-100"
                 />
                 <p className="mt-2 text-[0.7rem] text-gray-500">Describe brevemente el servicio para orientarte mejor.</p>
               </div>
@@ -199,7 +247,7 @@ export default function ContactForm() {
                         setExpressProvince('');
                         setExpressDistrict('');
                       }}
-                      className="w-full rounded-xl border border-gray-200 bg-slate-50 p-3 text-xs font-bold text-gray-800 focus:border-[#1e3a8a] focus:outline-none focus:ring-2 focus:ring-blue-100"
+                      className="w-full rounded-sm border border-gray-200 bg-slate-50 p-3 text-xs font-bold text-gray-800 focus:border-[#1e3a8a] focus:outline-none focus:ring-2 focus:ring-blue-100"
                     >
                       <option value="">Busca o selecciona una región...</option>
                       {peruLocations.map((region) => <option key={region.code} value={region.code}>{displayLocationName(region.name)}</option>)}
@@ -216,7 +264,7 @@ export default function ContactForm() {
                         setExpressProvince(e.target.value);
                         setExpressDistrict('');
                       }}
-                      className="w-full rounded-xl border border-gray-200 bg-slate-50 p-3 text-xs font-bold text-gray-800 focus:border-[#1e3a8a] focus:outline-none focus:ring-2 focus:ring-blue-100 disabled:cursor-not-allowed disabled:opacity-50"
+                      className="w-full rounded-sm border border-gray-200 bg-slate-50 p-3 text-xs font-bold text-gray-800 focus:border-[#1e3a8a] focus:outline-none focus:ring-2 focus:ring-blue-100 disabled:cursor-not-allowed disabled:opacity-50"
                     >
                       <option value="">{selectedRegion ? 'Busca o selecciona una provincia...' : 'Primero elige una región'}</option>
                       {selectedRegion?.provinces.map((province) => <option key={province.code} value={province.code}>{displayLocationName(province.name)}</option>)}
@@ -230,7 +278,7 @@ export default function ContactForm() {
                       value={expressDistrict}
                       disabled={!selectedProvince}
                       onChange={(e) => setExpressDistrict(e.target.value)}
-                      className="w-full rounded-xl border border-gray-200 bg-slate-50 p-3 text-xs font-bold text-gray-800 focus:border-[#1e3a8a] focus:outline-none focus:ring-2 focus:ring-blue-100 disabled:cursor-not-allowed disabled:opacity-50"
+                      className="w-full rounded-sm border border-gray-200 bg-slate-50 p-3 text-xs font-bold text-gray-800 focus:border-[#1e3a8a] focus:outline-none focus:ring-2 focus:ring-blue-100 disabled:cursor-not-allowed disabled:opacity-50"
                     >
                       <option value="">{selectedProvince ? 'Busca o selecciona un distrito...' : 'Primero elige una provincia'}</option>
                       {selectedProvince?.districts.map((district) => <option key={district} value={district}>{displayLocationName(district)}</option>)}
@@ -247,7 +295,7 @@ export default function ContactForm() {
                   id="express-entity"
                   value={expressEntityType}
                   onChange={(e) => setExpressEntityType(e.target.value)}
-                  className="w-full rounded-xl border border-gray-200 bg-slate-50 p-3 text-xs font-bold text-gray-800 focus:border-[#1e3a8a] focus:outline-none focus:ring-2 focus:ring-blue-100"
+                  className="w-full rounded-sm border border-gray-200 bg-slate-50 p-3 text-xs font-bold text-gray-800 focus:border-[#1e3a8a] focus:outline-none focus:ring-2 focus:ring-blue-100"
                 >
                   <option value="Entidades Públicas">Entidades Públicas</option>
                   <option value="Entidades Privadas">Entidades Privadas</option>
@@ -264,7 +312,7 @@ export default function ContactForm() {
                 onClick={(e) => {
                   if (!isExpressReady) e.preventDefault();
                 }}
-                className={`w-full inline-flex items-center justify-center gap-2.5 rounded-xl px-6 py-4 text-xs font-extrabold uppercase tracking-wider text-white shadow-lg transition-all ${isExpressReady ? 'bg-emerald-600 hover:bg-emerald-700 hover:shadow-xl' : 'cursor-not-allowed bg-gray-300'}`}
+                className={`w-full inline-flex items-center justify-center gap-2.5 rounded-sm px-6 py-4 text-xs font-extrabold uppercase tracking-wider text-white shadow-lg transition-all ${isExpressReady ? 'bg-emerald-600 hover:bg-emerald-700 hover:shadow-xl' : 'cursor-not-allowed bg-gray-300'}`}
               >
                 <FaWhatsapp className="text-xl" />
                 {isExpressReady ? 'Enviar Cotización a WhatsApp' : 'Completa los datos para continuar'}
@@ -275,9 +323,12 @@ export default function ContactForm() {
               <div className="text-[#10B981] mb-4">
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
               </div>
-              <h3 className="text-2xl text-primary-blue mb-2">¡Mensaje Enviado!</h3>
-              <p className="text-text-gray leading-relaxed">Gracias por contactarnos. Nos pondremos en comunicación contigo en las próximas 24 horas.</p>
-              <button className="btn-primary mt-6" onClick={() => setIsSuccess(false)}>Enviar otro mensaje</button>
+              <h3 className="text-2xl text-primary-blue mb-2">WhatsApp listo para enviar</h3>
+              <p className="text-text-gray leading-relaxed">Preparamos tu consulta y abrimos el WhatsApp de CIVILAM. Revisa el mensaje y pulsa <strong>Enviar</strong> para que llegue a la empresa.</p>
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                {whatsappUrl && <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn-primary bg-[#25D366] hover:bg-[#1fb855]">Abrir WhatsApp <FaWhatsapp aria-hidden="true" /></a>}
+                <button type="button" className="btn-secondary" onClick={() => { setIsSuccess(false); setWhatsappUrl(''); }}>Editar mensaje</button>
+              </div>
             </div>
           ) : (
             <form className="flex flex-col gap-6" onSubmit={handleStandardSubmit}>
@@ -290,17 +341,17 @@ export default function ContactForm() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
                   <label htmlFor="name" className="text-[0.85rem] font-semibold text-text-dark ml-2">Nombre Completo</label>
-                  <input className="w-full px-6 py-3.5 border border-border-color rounded-full bg-bg-light font-inherit text-[0.95rem] text-text-dark transition-all duration-300 focus:outline-none focus:border-accent-red focus:shadow-[0_0_0_3px_var(--accent-red-glow)] focus:bg-bg-white" type="text" id="name" name="name" autoComplete="name" required placeholder="Ej. Juan Pérez" />
+                  <input className="w-full px-6 py-3.5 border border-border-color rounded-sm bg-bg-light font-inherit text-[0.95rem] text-text-dark transition-all duration-300 focus:outline-none focus:border-accent-red focus:shadow-[0_0_0_3px_var(--accent-red-glow)] focus:bg-bg-white" type="text" id="name" name="name" autoComplete="name" required placeholder="Ej. Juan Pérez" />
                 </div>
                 <div className="flex flex-col gap-2">
                   <label htmlFor="phone" className="text-[0.85rem] font-semibold text-text-dark ml-2">Teléfono / Celular</label>
-                  <input className="w-full px-6 py-3.5 border border-border-color rounded-full bg-bg-light font-inherit text-[0.95rem] text-text-dark transition-all duration-300 focus:outline-none focus:border-accent-red focus:shadow-[0_0_0_3px_var(--accent-red-glow)] focus:bg-bg-white" type="tel" id="phone" name="phone" autoComplete="tel" inputMode="tel" required placeholder="Ej. 987 654 321" />
+                  <input className="w-full px-6 py-3.5 border border-border-color rounded-sm bg-bg-light font-inherit text-[0.95rem] text-text-dark transition-all duration-300 focus:outline-none focus:border-accent-red focus:shadow-[0_0_0_3px_var(--accent-red-glow)] focus:bg-bg-white" type="tel" id="phone" name="phone" autoComplete="tel" inputMode="tel" required placeholder="Ej. 987 654 321" />
                 </div>
               </div>
 
               <div className="flex flex-col gap-2">
                 <label htmlFor="email" className="text-[0.85rem] font-semibold text-text-dark ml-2">Correo Electrónico</label>
-                <input className="w-full px-6 py-3.5 border border-border-color rounded-full bg-bg-light font-inherit text-[0.95rem] text-text-dark transition-all duration-300 focus:outline-none focus:border-accent-red focus:shadow-[0_0_0_3px_var(--accent-red-glow)] focus:bg-bg-white" type="email" id="email" name="email" autoComplete="email" inputMode="email" required placeholder="juan@ejemplo.com" />
+                <input className="w-full px-6 py-3.5 border border-border-color rounded-sm bg-bg-light font-inherit text-[0.95rem] text-text-dark transition-all duration-300 focus:outline-none focus:border-accent-red focus:shadow-[0_0_0_3px_var(--accent-red-glow)] focus:bg-bg-white" type="email" id="email" name="email" autoComplete="email" inputMode="email" required placeholder="juan@ejemplo.com" />
               </div>
 
               <label className="flex items-start gap-3 text-sm text-text-gray">
@@ -310,19 +361,25 @@ export default function ContactForm() {
 
               <div className="flex flex-col gap-2">
                 <label htmlFor="service" className="text-[0.85rem] font-semibold text-text-dark ml-2">Servicio de Interés</label>
-                <select className="w-full px-6 py-3.5 border border-border-color rounded-full bg-bg-light font-inherit text-[0.95rem] text-text-dark transition-all duration-300 focus:outline-none focus:border-accent-red focus:shadow-[0_0_0_3px_var(--accent-red-glow)] focus:bg-bg-white appearance-none relative" id="service" name="service" required defaultValue="" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'%234b5563\'%3E%3Cpath stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'M19 9l-7 7-7-7\'%3E%3C/path%3E%3C/svg%3E")', backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1.5rem center', backgroundSize: '1.2rem' }}>
+                <select className="w-full px-6 py-3.5 border border-border-color rounded-sm bg-bg-light font-inherit text-[0.95rem] text-text-dark transition-all duration-300 focus:outline-none focus:border-accent-red focus:shadow-[0_0_0_3px_var(--accent-red-glow)] focus:bg-bg-white appearance-none relative" id="service" name="service" required defaultValue="" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'%234b5563\'%3E%3Cpath stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'M19 9l-7 7-7-7\'%3E%3C/path%3E%3C/svg%3E")', backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1.5rem center', backgroundSize: '1.2rem' }}>
                   <option value="" disabled>Selecciona un servicio...</option>
                   <option value="expedientes">Expedientes Técnicos</option>
-                  <option value="agua">Agua Potable y Saneamiento</option>
-                  <option value="mantenimiento">Operación y Mantenimiento</option>
-                  <option value="construccion">Construcción en General</option>
-                  <option value="otro">Otro</option>
+                  <option value="topografia">Topografía, Geodesia y Fotogrametría</option>
+                  <option value="mantenimiento">Mantenimiento, Limpieza y Desinfección de Sistemas de Agua Potable y Saneamiento</option>
+                  <option value="hidrologia">Estudios de Hidrología e Hidráulica</option>
+                  <option value="modelamiento">Modelamiento Hidrológico e Hidráulico</option>
+                  <option value="evar">Evaluación de Riesgos (EVAR)</option>
+                  <option value="monitoreos">Monitoreos de Agua, Aire, Suelo y Ruido</option>
+                  <option value="impacto">Estudios de Impacto Ambiental (EIA)</option>
+                  <option value="ambiental">Servicios en Medio Ambiente</option>
+                  <option value="mapas">Mapas Base y Temáticos</option>
+                  <option value="arqueologia">Servicios en Arqueología</option>
                 </select>
               </div>
 
               <div className="flex flex-col gap-2">
                 <label htmlFor="message" className="text-[0.85rem] font-semibold text-text-dark ml-2">Detalles del Proyecto</label>
-                <textarea className="w-full px-6 py-4 border border-border-color rounded-3xl bg-bg-light font-inherit text-[0.95rem] text-text-dark transition-all duration-300 focus:outline-none focus:border-accent-red focus:shadow-[0_0_0_3px_var(--accent-red-glow)] focus:bg-bg-white resize-y min-h-[140px]" id="message" name="message" rows={4} required placeholder="Cuéntanos un poco sobre tu necesidad..."></textarea>
+                <textarea className="w-full px-6 py-4 border border-border-color rounded-sm bg-bg-light font-inherit text-[0.95rem] text-text-dark transition-all duration-300 focus:outline-none focus:border-accent-red focus:shadow-[0_0_0_3px_var(--accent-red-glow)] focus:bg-bg-white resize-y min-h-[140px]" id="message" name="message" rows={4} required placeholder="Cuéntanos un poco sobre tu necesidad..."></textarea>
               </div>
 
               {errorMessage && <p role="alert" aria-live="assertive" className="border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">{errorMessage}</p>}

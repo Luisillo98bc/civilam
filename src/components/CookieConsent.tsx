@@ -7,7 +7,8 @@ import { analyticsConsentKey } from '@/lib/site';
 type Consent = 'accepted' | 'rejected';
 
 export default function CookieConsent() {
-  const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+  const rawMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim();
+  const measurementId = rawMeasurementId && /^G-[A-Z0-9]+$/i.test(rawMeasurementId) ? rawMeasurementId : undefined;
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {

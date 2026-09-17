@@ -164,7 +164,7 @@ export default function BrochureServices() {
                     className="object-cover transition duration-700 group-hover:scale-105"
                   />
                 </div>
-                <span className="mt-6 block font-mono text-xs font-bold text-[#9a6410]">{family.number}</span>
+                <span className="mt-6 block font-sans text-xs font-bold text-[#9a6410]">{family.number}</span>
                 <h3 className="mt-2 text-lg font-bold leading-tight text-[#102a43] group-hover:text-[#1e3a8a] transition-colors">{family.title}</h3>
                 <ul className="mt-4 border-t border-slate-300 pt-3">
                   {family.items.map((item, idx) => (

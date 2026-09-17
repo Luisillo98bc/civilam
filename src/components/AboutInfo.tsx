@@ -17,7 +17,7 @@ export default function AboutInfo() {
         <div className="site-wrapper grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center lg:gap-20">
           <div className="relative aspect-[4/5] overflow-hidden bg-slate-200">
             <Image src="/nosotros-coordinacion-obra.png" alt="Ingenieros coordinando un proyecto de construcción en obra" fill sizes="(max-width: 1024px) 100vw, 45vw" className="object-cover saturate-[.75]" />
-            <span className="absolute bottom-0 left-0 bg-[#e5a72a] px-5 py-4 font-mono text-xs font-bold text-[#102a43]">INGENIERÍA · DISEÑO · CONSTRUCCIÓN</span>
+            <span className="absolute bottom-0 left-0 bg-[#e5a72a] px-5 py-4 font-sans text-xs font-bold text-[#102a43]">INGENIERÍA · DISEÑO · CONSTRUCCIÓN</span>
           </div>
           <div>
             <p className="technical-label text-[#9a6410]">QUIÉNES SOMOS</p>
@@ -43,7 +43,7 @@ export default function AboutInfo() {
               <article key={number} className="group rounded-sm border border-slate-200 bg-[#fbfaf7] p-7 transition hover:-translate-y-1 hover:border-[#e5a72a] hover:shadow-[0_12px_30px_rgba(16,42,67,.08)] sm:p-8">
                 <div className="flex items-center justify-between">
                   <span className="flex size-11 items-center justify-center rounded-full bg-[#e5a72a]/15 text-xl text-[#b87808] transition group-hover:bg-[#e5a72a] group-hover:text-[#102a43]"><Icon aria-hidden="true" /></span>
-                  <span className="font-mono text-xs font-bold text-[#9a6410]">{number}</span>
+                  <span className="font-sans text-xs font-bold text-[#9a6410]">{number}</span>
                 </div>
                 <h3 className="mt-6 text-xl font-semibold leading-tight text-[#102a43]">{title}</h3>
                 <p className="mt-4 text-sm leading-6 text-slate-600">{text}</p>

@@ -3,6 +3,7 @@
 
 @theme {
   --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+  --font-mono: "Inter", "Segoe UI", Arial, sans-serif;
   --color-primary-blue: var(--primary-blue);
   --color-secondary-blue: var(--secondary-blue);
   --color-accent-red: var(--accent-red);
@@ -94,8 +95,12 @@
     background: var(--accent-red);
   }
 
+  h1, h2, h3, h4, h5, h6,
+  button, input, textarea, select {
+    font-family: inherit;
+  }
+
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
     line-height: 1.1;
     letter-spacing: -0.02em;
   }
@@ -159,7 +164,7 @@
   }
 
   .technical-label {
-    @apply font-mono text-[0.7rem] font-bold uppercase tracking-[0.18em];
+    @apply font-sans text-[0.7rem] font-bold uppercase tracking-[0.18em];
   }
 
   .editorial-title {

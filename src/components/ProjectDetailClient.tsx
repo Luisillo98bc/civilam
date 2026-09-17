@@ -4,10 +4,14 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-interface Project { id: number; title: string; category: string; image: string; description: string; client: string; location: string; year: string; gallery?: string[] }
+interface Project { id: number; title: string; category: string; image: string; description?: string; client?: string; location?: string; year?: string; gallery?: string[] }
 
 export default function ProjectDetailClient({ project }: { project: Project }) {
   const images = Array.from(new Set([project.image, ...(project.gallery || [])]));
+  const description = project.description || `Registro de experiencia de CIVILAM en ${project.category.toLowerCase()}. El alcance detallado y los entregables se confirman según los antecedentes de cada proyecto.`;
+  const client = project.client || 'Información no publicada';
+  const location = project.location || 'Perú';
+  const year = project.year || 'No informado';
   const [active, setActive] = useState<number | null>(null);
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -28,9 +32,9 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
         <div className="absolute inset-0 blueprint-grid opacity-15" />
         <div className="site-wrapper relative z-10 flex min-h-[620px] flex-col justify-end pb-16 pt-32">
           <Link href="/proyectos" className="mb-12 inline-flex w-fit border-b border-white/50 pb-1 text-sm font-semibold text-white">← Volver a proyectos</Link>
-          <p className="technical-label text-[#e5a72a]">{project.category} · {project.year}</p>
+          <p className="technical-label text-[#e5a72a]">{project.category} · {year}</p>
           <h1 className="mt-5 max-w-4xl text-[clamp(2.7rem,6vw,5.6rem)] font-bold leading-[.97] tracking-[-.055em] text-white">{project.title}</h1>
-          <p className="mt-6 text-lg text-slate-200">{project.location}</p>
+          <p className="mt-6 text-lg text-slate-200">{location}</p>
         </div>
       </section>
 
@@ -39,9 +43,9 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
           <article>
             <p className="technical-label text-[#9a6410]">DESCRIPCIÓN Y ALCANCE</p>
             <h2 className="editorial-title mt-5">Información del proyecto</h2>
-            <p className="mt-8 max-w-3xl text-lg leading-8 text-slate-700">{project.description}</p>
+            <p className="mt-8 max-w-3xl text-lg leading-8 text-slate-700">{description}</p>
             <div className="mt-12 grid gap-px bg-slate-300 sm:grid-cols-3">
-              {[['Cliente', project.client], ['Ubicación', project.location], ['Año', project.year]].map(([label, value]) => <div key={label} className="bg-[#fbfaf7] p-6"><dt className="technical-label text-slate-500">{label}</dt><dd className="mt-3 font-semibold text-[#102a43]">{value}</dd></div>)}
+              {[['Cliente', client], ['Ubicación', location], ['Año', year]].map(([label, value]) => <div key={label} className="bg-[#fbfaf7] p-6"><dt className="technical-label text-slate-500">{label}</dt><dd className="mt-3 font-semibold text-[#102a43]">{value}</dd></div>)}
             </div>
           </article>
           <aside className="h-fit border-t-4 border-[#e5a72a] bg-[#102a43] p-8 text-white lg:sticky lg:top-32">
@@ -55,7 +59,7 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
 
       <section className="section bg-[#f4f2ed]">
         <div className="site-wrapper">
-          <div className="flex items-end justify-between border-b border-slate-300 pb-8"><div><p className="technical-label text-[#9a6410]">REGISTRO VISUAL</p><h2 className="editorial-title mt-5">Galería del proyecto</h2></div><span className="font-mono text-xs text-slate-500">{images.length} IMÁGENES</span></div>
+          <div className="flex items-end justify-between border-b border-slate-300 pb-8"><div><p className="technical-label text-[#9a6410]">REGISTRO VISUAL</p><h2 className="editorial-title mt-5">Galería del proyecto</h2></div><span className="font-sans text-xs text-slate-500">{images.length} IMÁGENES</span></div>
           <div className="grid gap-px bg-slate-300 sm:grid-cols-2 lg:grid-cols-3">{images.map((image, index) => <button key={image} onClick={() => setActive(index)} className="group relative aspect-[4/3] overflow-hidden bg-slate-200" aria-label={`Ampliar imagen ${index + 1}`}><Image src={image} alt={`${project.title}, imagen ${index + 1}`} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-700 group-hover:scale-[1.035]" /></button>)}</div>
         </div>
       </section>

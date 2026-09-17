@@ -27,7 +27,7 @@ export default function Certifications() {
           {references.map((reference, index) => {
             const content = (
               <>
-                <span className="font-mono text-xs text-[#9a6410]">0{index + 1}</span>
+                <span className="font-sans text-xs text-[#9a6410]">0{index + 1}</span>
                 <h3 className="mt-5 text-xl font-semibold text-primary-blue">{reference.title}</h3>
                 <p className="mt-4 text-sm leading-6 text-text-gray">{reference.description}</p>
                 {reference.href && <span className="mt-6 inline-flex border-b border-primary-blue pb-1 text-sm font-semibold text-primary-blue">Consultar fuente oficial →</span>}

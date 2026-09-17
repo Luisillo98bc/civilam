@@ -12,7 +12,10 @@ export type FormResult = {
 };
 
 const WINDOW_MS = 10 * 60 * 1000;
-const MAX_REQUESTS = Number(process.env.RATE_LIMIT_MAX_REQUESTS || 5);
+const configuredMaxRequests = Number.parseInt(process.env.RATE_LIMIT_MAX_REQUESTS || "5", 10);
+const MAX_REQUESTS = Number.isFinite(configuredMaxRequests) && configuredMaxRequests > 0
+  ? Math.min(configuredMaxRequests, 100)
+  : 5;
 const attempts = new Map<string, { count: number; resetAt: number }>();
 
 async function isRateLimited(scope: string) {
@@ -42,7 +45,9 @@ async function isRateLimited(scope: string) {
       }
       return result > MAX_REQUESTS;
     } catch {
-      // Fallback local para desarrollo o una caída temporal del proveedor.
+      // Fail closed in production when the shared limiter is unavailable.
+      if (process.env.NODE_ENV === "production") return true;
+      // Local fallback is only intended for development.
     }
   }
 
@@ -76,13 +81,13 @@ function saveDevelopmentSubmission(fileName: string, data: Record<string, string
 async function sendEmail(subject: string, html: string) {
   const apiKey = process.env.RESEND_API_KEY;
   const contactEmail = process.env.CONTACT_EMAIL;
-  const fromEmail = process.env.RESEND_FROM_EMAIL || "CIVILAM Web <onboarding@resend.dev>";
+  const fromEmail = process.env.RESEND_FROM_EMAIL?.trim();
 
-  if (!apiKey || !contactEmail) return false;
+  if (!apiKey || !contactEmail || !fromEmail) return false;
 
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 8_000);
   try {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 8_000);
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
@@ -92,10 +97,11 @@ async function sendEmail(subject: string, html: string) {
       body: JSON.stringify({ from: fromEmail, to: contactEmail, subject, html }),
       signal: controller.signal,
     });
-    clearTimeout(timeout);
     return response.ok;
   } catch {
     return false;
+  } finally {
+    clearTimeout(timeout);
   }
 }
 

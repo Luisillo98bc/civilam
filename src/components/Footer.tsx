@@ -36,7 +36,7 @@ export default function Footer() {
       {/* Background ambient glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(30,58,138,0.15)_0%,transparent_70%)] pointer-events-none blur-3xl"></div>
       <div className="site-wrapper relative z-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-[2.5fr_1fr_1fr_1.5fr_1.5fr] gap-10 pb-16">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-[1.25fr_.8fr_2.1fr_1.1fr_1.25fr] lg:items-start lg:gap-5 pb-16">
           {/* Column 1: Brand info */}
           <div className="flex flex-col">
             <div className="flex items-center gap-3 mb-4">
@@ -67,9 +67,9 @@ export default function Footer() {
           </div>
 
           {/* Column 3: Servicios Links (2 columnas) */}
-          <div className="flex flex-col xl:col-span-2">
-            <h4 className="text-base font-bold mb-5 text-[#F8FAFC] tracking-[0.01em]">Nuestros Servicios</h4>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
+          <div className="flex min-w-0 flex-col items-center">
+            <h4 className="mb-5 text-center text-base font-bold tracking-[0.01em] text-[#F8FAFC]">Nuestros Servicios</h4>
+            <ul className="grid w-full grid-cols-1 gap-x-4 gap-y-2.5 text-center sm:grid-cols-2">
               <li><Link href="/servicios#expedientes" scroll={false} className="text-[0.8rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">1. Expedientes Técnicos</Link></li>
               <li><Link href="/servicios#topografia" scroll={false} className="text-[0.8rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">2. Topografía y Fotogrametría</Link></li>
               <li><Link href="/servicios#mantenimiento" scroll={false} className="text-[0.8rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">3. Mantenimiento de Agua</Link></li>

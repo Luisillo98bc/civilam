@@ -9,7 +9,8 @@ declare global {
 }
 
 export default function Analytics() {
-  const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+  const rawMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim();
+  const measurementId = rawMeasurementId && /^G-[A-Z0-9]+$/i.test(rawMeasurementId) ? rawMeasurementId : undefined;
   const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {

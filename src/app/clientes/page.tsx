@@ -47,7 +47,7 @@ export default function ClientesPage() {
                   />
                 </div>
                 <div>
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-[#dc2626] font-bold block mb-1">
+                  <span className="text-[10px] font-sans uppercase tracking-widest text-[#dc2626] font-bold block mb-1">
                     {client.category}
                   </span>
                   <h3 className="text-base font-bold text-[#102a43] leading-snug mb-2">
@@ -87,7 +87,7 @@ export default function ClientesPage() {
                   />
                 </div>
                 <div>
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-[#9a6410] font-bold block mb-1">
+                  <span className="text-[10px] font-sans uppercase tracking-widest text-[#9a6410] font-bold block mb-1">
                     {client.category}
                   </span>
                   <h3 className="text-base font-bold text-[#102a43] leading-snug mb-2">

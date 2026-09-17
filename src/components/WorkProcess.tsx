@@ -62,7 +62,7 @@ export default function WorkProcess() {
         <ol className="relative mt-12 border-t border-slate-400">
           {phases.map((item) => (
             <li key={item.number} className="group grid gap-5 border-b border-slate-300 py-8 md:grid-cols-[90px_180px_1fr_280px] md:items-start md:gap-8 lg:py-10">
-              <span className="font-mono text-sm font-bold text-[#9a6410]">{item.number}</span>
+              <span className="font-sans text-sm font-bold text-[#9a6410]">{item.number}</span>
               <span className="technical-label text-slate-500">{item.phase}</span>
               <div>
                 <h3 className="text-2xl font-semibold tracking-[-.025em] text-[#102a43]">{item.title}</h3>

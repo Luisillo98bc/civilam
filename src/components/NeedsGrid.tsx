@@ -21,7 +21,7 @@ export default function NeedsGrid() {
           <div className="border-t border-slate-300">
             {needs.map(([number, title, description, href]) => (
               <Link key={number} href={href} className="group grid gap-4 border-b border-slate-300 py-7 transition hover:bg-white/70 sm:grid-cols-[48px_1fr_36px] sm:px-4">
-                <span className="font-mono text-xs text-[#9a6410]">{number}</span>
+                <span className="font-sans text-xs text-[#9a6410]">{number}</span>
                 <span>
                   <strong className="block text-xl text-[#102a43] sm:text-2xl">{title}</strong>
                   <span className="mt-2 block max-w-2xl text-sm leading-6 text-slate-600">{description}</span>

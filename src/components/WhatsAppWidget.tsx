@@ -6,7 +6,18 @@ import { contact } from '@/lib/site';
 
 export default function WhatsAppWidget() {
   const [showTooltip, setShowTooltip] = useState(false);
-  const message = "Hola, me gustaría solicitar información sobre sus servicios.";
+  const message = [
+    '*HOLA, EQUIPO CIVILAM*',
+    '━━━━━━━━━━━━━━━━━━━━',
+    '🏗️ Me gustaría recibir información sobre sus servicios de ingeniería.',
+    '',
+    '📌 *Mi consulta:*',
+    'Quisiera conocer el servicio más adecuado para mi proyecto y los próximos pasos.',
+    '',
+    '💬 ¿Podrían orientarme, por favor?',
+    '',
+    '_Mensaje enviado desde civilam.com_',
+  ].join('\n');
   const url = `${contact.whatsapp}?text=${encodeURIComponent(message)}`;
 
   useEffect(() => {
