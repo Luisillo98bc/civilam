@@ -2,7 +2,7 @@ const sectors = ['Entidades públicas', 'Entidades Privadas'];
 
 export default function SectorStrip() {
   return (
-    <section aria-label="Sectores atendidos" className="border-b border-slate-300 bg-[#fbfaf7]">
+    <section aria-label="Sectores atendidos" className="border-b border-slate-300 bg-[#fbfaf7]" data-reveal="reveal-left">
       <div className="site-wrapper grid md:grid-cols-[220px_1fr]">
         <div className="flex items-center border-b border-slate-300 py-5 md:border-b-0 md:border-r">
           <span className="technical-label text-[#9a6410]">SECTORES ATENDIDOS</span>

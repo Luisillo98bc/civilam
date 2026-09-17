@@ -11,7 +11,7 @@ export default function ClientsMarquee() {
   return (
     <section className="py-14 bg-[#0a192f] text-white overflow-hidden border-y border-white/10">
       <div className="site-wrapper mb-8">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-b border-white/15 pb-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-b border-white/15 pb-6" data-reveal="reveal-left">
           <div>
             <p className="technical-label text-[#e5a72a]">RESPALDO INSTITUCIONAL</p>
             <h2 className="editorial-title mt-2 text-white text-2xl md:text-3xl">
@@ -28,7 +28,7 @@ export default function ClientsMarquee() {
       </div>
 
       {/* Infinite Logo Marquee Track */}
-      <div className="relative w-full overflow-hidden flex items-center py-4">
+      <div className="relative w-full overflow-hidden flex items-center py-4" data-reveal="reveal-scale" data-reveal-delay="1">
         {/* Left and Right Fade Overlays */}
         <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-[#0a192f] to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[#0a192f] to-transparent z-10 pointer-events-none" />
@@ -37,18 +37,21 @@ export default function ClientsMarquee() {
           {marqueeItems.map((client, idx) => (
             <div
               key={`${client.id}-${idx}`}
-              className="flex-shrink-0 w-44 md:w-56 bg-white/95 rounded-lg p-4 flex flex-col items-center justify-center border border-white/20 shadow-md hover:bg-white transition-all hover:scale-105 duration-300 group"
+              aria-hidden={idx >= clientsData.length}
+              className="group flex w-44 flex-shrink-0 flex-col items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] p-4 transition-transform duration-300 hover:scale-105 hover:border-white/20 hover:bg-white/[0.06] md:w-56"
             >
-              <div className="relative w-full h-16 md:h-20 flex items-center justify-center">
+              <div className="relative flex h-20 w-full items-center justify-center md:h-24">
                 <Image
                   src={client.image}
                   alt={client.name}
                   fill
-                  sizes="200px"
-                  className="object-contain p-1 filter drop-shadow-sm group-hover:scale-105 transition-transform"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 176px, 224px"
+                  quality={75}
+                  className="object-contain p-2 filter drop-shadow-sm transition-transform group-hover:scale-105"
                 />
               </div>
-              <span className="mt-2 text-[11px] font-bold text-[#102a43] text-center line-clamp-1 truncate w-full">
+              <span title={client.name} className="mt-3 min-h-10 w-full text-center text-xs font-semibold leading-5 tracking-[-0.01em] text-white/95 line-clamp-2 md:text-[13px]">
                 {client.name}
               </span>
             </div>

@@ -50,7 +50,7 @@ export default function FAQ() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div className="site-wrapper max-w-[850px]">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-reveal="reveal-left">
           <h4 className="section-subtitle">DUDAS COMUNES</h4>
           <h2 className="text-[2rem] md:text-[2.5rem] font-black text-primary-blue mb-4 tracking-tight">Preguntas Frecuentes</h2>
           <p className="text-slate-500 text-[1.1rem] mt-2 max-w-[600px] mx-auto">
@@ -74,6 +74,7 @@ export default function FAQ() {
                   className={`w-full flex justify-between items-center p-6 md:p-7 bg-transparent border-none text-[1.05rem] md:text-[1.15rem] font-bold text-primary-blue text-left transition-colors duration-300 cursor-pointer gap-6 leading-[1.4] ${isOpen ? 'text-accent-red' : 'hover:text-accent-blue'}`}
                   onClick={() => toggleFAQ(index)}
                   aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${index}`}
                 >
                   <span>{faq.question}</span>
                   <span className={`transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] flex items-center justify-center shrink-0 w-10 h-10 rounded-full border shadow-sm ${isOpen ? 'rotate-[135deg] bg-accent-red border-transparent text-white shadow-[0_4px_12px_rgba(220,38,38,0.3)]' : 'bg-slate-50 border-slate-200 text-slate-400 group-hover:border-blue-200 group-hover:text-accent-blue'}`}>
@@ -91,7 +92,7 @@ export default function FAQ() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.4, ease: [0.04, 0.62, 0.23, 0.98] }}
                     >
-                      <div className="px-6 md:px-7 pb-6 md:pb-7 pt-2">
+                      <div id={`faq-answer-${index}`} className="px-6 md:px-7 pb-6 md:pb-7 pt-2">
                         <div className="w-12 h-1 bg-accent-red/20 rounded-full mb-4"></div>
                         <p className="text-slate-500 text-[1rem] leading-[1.7] font-medium">{faq.answer}</p>
                       </div>

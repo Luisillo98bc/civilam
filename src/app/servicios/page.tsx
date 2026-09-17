@@ -6,7 +6,7 @@ import CTA from '@/components/CTA';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Servicios de Ingeniería | CIVILAM',
+  title: 'Servicios de ingeniería',
   description: 'Conoce el detalle de nuestras especialidades en expedientes técnicos, ingeniería civil, obras hidráulicas, saneamiento, licencias de edificación y estudios ambientales en todo el Perú.',
   alternates: { canonical: '/servicios' },
 };

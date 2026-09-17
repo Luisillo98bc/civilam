@@ -5,7 +5,7 @@ import CTA from '@/components/CTA';
 import clientsData from '@/../content/clients.json';
 
 export const metadata: Metadata = {
-  title: 'Nuestros Clientes | CIVILAM',
+  title: 'Nuestros clientes',
   description: 'Conoce a las entidades públicas, ministerios y gobiernos regionales que respaldan el trabajo de CIVILAM a nivel nacional.',
   alternates: { canonical: '/clientes' },
 };
@@ -24,7 +24,7 @@ export default function ClientesPage() {
       />
 
       {/* Ministerios & Programas Nacionales */}
-      <section className="section bg-[#fbfaf7]">
+      <section className="section bg-[#fbfaf7]" data-reveal="reveal-left">
         <div className="site-wrapper">
           <div className="border-b border-slate-300 pb-6 mb-10">
             <p className="technical-label text-[#dc2626] font-bold">NIVEL NACIONAL</p>
@@ -32,10 +32,12 @@ export default function ClientesPage() {
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {ministerios.map((client) => (
+            {ministerios.map((client, index) => (
               <div 
                 key={client.id}
                 className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow"
+                data-reveal="reveal-scale"
+                data-reveal-delay={(index % 5) + 1}
               >
                 <div className="relative w-full aspect-[16/10] bg-gray-50 rounded-md p-4 mb-4 flex items-center justify-center border border-gray-100">
                   <Image 
@@ -64,7 +66,7 @@ export default function ClientesPage() {
       </section>
 
       {/* Gobiernos Regionales */}
-      <section className="section bg-white border-t border-gray-100">
+      <section className="section bg-white border-t border-gray-100" data-reveal="reveal-left">
         <div className="site-wrapper">
           <div className="border-b border-slate-300 pb-6 mb-10">
             <p className="technical-label text-[#dc2626] font-bold">COBERTURA REGIONAL</p>
@@ -72,10 +74,12 @@ export default function ClientesPage() {
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-            {regionales.map((client) => (
+            {regionales.map((client, index) => (
               <div 
                 key={client.id}
                 className="bg-[#fbfaf7] border border-gray-200 rounded-lg p-6 shadow-sm flex flex-col justify-between hover:border-[#dc2626] transition-colors"
+                data-reveal="reveal-scale"
+                data-reveal-delay={(index % 5) + 1}
               >
                 <div className="relative w-full aspect-[16/10] bg-white rounded-md p-4 mb-4 flex items-center justify-center border border-gray-200">
                   <Image 

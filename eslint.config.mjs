@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Repository-local skill helpers are not application source files.
+    ".agents/**",
+    ".codex/**",
+    ".local-data/**",
   ]),
 ]);
 

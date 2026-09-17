@@ -17,7 +17,7 @@ export default function CTA() {
   return (
     <section id="contacto" className="relative overflow-hidden bg-[#e5a72a] py-20 text-[#102a43] lg:py-28">
       <div className="absolute inset-0 blueprint-grid opacity-15" />
-      <div className="site-wrapper relative grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
+      <div className="site-wrapper relative grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end" data-reveal="reveal-scale">
         <div>
           <p className="technical-label text-[#102a43]/65">CONVERSEMOS SOBRE TU PROYECTO</p>
           <h2 className="mt-5 max-w-4xl text-[clamp(2.5rem,5vw,5rem)] font-bold leading-[.98] tracking-[-.05em]">Revisemos la viabilidad técnica de tu proyecto.</h2>

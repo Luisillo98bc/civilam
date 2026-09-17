@@ -23,7 +23,7 @@ export default function PrivacyPage() {
 
           <h2>Datos y finalidades</h2>
           <p>Podemos recibir nombre, teléfono, correo electrónico, servicio de interés, ubicación general y detalles del proyecto. Se utilizan para responder consultas, evaluar requerimientos, preparar propuestas y mantener la comunicación solicitada.</p>
-          <p>La suscripción al boletín se utiliza únicamente para enviar novedades relacionadas con ingeniería, construcción y capacitaciones. Puedes retirarla escribiendo al correo indicado.</p>
+          <p>La suscripción al boletín se utiliza únicamente para enviar novedades relacionadas con ingeniería y construcción. Puedes retirarla escribiendo al correo indicado.</p>
 
           <h2>Base y carácter de la información</h2>
           <p>El tratamiento se realiza con el consentimiento expresado al enviar el formulario. Los campos marcados como obligatorios son necesarios para atender la solicitud; no proporcionarlos impide procesarla. No se adoptan decisiones automatizadas ni se elaboran perfiles comerciales mediante estos formularios.</p>

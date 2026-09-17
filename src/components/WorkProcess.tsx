@@ -49,7 +49,7 @@ export default function WorkProcess() {
   return (
     <section className="section bg-[#f4f2ed]">
       <div className="site-wrapper">
-        <header className="grid gap-8 border-b border-slate-300 pb-12 lg:grid-cols-[.85fr_1.15fr] lg:items-end">
+        <header className="grid gap-8 border-b border-slate-300 pb-12 lg:grid-cols-[.85fr_1.15fr] lg:items-end" data-reveal="reveal-left">
           <div>
             <p className="technical-label text-[#9a6410]">METODOLOGÍA DE TRABAJO</p>
             <h2 className="editorial-title mt-5">Un proceso técnico con entregables definidos</h2>
@@ -61,7 +61,7 @@ export default function WorkProcess() {
 
         <ol className="relative mt-12 border-t border-slate-400">
           {phases.map((item) => (
-            <li key={item.number} className="group grid gap-5 border-b border-slate-300 py-8 md:grid-cols-[90px_180px_1fr_280px] md:items-start md:gap-8 lg:py-10">
+            <li key={item.number} className="group grid gap-5 border-b border-slate-300 py-8 md:grid-cols-[90px_180px_1fr_280px] md:items-start md:gap-8 lg:py-10" data-reveal data-reveal-delay={((Number(item.number) - 1) % 5) + 1}>
               <span className="font-sans text-sm font-bold text-[#9a6410]">{item.number}</span>
               <span className="technical-label text-slate-500">{item.phase}</span>
               <div>

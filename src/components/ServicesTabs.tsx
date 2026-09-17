@@ -330,12 +330,9 @@ export default function ServicesTabs() {
 
     window.addEventListener('hashchange', handleHashCheck);
     window.addEventListener('popstate', handleHashCheck);
-    const interval = setInterval(handleHashCheck, 150);
-
     return () => {
       window.removeEventListener('hashchange', handleHashCheck);
       window.removeEventListener('popstate', handleHashCheck);
-      clearInterval(interval);
     };
   }, []);
 
@@ -361,7 +358,7 @@ export default function ServicesTabs() {
     );
 
   return (
-    <section id="catalogo-servicios" className="section scroll-mt-28 bg-slate-50/70 !py-16">
+    <section id="catalogo-servicios" className="section scroll-mt-28 bg-slate-50/70 !py-16" data-reveal="reveal-scale">
       <div className="site-wrapper">
 
         {/* Encabezado */}

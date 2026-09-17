@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { siteUrl } from '@/lib/site';
+import projectsData from '@/../content/projects.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteUrl;
@@ -20,5 +21,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1.0 : 0.8,
   }));
 
-  return staticRoutes;
+  const projectRoutes = projectsData.map((project) => ({
+    url: `${baseUrl}/proyectos/${project.id}`,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...projectRoutes];
 }

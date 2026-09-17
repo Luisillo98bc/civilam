@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
+  images: {
+    formats: ['image/webp'],
+    qualities: [75],
+    minimumCacheTTL: 2678400,
+  },
   async headers() {
     return [{
       source: '/(.*)',

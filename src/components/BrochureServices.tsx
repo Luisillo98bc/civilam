@@ -142,7 +142,7 @@ export default function BrochureServices() {
   return (
     <section className="section bg-[#f4f2ed]" aria-labelledby="brochure-services-title">
       <div className="site-wrapper">
-        <div className="mb-10 grid gap-6 border-b border-slate-300 pb-10 lg:grid-cols-2 lg:items-end">
+        <div className="mb-10 grid gap-6 border-b border-slate-300 pb-10 lg:grid-cols-2 lg:items-end" data-reveal="reveal-left">
           <div>
             <p className="technical-label text-[#9a6410]">CATÁLOGO DE ESPECIALIDADES</p>
             <h2 id="brochure-services-title" className="editorial-title mt-5">Todas las especialidades de CIVILAM</h2>
@@ -151,9 +151,9 @@ export default function BrochureServices() {
             Explora las 11 familias especializadas de ingeniería, estudios hídricos, medio ambiente y arqueología desarrolladas por CIVILAM a nivel nacional.
           </p>
         </div>
-        <div className="grid gap-px bg-slate-300 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-3 bg-[#f4f2ed] md:grid-cols-2 lg:grid-cols-3">
           {families.map((family) => (
-            <article key={family.number} className="group bg-[#fbfaf7] p-5 sm:p-7 flex flex-col justify-between hover:bg-white transition-colors">
+            <article key={family.number} className="group bg-[#fbfaf7] p-5 sm:p-7 flex flex-col justify-between hover:bg-white transition-colors" data-reveal="reveal-scale" data-reveal-delay={(Number(family.number) % 5) || 5}>
               <Link href={`/servicios#${family.id}`} className="block">
                 <div className="relative aspect-[4/3] overflow-hidden bg-slate-200 rounded-lg">
                   <Image

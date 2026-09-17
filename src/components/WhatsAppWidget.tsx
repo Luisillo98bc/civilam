@@ -42,7 +42,7 @@ export default function WhatsAppWidget() {
       href={url} 
       target="_blank" 
       rel="noopener noreferrer" 
-      className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[9999] flex items-center justify-center w-[50px] h-[50px] md:w-[60px] md:h-[60px] no-underline group"
+      className="fixed bottom-6 right-6 z-[49] flex h-[50px] w-[50px] items-center justify-center no-underline group md:bottom-8 md:right-8 md:h-[60px] md:w-[60px]"
       aria-label="Chat en WhatsApp"
     >
       <div className={`hidden md:block absolute right-[calc(100%+15px)] top-1/2 -translate-y-1/2 translate-x-2.5 bg-bg-white text-text-dark py-2.5 px-4 rounded-md text-[0.85rem] font-semibold whitespace-nowrap shadow-[0_4px_12px_rgba(0,0,0,0.15)] opacity-0 pointer-events-none transition-all duration-300 border border-border-color group-hover:opacity-100 group-hover:translate-x-0 after:content-[''] after:absolute after:top-1/2 after:-right-[5px] after:-translate-y-1/2 after:border-[5px] after:border-y-transparent after:border-r-transparent after:border-l-bg-white before:content-[''] before:absolute before:top-1/2 before:-right-[6px] before:-translate-y-1/2 before:border-[6px] before:border-y-transparent before:border-r-transparent before:border-l-border-color ${showTooltip ? '!opacity-100 !translate-x-0' : ''}`}>

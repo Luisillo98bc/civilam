@@ -13,7 +13,7 @@ const values = [
 export default function AboutInfo() {
   return (
     <>
-      <section className="section bg-[#fbfaf7]">
+      <section className="section bg-[#fbfaf7]" data-reveal="reveal-scale">
         <div className="site-wrapper grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center lg:gap-20">
           <div className="relative aspect-[4/5] overflow-hidden bg-slate-200">
             <Image src="/nosotros-coordinacion-obra.png" alt="Ingenieros coordinando un proyecto de construcción en obra" fill sizes="(max-width: 1024px) 100vw, 45vw" className="object-cover saturate-[.75]" />
@@ -31,7 +31,7 @@ export default function AboutInfo() {
           </div>
         </div>
       </section>
-      <section className="section bg-[#f4f2ed]" aria-labelledby="values-title">
+      <section className="section bg-[#f4f2ed]" aria-labelledby="values-title" data-reveal="reveal-left">
         <div className="site-wrapper">
           <div className="mx-auto max-w-3xl text-center">
             <p className="technical-label text-[#9a6410]">NUESTROS VALORES</p>
@@ -40,7 +40,7 @@ export default function AboutInfo() {
           </div>
           <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {values.map(([number, title, text, Icon]) => (
-              <article key={number} className="group rounded-sm border border-slate-200 bg-[#fbfaf7] p-7 transition hover:-translate-y-1 hover:border-[#e5a72a] hover:shadow-[0_12px_30px_rgba(16,42,67,.08)] sm:p-8">
+              <article key={number} className="group rounded-sm border border-slate-200 bg-[#fbfaf7] p-7 transition hover:-translate-y-1 hover:border-[#e5a72a] hover:shadow-[0_12px_30px_rgba(16,42,67,.08)] sm:p-8" data-reveal="reveal-scale" data-reveal-delay={(Number(number) % 5) || 5}>
                 <div className="flex items-center justify-between">
                   <span className="flex size-11 items-center justify-center rounded-full bg-[#e5a72a]/15 text-xl text-[#b87808] transition group-hover:bg-[#e5a72a] group-hover:text-[#102a43]"><Icon aria-hidden="true" /></span>
                   <span className="font-sans text-xs font-bold text-[#9a6410]">{number}</span>

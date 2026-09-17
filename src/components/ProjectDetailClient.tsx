@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -13,6 +13,7 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
   const location = project.location || 'Perú';
   const year = project.year || 'No informado';
   const [active, setActive] = useState<number | null>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (active === null) return;
@@ -23,6 +24,16 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [active, images.length]);
+
+  useEffect(() => {
+    document.body.style.overflow = active === null ? '' : 'hidden';
+    if (active !== null) {
+      window.requestAnimationFrame(() => closeButtonRef.current?.focus());
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [active]);
 
   return (
     <div className="bg-[#fbfaf7]">
@@ -60,11 +71,11 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
       <section className="section bg-[#f4f2ed]">
         <div className="site-wrapper">
           <div className="flex items-end justify-between border-b border-slate-300 pb-8"><div><p className="technical-label text-[#9a6410]">REGISTRO VISUAL</p><h2 className="editorial-title mt-5">Galería del proyecto</h2></div><span className="font-sans text-xs text-slate-500">{images.length} IMÁGENES</span></div>
-          <div className="grid gap-px bg-slate-300 sm:grid-cols-2 lg:grid-cols-3">{images.map((image, index) => <button key={image} onClick={() => setActive(index)} className="group relative aspect-[4/3] overflow-hidden bg-slate-200" aria-label={`Ampliar imagen ${index + 1}`}><Image src={image} alt={`${project.title}, imagen ${index + 1}`} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-700 group-hover:scale-[1.035]" /></button>)}</div>
+          <div className="grid gap-px bg-slate-300 sm:grid-cols-2 lg:grid-cols-3">{images.map((image, index) => <button type="button" key={image} onClick={() => setActive(index)} className="group relative aspect-[4/3] overflow-hidden bg-slate-200" aria-label={`Ampliar imagen ${index + 1}`}><Image src={image} alt={`${project.title}, imagen ${index + 1}`} fill loading="lazy" quality={75} sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-700 group-hover:scale-[1.035]" /></button>)}</div>
         </div>
       </section>
 
-      {active !== null && <div role="dialog" aria-modal="true" aria-label="Galería ampliada" className="fixed inset-0 z-[1000] flex items-center justify-center bg-[#071826]/95 p-4" onClick={() => setActive(null)}><button className="absolute right-5 top-5 min-h-11 border border-white/40 px-4 text-white" onClick={() => setActive(null)}>Cerrar ×</button><button className="absolute left-3 z-10 size-12 bg-white text-[#102a43]" onClick={event => { event.stopPropagation(); setActive((active - 1 + images.length) % images.length); }} aria-label="Imagen anterior">←</button><div className="relative h-[80vh] w-[85vw]" onClick={event => event.stopPropagation()}><Image src={images[active]} alt={`${project.title}, imagen ampliada`} fill sizes="90vw" className="object-contain" /></div><button className="absolute right-3 z-10 size-12 bg-white text-[#102a43]" onClick={event => { event.stopPropagation(); setActive((active + 1) % images.length); }} aria-label="Imagen siguiente">→</button></div>}
+      {active !== null && <div role="dialog" aria-modal="true" aria-label="Galería ampliada" className="fixed inset-0 z-[1000] flex items-center justify-center bg-[#071826]/95 p-4" onClick={() => setActive(null)}><button type="button" ref={closeButtonRef} className="absolute right-5 top-5 min-h-11 border border-white/40 px-4 text-white" onClick={() => setActive(null)}>Cerrar ×</button><button type="button" className="absolute left-3 z-10 size-12 bg-white text-[#102a43]" onClick={event => { event.stopPropagation(); setActive((active - 1 + images.length) % images.length); }} aria-label="Imagen anterior">←</button><div className="relative h-[80vh] w-[85vw]" onClick={event => event.stopPropagation()}><Image src={images[active]} alt={`${project.title}, imagen ampliada`} fill quality={75} sizes="90vw" className="object-contain" /></div><button type="button" className="absolute right-3 z-10 size-12 bg-white text-[#102a43]" onClick={event => { event.stopPropagation(); setActive((active + 1) % images.length); }} aria-label="Imagen siguiente">→</button></div>}
     </div>
   );
 }

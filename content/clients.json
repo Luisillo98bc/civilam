@@ -10,14 +10,14 @@
     "id": "mvcs",
     "name": "Ministerio de Vivienda, Construcción y Saneamiento (MVCS)",
     "category": "Ministerios",
-    "image": "/clientes/misterio de vivienda.png",
+    "image": "/clientes/mvcs.png",
     "description": "Expedientes técnicos de agua potable, alcantarillado sanitario y plantas de tratamiento."
   },
   {
     "id": "midagri",
     "name": "Ministerio de Desarrollo Agrario y Riego (MIDAGRI)",
     "category": "Ministerios",
-    "image": "/clientes/min desarrollo agrario.png",
+    "image": "/clientes/midagri.png",
     "description": "Estudios de riego tecnificado, presas, reservorios y defensas ribereñas agrícolas."
   },
   {
