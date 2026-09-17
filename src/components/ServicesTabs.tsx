@@ -16,18 +16,25 @@ const categories = [
     image: '/expedientes-tecnicos.png',
     type: 'CONSULTORÍA & ESTUDIOS',
     items: [
-      'Sistema de Agua Potable y Alcantarillado (MVCS)',
-      'Carreteras y Pavimentación Urbana',
-      'Infraestructura Educativa (PRONIED)',
-      'Viviendas e Infraestructura Urbana',
-      'Presas, Reservorios y Canales de Riego',
-      'Sistemas de Riego Tecnificado',
-      'Defensas Ribereñas y Encauzamiento',
-      'Drenaje Pluvial y Muros de Contención',
-      'Centros de Salud y Hospitales (PRONIS)',
-      'Complejos Deportivos y Parques',
-      'Siembra y Cosecha de Agua',
-      'Habilitaciones Urbanas y Terminales'
+      'Expediente Técnico de Sistema de Agua Potable y Alcantarillado (MVCS)',
+      'Expediente Técnico de Carreteras',
+      'Expediente Técnico de Puentes',
+      'Expediente Técnico de Pavimentación Urbana',
+      'Expediente Técnico de Drenaje Pluvial',
+      'Expediente Técnico de Colegios (PRONIED)',
+      'Expediente Técnico de Salud / Hospitales (PRONIS)',
+      'Expediente Técnico de Infraestructura (Viviendas)',
+      'Expediente Técnico de Complejos Deportivos',
+      'Expediente Técnico de Presas y Reservorios',
+      'Expediente Técnico de Redes de Riego',
+      'Expediente Técnico de Sistemas de Riego Tecnificado',
+      'Expediente Técnico de Siembra y Cosecha de Agua',
+      'Expediente Técnico de Balsas Ribereñas',
+      'Expediente Técnico de Encauzamiento de Ríos',
+      'Expediente Técnico de Muros de Contención por Emergencia',
+      'Expediente Técnico de Habilitación Urbana',
+      'Expediente Técnico de Parques y Áreas Verdes',
+      'Expediente Técnico de Terminal Terrestre'
     ]
   },
   {
@@ -39,12 +46,15 @@ const categories = [
     image: '/sig-cartografia.png',
     type: 'TOPOGRAFÍA & GEOMÁTICA',
     items: [
-      'Levantamientos topográficos con estación total y GNSS',
-      'Georreferenciación y control de puntos',
-      'Levantamientos con drones y fotogrametría',
-      'Ortomosaicos y modelos digitales de elevación',
-      'Curvas de nivel y perfiles longitudinales',
-      'Replanteo y verificación de obras'
+      'Levantamientos topográficos',
+      'Levantamientos de urbanizaciones y lotizaciones',
+      'Levantamientos de pistas y veredas',
+      'Control topográfico de obras civiles',
+      'Parcelaciones',
+      'Nivelación de obras',
+      'Monumentación de puntos geodésicos (IGN)',
+      'Levantamientos con tecnología RTK',
+      'Fotogrametría con drones'
     ]
   },
   {
@@ -56,12 +66,24 @@ const categories = [
     image: '/construccion_mante.jpeg',
     type: 'OPERACIÓN & MANTENIMIENTO',
     items: [
-      'Limpieza y desinfección de reservorios',
-      'Lavado y desinfección de redes de agua potable',
-      'Limpieza de cámaras, captaciones y estructuras',
-      'Mantenimiento preventivo de sistemas',
-      'Diagnóstico de fallas y recomendaciones',
-      'Protocolos y constancias de servicio'
+      '1. Mantenimiento y limpieza de captaciones',
+      '2. Mantenimiento, limpieza y desinfección de reservorios',
+      'Retiro de sedimentos y lodos acumulados',
+      'Lavado de paredes, techo y piso',
+      'Limpieza de tuberías de ingreso y salida',
+      'Desinfección mediante solución clorada',
+      'Llenado y puesta en operación del reservorio',
+      '3. Mantenimiento y limpieza de plantas de tratamiento de agua potable (PTAP)',
+      'Limpieza de desarenadores',
+      'Limpieza de sedimentadores',
+      'Lavado de filtros',
+      'Limpieza de cámaras de contacto',
+      'Limpieza de canales y estructuras hidráulicas',
+      '4. Mantenimiento y limpieza de plantas de tratamiento de agua residual (PTAR)',
+      'Limpieza de rejas y cribas',
+      'Limpieza de lagunas, tanques y cámaras',
+      'Extracción y manejo de lodos',
+      'Limpieza de canales de distribución'
     ]
   },
   {
@@ -73,29 +95,52 @@ const categories = [
     image: '/hidraulico.jpg',
     type: 'ESTUDIOS ESPECIALIZADOS',
     items: [
-      'Estudios hidrológicos e hidrogeológicos de cuencas',
-      'Diseño hidráulico de presas y represas',
-      'Delimitación de fajas marginales (ANA)',
-      'Defensas ribereñas y muros de gaviones',
-      'Estudios de socavación en puentes y obras de arte',
-      'Análisis de caudales máximos y disponibilidad hídrica'
+      'Estudios de hidrología e hidráulica para carreteras',
+      'Estudios de hidrología e hidráulica para puentes, alcantarillas, badenes y cunetas',
+      'Estudios de hidrología e hidráulica para defensas ribereñas',
+      'Estudios de hidrología e hidráulica para saneamiento y agua potable',
+      'Estudios de hidrología e hidráulica para proyectos de riego',
+      'Estudios de hidrología e hidráulica para pistas y veredas',
+      'Estudios de hidrología e hidráulica para represas',
+      'Estudios de hidrología e hidráulica para centrales hidroeléctricas',
+      'Estudios hidrológicos para la acreditación de la disponibilidad hídrica superficial'
     ]
   },
   {
     id: 'modelamiento',
     label: 'Modelamiento Hidrológico e Hidráulico (HEC-HMS, HEC-RAS, IBER, SWMM)',
     icon: <FaLaptopCode />,
-    title: 'Modelamiento hidrológico e hidráulico',
+    title: 'Modelamiento Hidrológico e Hidráulico (HEC-HMS, HEC-RAS, IBER, SWMM)',
     description: 'Simulamos escenarios de lluvia, escorrentía, cauces y drenaje urbano con herramientas especializadas para tomar decisiones seguras.',
     image: '/modelado 2d hibraulica.png',
     type: 'SIMULACIÓN DIGITAL',
     items: [
-      'Modelamiento hidrológico con HEC-HMS',
-      'Simulación hidráulica 1D y 2D con HEC-RAS',
-      'Modelamiento de cauces y planicies con IBER',
-      'Modelamiento de drenaje urbano con SWMM',
-      'Mapas de inundación y escenarios de riesgo',
-      'Calibración, interpretación y reportes técnicos'
+      '1. Aplicación en Proyectos de Ingeniería',
+      'Proyectos de drenaje para carreteras y caminos',
+      'Proyectos de puentes y pasos de agua',
+      'Proyectos de defensas ribereñas',
+      'Proyectos de represas, bocatomas y sistemas de captación',
+      'Proyectos hidroeléctricos',
+      'Proyectos mineros',
+      '2. Modelamiento hidráulico con HEC-RAS e IBER',
+      'Modelamiento hidráulico unidimensional y bidimensional (1D y 2D) con HEC-RAS',
+      'Modelamiento hidráulico unidimensional y bidimensional (1D y 2D) con IBER',
+      'Modelamiento del transporte de sedimentos con HEC-RAS',
+      'Modelamiento de inundaciones con IBER',
+      'Simulación de rotura de presas con HEC-RAS',
+      'Modelamiento del flujo en cauces naturales con HEC-RAS',
+      '3. Modelamiento hidráulico de drenaje pluvial urbano con SWMM',
+      'Modelamiento de cuencas urbanas',
+      'Modelamiento de buzones',
+      'Modelamiento de sumideros',
+      'Modelamiento de estructuras de conducción y almacenamiento',
+      'Modelamiento de sistemas de bombeo',
+      'Modelamiento de estructuras de descarga',
+      '4. Modelamiento de agua potable y alcantarillado',
+      'Modelamiento de sistemas de agua potable con WaterCAD',
+      'Modelamiento de sistemas de agua potable con WaterGEMS',
+      'Modelamiento de sistemas de alcantarillado con SewerCAD',
+      'Modelamiento de sistemas de alcantarillado con SewerGEMS'
     ]
   },
   {
@@ -107,12 +152,22 @@ const categories = [
     image: '/medio-ambiente-riesgos-realista.png',
     type: 'GESTIÓN DEL RIESGO',
     items: [
-      'Identificación de peligros naturales',
-      'Evaluación de vulnerabilidad y exposición',
-      'Escenarios de riesgo por inundaciones, huaicos y movimientos en masa',
-      'Mapas de peligros y riesgo',
-      'Medidas de prevención y reducción del riesgo',
-      'Informe técnico de evaluación de riesgos (EVAR)'
+      '1. Evaluación del Riesgo de Desastres (EVAR)',
+      'EVAR por deslizamientos',
+      'EVAR por sismos',
+      'EVAR por lluvias intensas',
+      'EVAR por inundaciones',
+      'EVAR por descensos de temperatura',
+      'EVAR por erupciones volcánicas',
+      'EVAR por pandemias, incluido el COVID-19',
+      '2. EVAR para Proyectos de Inversión Pública',
+      'EVAR para proyectos de defensas ribereñas',
+      'EVAR para proyectos de agua potable y alcantarillado',
+      'EVAR para proyectos de carreteras',
+      'EVAR para proyectos de riego',
+      'EVAR para proyectos de infraestructura, colegios y hospitales',
+      'EVAR para proyectos de puentes',
+      'EVAR para proyectos de pistas y veredas'
     ]
   },
   {
@@ -124,12 +179,10 @@ const categories = [
     image: '/medio ambiente.avif',
     type: 'MONITOREO AMBIENTAL',
     items: [
-      'Monitoreo de calidad de agua superficial y subterránea',
-      'Monitoreo de calidad de aire y emisiones',
-      'Monitoreo de calidad de suelo',
-      'Monitoreo de ruido ambiental y ocupacional',
-      'Diseño de puntos y frecuencia de muestreo',
-      'Informes de resultados y comparación normativa'
+      'Monitoreo de la calidad del agua',
+      'Monitoreo de la calidad del aire',
+      'Monitoreo de la calidad del suelo',
+      'Monitoreo del ruido ambiental'
     ]
   },
   {
@@ -137,16 +190,24 @@ const categories = [
     label: 'Estudios de Impacto Ambiental (EIA)',
     icon: <FaLeaf />,
     title: 'Estudios de Impacto Ambiental (EIA)',
-    description: 'Evaluamos los impactos ambientales y sociales de cada proyecto para definir medidas de manejo, prevención, mitigación y seguimiento.',
+    description: 'LA EMPRESA 𝐂𝐈𝐕𝐈𝐋𝐀𝐌 𝐈𝐍𝐆𝐄𝐍𝐈𝐄𝐑𝐈𝐀 𝐘 𝐂𝐎𝐍𝐒𝐓𝐑𝐔𝐂𝐂𝐈𝐎𝐍 SE ENCUENTRA REGISTRADA COMO 𝘾𝙊𝙉𝙎𝙐𝙇𝙏𝙊𝙍𝘼 𝘼𝙈𝘽𝙄𝙀𝙉𝙏𝘼𝙇 EN EL 𝑺𝑬𝑵𝑨𝑪𝑬 PARA LA ELABORACION DE ESTUDIOS DE IMPACTO AMBIENTAL EN LOS SIGUIENTES SUBSECTORES:',
     image: '/impacto-ambiental.png',
     type: 'EVALUACIÓN AMBIENTAL',
     items: [
-      'Línea base ambiental y social',
-      'Identificación y valoración de impactos',
-      'Estudios de Impacto Ambiental semidetallados y detallados',
-      'Plan de manejo ambiental',
-      'Programa de monitoreo y seguimiento',
-      'Auditorías y fiscalización ambiental'
+      'Declaración de Impacto Ambiental (DIA)',
+      'Estudio de Impacto Ambiental Semidetallado (EIA-sd)',
+      'Estudio de Impacto Ambiental Detallado (EIA-d)',
+      'Modificación del Estudio de Impacto Ambiental (MEIA)',
+      'Informe Técnico Sustentatorio (ITS)',
+      'Programa de Adecuación y Manejo Ambiental (PAMA)',
+      'Plan de Manejo Ambiental (PMA)',
+      'Declaración de Adecuación Ambiental (DAA)',
+      'Instrumento de Gestión Ambiental Correctivo (IGAC)',
+      'Programa de Adecuación Ambiental (PAA)'
+    ],
+    extraImages: [
+      '/senace-registro-1.png',
+      '/senace-registro-2.png'
     ]
   },
   {
@@ -158,12 +219,20 @@ const categories = [
     image: '/medio-ambiente-riesgos.png',
     type: 'GESTIÓN AMBIENTAL',
     items: [
-      'Declaración de Impacto Ambiental (DIA)',
-      'Instrumentos de gestión ambiental',
-      'Planes de manejo y adecuación ambiental',
-      'Supervisión y cumplimiento de compromisos',
-      'Planes de cierre y post cierre',
-      'Asesoría ambiental para proyectos'
+      '1. Elaboración de Expedientes Técnicos de Medio Ambiente',
+      'Expediente técnico de relleno sanitario',
+      'Expediente técnico de reforestación',
+      'Expediente técnico de restauración ambiental',
+      '2. Ficha Técnica Socioambiental (FITSA)',
+      'Ficha Técnica Socioambiental para proyectos de carreteras',
+      'Ficha Técnica Socioambiental para proyectos de puentes',
+      '3. Ficha Técnica Ambiental (FTA)',
+      'Ficha Técnica Ambiental para proyectos de saneamiento del MVCS',
+      'Ficha Técnica Ambiental para proyectos de riego',
+      '4. Estudios Ambientales',
+      'Plan de recuperación de áreas degradadas por residuos sólidos',
+      'Estudio de caracterización de residuos sólidos municipales',
+      'Plan de Gestión Ambiental y Social (PGAS)'
     ]
   },
   {
@@ -175,12 +244,35 @@ const categories = [
     image: '/sig-cartografia.png',
     type: 'GEOMÁTICA & SIG',
     items: [
-      'Cartografía base y mapas temáticos',
-      'Geoprocesamiento en ArcGIS, QGIS y ArcGIS Pro',
-      'Modelos digitales de elevación y terreno',
-      'Mapas de riesgos, vulnerabilidad y uso de suelo',
-      'Bases de datos geográficas y georreferenciación',
-      'Diseño e impresión de mapas técnicos'
+      'Mapa de Modelo Digital de Elevación (DEM) topográfico y batimétrico',
+      'Mapa de ubicación y localización',
+      'Mapa catastral',
+      'Mapa de cuencas hidrográficas',
+      'Mapa de densidad sísmica',
+      'Mapa de peligros',
+      'Mapa de vulnerabilidad',
+      'Mapa de riesgos',
+      'Mapa de dirección y velocidad del viento',
+      'Mapa de redes viales vecinales, departamentales y nacionales',
+      'Mapa de Áreas Naturales Protegidas (ANP)',
+      'Mapa de zonas de amortiguamiento',
+      'Mapas para Estudios de Impacto Ambiental (EIA)',
+      'Mapa de contaminación atmosférica',
+      'Mapa de catastro minero',
+      'Mapa de cobertura vegetal',
+      'Mapa de capacidad de uso mayor de suelos',
+      'Mapa de zonas de vida',
+      'Mapa de ecorregiones',
+      'Mapa de ecosistemas',
+      'Mapa de erosión de suelos',
+      'Mapa fisiográfico',
+      'Mapa geológico',
+      'Mapa geomorfológico',
+      'Mapa de sitios arqueológicos',
+      'Mapa de lotes petroleros',
+      'Mapa del Qhapaq Ñan',
+      'Mapa de oleoductos',
+      'Mapa de pasivos mineros y ambientales'
     ]
   },
   {
@@ -192,12 +284,18 @@ const categories = [
     image: '/arqueologia.jpg',
     type: 'PATRIMONIO CULTURAL',
     items: [
-      'Certificado de Inexistencia de Restos Arqueológicos (CIRA)',
-      'Plan de Monitoreo Arqueológico (PMA)',
-      'Proyecto de Evaluación Arqueológica (PEA)',
-      'Proyecto de Rescate Arqueológico (PRA)',
-      'Supervisión y acompañamiento arqueológico en obra',
-      'Gestión y seguimiento ante el Ministerio de Cultura'
+      '1. Certificado de Inexistencia de Restos Arqueológicos en Superficie (CIRAS)',
+      'CIRAS para proyectos de carreteras',
+      'CIRAS para proyectos de agua potable y alcantarillado',
+      'CIRAS para proyectos de puentes',
+      'CIRAS para proyectos de riego',
+      'CIRAS para proyectos de hospitales',
+      'CIRAS para proyectos de instituciones educativas',
+      'CIRAS para proyectos de pistas y veredas',
+      '2. Plan de Monitoreo Arqueológico (PMA)',
+      'Elaboración del Plan de Monitoreo Arqueológico (PMA)',
+      '3. Proyecto de Evaluación Arqueológica (PEA)',
+      'Elaboración del Proyecto de Evaluación Arqueológica (PEA)'
     ]
   }
 ];
@@ -207,28 +305,50 @@ export default function ServicesTabs() {
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    const hash = window.location.hash.replace('#', '');
-    if (hash && categories.some(c => c.id === hash)) {
-      setTimeout(() => {
-        setActiveTab(hash);
-      }, 0);
-    }
+    let lastHash = '';
 
-    const handleHashChange = () => {
+    const handleHashCheck = () => {
       const currentHash = window.location.hash.replace('#', '');
-      if (currentHash && categories.some(c => c.id === currentHash)) {
+      if (currentHash && currentHash !== lastHash && categories.some(c => c.id === currentHash)) {
+        lastHash = currentHash;
         setActiveTab(currentHash);
+        
+        const scrollToCard = () => {
+          const cardAnchor = document.getElementById(currentHash) || document.getElementById('tarjeta-servicio-anchor');
+          if (cardAnchor) {
+            cardAnchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        };
+
+        scrollToCard();
+        setTimeout(scrollToCard, 80);
+        setTimeout(scrollToCard, 250);
       }
     };
 
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    handleHashCheck();
+
+    window.addEventListener('hashchange', handleHashCheck);
+    window.addEventListener('popstate', handleHashCheck);
+    const interval = setInterval(handleHashCheck, 150);
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashCheck);
+      window.removeEventListener('popstate', handleHashCheck);
+      clearInterval(interval);
+    };
   }, []);
 
   const activeCategory = categories.find(c => c.id === activeTab) || categories[0];
   const selectCategory = (id: string) => {
     setActiveTab(id);
     window.history.replaceState(null, '', `${window.location.pathname}#${id}`);
+    setTimeout(() => {
+      const cardAnchor = document.getElementById('tarjeta-servicio-anchor');
+      if (cardAnchor) {
+        cardAnchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 60);
   };
 
   // Buscador inteligente
@@ -330,8 +450,8 @@ export default function ServicesTabs() {
               <button
                 key={category.id}
                 className={`py-3 px-5 rounded-lg text-sm font-semibold cursor-pointer transition-all duration-300 flex items-center gap-2.5 shadow-sm border ${isActive
-                    ? 'bg-gradient-to-r from-[#1e3a8a] to-[#2563eb] text-white border-transparent shadow-lg shadow-blue-900/20 -translate-y-0.5'
-                    : 'bg-white border-gray-200 text-gray-700 hover:border-blue-300 hover:text-[#1e3a8a] hover:bg-blue-50/50'
+                  ? 'bg-gradient-to-r from-[#1e3a8a] to-[#2563eb] text-white border-transparent shadow-lg shadow-blue-900/20 -translate-y-0.5'
+                  : 'bg-white border-gray-200 text-gray-700 hover:border-blue-300 hover:text-[#1e3a8a] hover:bg-blue-50/50'
                   }`}
                 onClick={() => selectCategory(category.id)}
                 aria-pressed={isActive}
@@ -344,6 +464,9 @@ export default function ServicesTabs() {
             );
           })}
         </div>
+
+        {/* Anchor de desplazamiento directo a la tarjeta */}
+        <div id="tarjeta-servicio-anchor" className="scroll-mt-28 md:scroll-mt-32" />
 
         {/* Contenido Activo animado */}
         <AnimatePresence mode="wait">
@@ -372,13 +495,46 @@ export default function ServicesTabs() {
                 <div className="mb-8">
                   <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-4">Alcances y Entregables del Servicio:</h4>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3.5 list-none p-0">
-                    {activeCategory.items.map((item, index) => (
-                      <li key={index} className="flex items-start text-gray-800 text-sm group">
-                        <FaCheckCircle className="text-[#dc2626] mt-0.5 mr-2.5 shrink-0 group-hover:scale-110 transition-transform text-base" />
-                        <span className="group-hover:text-[#1e3a8a] transition-colors font-medium leading-tight">{item}</span>
-                      </li>
-                    ))}
+                    {activeCategory.items.map((item, index) => {
+                      const matchNumber = item.match(/^(\d+\.)\s*(.*)/);
+                      if (matchNumber) {
+                        const [, num, text] = matchNumber;
+                        return (
+                          <li key={index} className="col-span-1 sm:col-span-2 pt-3 pb-1 border-b border-gray-100 flex items-center group">
+                            <span className="bg-[#1e3a8a] text-white text-xs font-extrabold px-2.5 py-1 rounded-md mr-2.5 shadow-sm shrink-0">
+                              {num}
+                            </span>
+                            <span className="text-[#1e3a8a] font-extrabold text-sm sm:text-base group-hover:text-blue-600 transition-colors">
+                              {text}
+                            </span>
+                          </li>
+                        );
+                      }
+                      return (
+                        <li key={index} className="flex items-start text-gray-800 text-sm group">
+                          <FaCheckCircle className="text-[#dc2626] mt-0.5 mr-2.5 shrink-0 group-hover:scale-110 transition-transform text-base" />
+                          <span className="group-hover:text-[#1e3a8a] transition-colors font-medium leading-tight">{item}</span>
+                        </li>
+                      );
+                    })}
                   </ul>
+
+                  {/* Imágenes adicionales (ej. Certificación y Registro SENACE) */}
+                  {'extraImages' in activeCategory && Array.isArray((activeCategory as { extraImages?: string[] }).extraImages) && (
+                    <div className="mt-6 space-y-3.5 pt-4 border-t border-gray-100">
+                      {(activeCategory as { extraImages: string[] }).extraImages.map((imgSrc, idx) => (
+                        <div key={idx} className="relative w-full rounded-xl overflow-hidden border border-gray-200/90 shadow-sm bg-white p-1.5 transition-all hover:shadow-md">
+                          <Image
+                            src={imgSrc}
+                            alt={`Registro y Certificación SENACE CIVILAM ${idx + 1}`}
+                            width={900}
+                            height={300}
+                            className="w-full h-auto object-contain rounded-lg"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
 

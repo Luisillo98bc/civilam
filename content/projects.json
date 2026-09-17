@@ -1,82 +1,79 @@
 [
   {
     "id": 1,
-    "title": "Vivienda Multifamiliar Miraflores",
-    "category": "Viviendas",
-    "image": "/viviendas-tramites.jpg",
-    "description": "Diseño arquitectónico, estructural e ingeniería de detalle para un edificio multifamiliar de 5 pisos. Gestión completa de la licencia de edificación ante la municipalidad.",
-    "client": "Inmobiliaria Construye Perú",
-    "location": "Lima, Miraflores",
-    "year": "2024",
-    "gallery": [
-      "/viviendas-tramites.jpg",
-      "/contruc.jpeg"
-    ]
+    "numberTitle": "1. EXPEDIENTES TÉCNICOS",
+    "title": "CREACION DEL SERVICIO DE TRANSITABILIDAD VIAL INTERURBANA EN EL CASERIO DE YERBABUENA HASTA EL CENTRO POBLADO DE SAN PEDRO DE CANCHABAMBA DEL DISTRITO DE SAN LUIS DE LA PROVINCIA DE CARLOS FERMIN FITZCARRALD DEL DEPARTAMENTO DE ANCASH",
+    "category": "Expedientes Técnicos",
+    "image": "/proyectos/proyecto-1.png"
   },
   {
     "id": 2,
-    "title": "Reservorio Apoyado de 500m3",
-    "category": "Agua Potable",
-    "image": "/proyectos/reservorio.jpg",
-    "description": "Elaboración del expediente técnico y ejecución de reservorio apoyado de concreto armado para el sistema de agua potable en zona rural altoandina.",
-    "client": "Gobierno Regional de Huancavelica",
-    "location": "Huancavelica, Acobamba",
-    "year": "2023",
-    "gallery": [
-      "/proyectos/reservorio2.png"
-    ]
+    "numberTitle": "2. TOPOGRAFIA GEODESIA Y FOTOGRAMETRIA",
+    "title": "MEJORAMIENTO Y AMPLIACION DE LA TRANSITABILLIDAD VEHICULAR DEL CAMINO VECINAL SIMON BOLIVAR TRAMO MUÑANPAMPA - ATOC PITINAN DEPARTAMENTO DE ANCASH – TOPOGRAFÍA",
+    "category": "Topografía",
+    "image": "/proyectos/proyecto-2.png"
   },
   {
     "id": 3,
-    "title": "PTAR Industrial San Jerónimo",
-    "category": "PTAR",
-    "image": "/proyectos/petar 2.jpeg",
-    "description": "Modelamiento e implementación de la Planta de Tratamiento de Aguas Residuales (PTAR) para una zona industrial, incluyendo lagunas de oxidación y sistemas de filtrado por gravedad.",
-    "client": "Consorcio Industrial del Sur",
-    "location": "Cusco, San Jerónimo",
-    "year": "2024",
-    "gallery": [
-      "/proyectos/petar22.jpeg"
-    ]
+    "numberTitle": "3. SERVICIO DE MANTENIMIENTO, LIMPIEZA Y DESINFECCIÓN DE SISTEMAS DE AGUA POTABLE Y SANEAMIENTO",
+    "title": "ELABORACION DE PLAN DE MANTENIMIENTO DEL SISTEMA DE ALCANTARILLADO (PTAR) DEL CENTRO POBLADO DE HUARANHUAY - ANDAYMARCA - TAYACAJA - HUANCAVELICA.",
+    "category": "Mantenimiento",
+    "image": "/proyectos/proyecto-3.png"
   },
   {
     "id": 4,
-    "title": "Red de Alcantarillado Urbano",
-    "category": "Alcantarillado",
-    "image": "/proyectos/alcantarillado-sanitario.webp",
-    "description": "Renovación integral y ampliación de las redes de alcantarillado sanitario y conexiones domiciliarias para más de 1200 familias.",
-    "client": "Municipalidad Provincial de Trujillo",
-    "location": "La Libertad, Trujillo",
-    "year": "2023",
-    "gallery": [
-      "/proyectos/alcantarillado2.jpg"
-    ]
+    "numberTitle": "4. ESTUDIOS DE HIDROLOGÍA E HIDRÁULICA",
+    "title": "MEJORAMIENTO DEL SERVICIO DE TRANSITABILIDAD VIAL INTERURBANA EN LOS PUENTES QUEMPIRITO 1 Y 2 DE LA CARRETERA LA VECINAL DEL R12060811, CP FE Y ALEGRIA DISTRITO DE RIO TAMBO DE LA PROVINCIA DE SATIPO DEL DEPARTAMENTO DE JUNIN",
+    "category": "Hidrología",
+    "image": "/proyectos/proyecto-4.png"
   },
   {
     "id": 5,
-    "title": "Supervisión Vial de Carretera Interoceánica",
-    "category": "Supervisión",
-    "image": "/proyectos/supervision vial.jpg",
-    "description": "Servicio de supervisión técnica, ambiental y arqueológica durante el asfaltado y estabilización de taludes en el tramo andino de la carretera.",
-    "client": "Provías Nacional",
-    "location": "Puno, Macusani",
-    "year": "2024",
-    "gallery": [
-      "/proyectos/supervision vial3.jpg",
-      "/proyectos/suoervisionvial2.jpeg"
-    ]
+    "numberTitle": "5. MODELAMIENTO HIDROLÓGICO E HIDRÁULICO (HEC-HMS, HEC-RAS, IBER, SWMM)",
+    "title": "CREACION DE LOS SERVICIOS DE PROTECCIÓN EN RIBERAS DE RÍO VULNERABLES ANTE EL PELIGRO EN LA LOCALIDAD DE CORONGO, DISTRITO DE CORONGO DE LA PROVINCIA DE CORONGO DEL DEPARTAMENTO DE ANCASH - MODELAMIENTO HIDROLÓGICO E HIDRÁULICO",
+    "category": "Modelamiento",
+    "image": "/proyectos/proyecto-5.png"
   },
   {
     "id": 6,
-    "title": "Complejo Deportivo y Obras Civiles",
-    "category": "Construcción",
-    "image": "/proyectos/complejo deportivo1.jpg",
-    "description": "Ejecución de obras civiles, pavimentación exterior, muros de contención por gravedad y graderías para el complejo deportivo municipal.",
-    "client": "Municipalidad Distrital de Los Olivos",
-    "location": "Lima, Los Olivos",
-    "year": "2023",
-    "gallery": [
-      "/proyectos/complejo deportivo2.jpg"
-    ]
+    "numberTitle": "6. EVALUACIÓN DE RIESGOS ORIGINADOS POR FENÓMENOS NATURALES (EVAR)",
+    "title": "MEJORAMIENTO Y AMPLIACIÓN DE LA PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES DISTRITO DE ICA - PROVINCIA DE ICA - DEPARTAMENTO DE ICA - ESTUDIO DE EVALUACIÓN DE RIESGOS POR SISMO E INUNDACIÓN PLUVIAL",
+    "category": "Gestión del Riesgo",
+    "image": "/proyectos/proyecto-6.png"
+  },
+  {
+    "id": 7,
+    "numberTitle": "7. MONITOREOS DE AGUA, AIRE, SUELO Y RUIDO",
+    "title": "ANALISIS DE PARAMETROS BACTERIOLOGICOS, PARASITOLOGICOS, ORGANOLEPTICOS E INORGANICOS DE AGUA POTABLE DEL CC.PP. ATAHUARCO PARA LA INSTALACION DE SISTEMA DE CLORACION EN RESERVORIO - HUANCAVELICA",
+    "category": "Monitoreo Ambiental",
+    "image": "/proyectos/proyecto-7.png"
+  },
+  {
+    "id": 8,
+    "numberTitle": "8. ESTUDIOS DE IMPACTO AMBIENTAL (EIA)",
+    "title": "MEJORAMIENTO Y AMPLIACION DEL SERVICIO DE PROTECCIÓN CONTRA INUNDACIONES TRAMO: CUSHITAMBO HASTA EL SECTOR TINGO DEL BARRIO COLLANA DEL DISTRITO DE PAUCARTAMBO - PROVINCIA DE PASCO - DEPARTAMENTO DE PASCO - INFORME DE GESTIÓN AMBIENTAL",
+    "category": "Evaluación Ambiental",
+    "image": "/proyectos/proyecto-8.png"
+  },
+  {
+    "id": 9,
+    "numberTitle": "9. SERVICIOS EN MEDIO AMBIENTE",
+    "title": "CREACIÓN DEL PUENTE CARROZABLE EN LA ULTIMA CUADRA DEL JIRÓN AREQUIPA Y EL PARQUE DE LA FAMILIA DE TALAVERA DEL DISTRITO DE TALAVERA - PROVINCIA DE ANDAHUAYLAS - DEPARTAMENTO DE APURIMAC - FICHA TÉCNICA SOCIO AMBIENTAL (FITSA)",
+    "category": "Gestión Ambiental",
+    "image": "/proyectos/proyecto-9.png"
+  },
+  {
+    "id": 10,
+    "numberTitle": "10. MAPAS BASE Y TEMÁTICOS (ArcGIS, Qgis y ArcGIS Pro)",
+    "title": "MEJORAMIENTO Y AMPLIACIÓN DEL SERVICIO DE AGUA POTABLE URBANO Y MEJORAMIENTO Y AMPLIACION DEL SERVICIO DE ALCANTARILLADO EN SAN JOSE DE LOS MOLINOS DEL DISTRITO DE SAN JOSE DE LOS MOLINOS DE LA PROVINCIA DE ICA DEL DEPARTAMENTO DE ICA – MAPAS TEMÁTICOS",
+    "category": "Geomática",
+    "image": "/proyectos/proyecto-10.png"
+  },
+  {
+    "id": 11,
+    "numberTitle": "11. SERVICIOS EN ARQUEOLOGÍA",
+    "title": "MEJORAMIENTO Y AMPLIACION DEL SISTEMA DE RIEGO TECNIFICADO EN EL SECTOR MULLIPAMPA DE LA LOCALIDAD DE SAN MIGUEL, DISTRITO DE PONTO PROVINCIA DE HUARI - DEPARTAMENTO DE ANCASH - CERTIFICADO DE INEXISTENCIA DE RESTOS ARQUEOLÓGICOS EN SUPERFICIE (CIRAS)",
+    "category": "Patrimonio Cultural",
+    "image": "/proyectos/proyecto-11.png"
   }
 ]

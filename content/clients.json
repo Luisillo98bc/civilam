@@ -1,0 +1,72 @@
+[
+  {
+    "id": "mtc",
+    "name": "Ministerio de Transportes y Comunicaciones (MTC)",
+    "category": "Ministerios",
+    "image": "/clientes/mtc.png",
+    "description": "Estudios de infraestructura vial, defensas ribereñas y puentes en la red vial nacional."
+  },
+  {
+    "id": "mvcs",
+    "name": "Ministerio de Vivienda, Construcción y Saneamiento (MVCS)",
+    "category": "Ministerios",
+    "image": "/clientes/misterio de vivienda.png",
+    "description": "Expedientes técnicos de agua potable, alcantarillado sanitario y plantas de tratamiento."
+  },
+  {
+    "id": "midagri",
+    "name": "Ministerio de Desarrollo Agrario y Riego (MIDAGRI)",
+    "category": "Ministerios",
+    "image": "/clientes/min desarrollo agrario.png",
+    "description": "Estudios de riego tecnificado, presas, reservorios y defensas ribereñas agrícolas."
+  },
+  {
+    "id": "sierraazul",
+    "name": "Fondo Sierra Azul",
+    "category": "Programas Estatales",
+    "image": "/clientes/sierraazul.png",
+    "description": "Siembra y cosecha de agua, cochas, microreservorios y recarga hídrica altoandina."
+  },
+  {
+    "id": "ancash",
+    "name": "Gobierno Regional de Ancash",
+    "category": "Gobiernos Regionales",
+    "image": "/clientes/ancash.jpg",
+    "description": "Expedientes técnicos de carreteras, modelamiento hidráulico e infraestructura pública."
+  },
+  {
+    "id": "junin",
+    "name": "Gobierno Regional de Junín",
+    "category": "Gobiernos Regionales",
+    "image": "/clientes/junin.png",
+    "description": "Estudios de hidrología, hidráulica, puentes y evaluaciones de riesgo (EVAR)."
+  },
+  {
+    "id": "huancavelica",
+    "name": "Gobierno Regional de Huancavelica",
+    "category": "Gobiernos Regionales",
+    "image": "/clientes/huancavelica.jpg",
+    "description": "Mantenimiento y desinfección de reservorios, saneamiento y proyectos hidráulicos."
+  },
+  {
+    "id": "ayacucho",
+    "name": "Gobierno Regional de Ayacucho",
+    "category": "Gobiernos Regionales",
+    "image": "/clientes/ayacucho.png",
+    "description": "Estudios ambientales, fichas FITSA/FTA y monitoreos de agua y suelo."
+  },
+  {
+    "id": "pasco",
+    "name": "Gobierno Regional de Pasco",
+    "category": "Gobiernos Regionales",
+    "image": "/clientes/pasco.jpg",
+    "description": "Informes de gestión ambiental, protección contra inundaciones y encauzamientos."
+  },
+  {
+    "id": "huanuco",
+    "name": "Gobierno Regional de Huánuco",
+    "category": "Gobiernos Regionales",
+    "image": "/clientes/huanuco.jpg",
+    "description": "Topografía, cartografía digital, mapas temáticos y desarrollo de infraestructura."
+  }
+]

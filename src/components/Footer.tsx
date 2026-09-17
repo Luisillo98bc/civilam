@@ -61,21 +61,26 @@ export default function Footer() {
               <li><Link href="/" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Inicio</Link></li>
               <li><Link href="/nosotros" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Nosotros</Link></li>
               <li><Link href="/proyectos" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Proyectos</Link></li>
-              <li><Link href="/blog" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Blog</Link></li>
+              <li><Link href="/clientes" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Clientes</Link></li>
               <li><Link href="/contacto" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Contacto</Link></li>
             </ul>
           </div>
 
-          {/* Column 3: Servicios Links */}
-          <div className="flex flex-col">
-            <h4 className="text-base font-bold mb-6 text-[#F8FAFC] tracking-[0.01em]">Servicios</h4>
-            <ul className="flex flex-col gap-3">
-              <li><Link href="/servicios#expedientes" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Expedientes Técnicos</Link></li>
-              <li><Link href="/servicios#topografia" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Topografía y Geodesia</Link></li>
-              <li><Link href="/servicios#mantenimiento" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Mantenimiento de Agua y Saneamiento</Link></li>
-              <li><Link href="/servicios#hidrologia" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Hidrología e Hidráulica</Link></li>
-              <li><Link href="/servicios#modelamiento" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Modelamiento Hidráulico</Link></li>
-              <li><Link href="/servicios#ambiental" className="text-[0.85rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">Gestión Ambiental</Link></li>
+          {/* Column 3: Servicios Links (2 columnas) */}
+          <div className="flex flex-col xl:col-span-2">
+            <h4 className="text-base font-bold mb-5 text-[#F8FAFC] tracking-[0.01em]">Nuestros Servicios</h4>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
+              <li><Link href="/servicios#expedientes" scroll={false} className="text-[0.8rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">1. Expedientes Técnicos</Link></li>
+              <li><Link href="/servicios#topografia" scroll={false} className="text-[0.8rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">2. Topografía y Fotogrametría</Link></li>
+              <li><Link href="/servicios#mantenimiento" scroll={false} className="text-[0.8rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">3. Mantenimiento de Agua</Link></li>
+              <li><Link href="/servicios#hidrologia" scroll={false} className="text-[0.8rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">4. Hidrología e Hidráulica</Link></li>
+              <li><Link href="/servicios#modelamiento" scroll={false} className="text-[0.8rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">5. Modelamiento Hidráulico</Link></li>
+              <li><Link href="/servicios#evar" scroll={false} className="text-[0.8rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">6. Evaluación de Riesgos (EVAR)</Link></li>
+              <li><Link href="/servicios#monitoreos" scroll={false} className="text-[0.8rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">7. Monitoreos Ambientales</Link></li>
+              <li><Link href="/servicios#impacto" scroll={false} className="text-[0.8rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">8. Impacto Ambiental (EIA)</Link></li>
+              <li><Link href="/servicios#ambiental" scroll={false} className="text-[0.8rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">9. Servicios Medio Ambiente</Link></li>
+              <li><Link href="/servicios#mapas" scroll={false} className="text-[0.8rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">10. Mapas Base y Temáticos</Link></li>
+              <li><Link href="/servicios#arqueologia" scroll={false} className="text-[0.8rem] text-[#94A3B8] transition-all duration-200 inline-block hover:text-accent-red hover:translate-x-1">11. Servicios en Arqueología</Link></li>
             </ul>
           </div>
 

@@ -14,7 +14,6 @@ export default function ProyectosPage() {
     <main>
       <HeroInner 
         title="Proyectos y experiencia aplicada" 
-        subtitle="Consulta trabajos por especialidad, ubicación y año. Cada ficha resume el alcance técnico desarrollado."
         eyebrow="PORTAFOLIO · CASOS DE PROYECTO"
         image="/construccion_mante.jpeg"
       />

@@ -30,8 +30,7 @@ export default function Header() {
     { href: '/nosotros', label: 'Nosotros' },
     { href: '/servicios', label: 'Servicios' },
     { href: '/proyectos', label: 'Proyectos' },
-    { href: '/capacitaciones', label: 'Capacitaciones' },
-    { href: '/blog', label: 'Blog' },
+    { href: '/clientes', label: 'Clientes' },
     { href: '/contacto#mensaje', label: 'Contacto' },
   ];
 

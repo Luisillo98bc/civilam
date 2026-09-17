@@ -2,10 +2,7 @@ import { Metadata } from 'next';
 import HeroInner from '@/components/HeroInner';
 import NeedsGrid from '@/components/NeedsGrid';
 import ServicesTabs from '@/components/ServicesTabs';
-import WorkProcess from '@/components/WorkProcess';
-import Certifications from '@/components/Certifications';
 import CTA from '@/components/CTA';
-import BrochureServices from '@/components/BrochureServices';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
@@ -43,9 +40,6 @@ export default function ServiciosPage() {
         </div>
         <ServicesTabs />
       </section>
-      <BrochureServices />
-      <WorkProcess />
-      <Certifications />
       <CTA />
     </main>
   );
